@@ -1,0 +1,8 @@
+{
+  "name": "luzon-tollmap",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "next lint", "test": "vitest run", "db:generate": "prisma generate", "db:seed": "tsx prisma/seed.ts" },
+  "dependencies": { "@prisma/client": "^6.1.0", "mapbox-gl": "^3.8.0", "next": "^15.1.0", "react": "^19.0.0", "react-dom": "^19.0.0", "zod": "^3.24.0" },
+  "devDependencies": { "@types/node": "^22", "@types/react": "^19", "@types/react-dom": "^19", "@types/mapbox-gl": "^3.4.1", "prisma": "^6.1.0", "tsx": "^4.19.0", "typescript": "^5", "vitest": "^2.1.0" }
+}

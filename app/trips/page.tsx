@@ -1,0 +1,1 @@
+export default function Trips(){return <main className="admin"><a className="brand" href="/">LUZON <span>TOLLMAP</span></a><h1>Your trips</h1><p>Saving trips is available when authentication is configured. Route calculation never requires an account.</p></main>}

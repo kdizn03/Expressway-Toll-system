@@ -1,0 +1,141 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RateStatus {
+  DRAFT
+  PENDING_REVIEW
+  SCHEDULED
+  PUBLISHED
+  EXPIRED
+  REJECTED
+}
+
+model Expressway {
+  id String @id @default(cuid())
+  name String @unique
+  abbreviation String @unique
+  operator String?
+  region String?
+  status String @default("operational")
+  rfidSystem String?
+  tollSystemType String?
+  geometry Json?
+  sourceInfo Json?
+  notes String?
+  lastVerifiedAt DateTime?
+  plazas TollPlaza[]
+  versions RateVersion[]
+  restrictions VehicleRestriction[]
+  createdAt DateTime @default(now())
+}
+
+model TollPlaza {
+  id String @id @default(cuid())
+  expresswayId String
+  name String
+  latitude Float
+  longitude Float
+  direction String?
+  externalId String?
+  expressway Expressway @relation(fields: [expresswayId], references: [id])
+  @@unique([expresswayId, name])
+  @@index([expresswayId])
+}
+
+model VehicleClass {
+  id String @id @default(cuid())
+  code String @unique
+  displayName String
+  description String?
+  restrictions VehicleRestriction[]
+  rates TollRate[]
+}
+
+model VehicleRestriction {
+  id String @id @default(cuid())
+  expresswayId String
+  vehicleClassId String
+  allowed Boolean @default(true)
+  notes String?
+  effectiveFrom DateTime
+  effectiveTo DateTime?
+  source String?
+  expressway Expressway @relation(fields: [expresswayId], references: [id])
+  vehicleClass VehicleClass @relation(fields: [vehicleClassId], references: [id])
+  @@index([expresswayId, vehicleClassId, effectiveFrom])
+}
+
+model RateSource {
+  id String @id @default(cuid())
+  name String
+  officialUrl String
+  sourceType String
+  expresswayId String?
+  enabled Boolean @default(true)
+  lastCheckedAt DateTime?
+  lastSuccessfulAt DateTime?
+  contentHash String?
+  notes String?
+  versions RateVersion[]
+}
+
+model RateVersion {
+  id String @id @default(cuid())
+  expresswayId String
+  sourceId String
+  versionNumber Int
+  retrievedAt DateTime @default(now())
+  verifiedAt DateTime?
+  effectiveFrom DateTime
+  effectiveTo DateTime?
+  status RateStatus @default(DRAFT)
+  notes String?
+  createdBy String?
+  approvedBy String?
+  createdAt DateTime @default(now())
+  expressway Expressway @relation(fields: [expresswayId], references: [id])
+  source RateSource @relation(fields: [sourceId], references: [id])
+  rates TollRate[]
+  @@unique([expresswayId, versionNumber])
+  @@index([expresswayId, status, effectiveFrom, effectiveTo])
+}
+
+model TollRate {
+  id String @id @default(cuid())
+  rateVersionId String
+  entryPlazaId String
+  exitPlazaId String
+  vehicleClassId String
+  tollCentavos Int
+  vatIncluded Boolean @default(true)
+  rateVersion RateVersion @relation(fields: [rateVersionId], references: [id])
+  vehicleClass VehicleClass @relation(fields: [vehicleClassId], references: [id])
+  @@unique([rateVersionId, entryPlazaId, exitPlazaId, vehicleClassId])
+  @@index([entryPlazaId, exitPlazaId, vehicleClassId])
+}
+
+model AuditLog {
+  id String @id @default(cuid())
+  actorId String?
+  action String
+  entityType String
+  entityId String
+  oldValue Json?
+  newValue Json?
+  reason String?
+  createdAt DateTime @default(now())
+}
+
+model SourceSnapshot {
+  id String @id @default(cuid())
+  sourceId String
+  contentHash String
+  retrievedAt DateTime @default(now())
+  requiresManualReview Boolean @default(false)
+}
