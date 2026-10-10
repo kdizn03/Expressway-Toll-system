@@ -1,0 +1,14 @@
+[
+  {
+    "expressway": "NLEX",
+    "origin": "OFFICIAL_PLAZA_CODE",
+    "destination": "OFFICIAL_PLAZA_CODE",
+    "class1Centavos": 0,
+    "class2Centavos": 0,
+    "class3Centavos": 0,
+    "effectiveFrom": "YYYY-MM-DD",
+    "source": "Official source name",
+    "sourceUrl": "https://official.example/rate-matrix",
+    "lastVerified": "YYYY-MM-DD"
+  }
+]

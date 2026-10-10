@@ -25,6 +25,7 @@ model Expressway {
   status String @default("operational")
   rfidSystem String?
   tollSystemType String?
+  pricingModel String @default("closed_matrix")
   geometry Json?
   sourceInfo Json?
   notes String?
@@ -43,7 +44,11 @@ model TollPlaza {
   longitude Float
   direction String?
   externalId String?
+  sequence Int?
+  aliases Json?
   expressway Expressway @relation(fields: [expresswayId], references: [id])
+  entryRates TollRate[] @relation("RateEntryPlaza")
+  exitRates TollRate[] @relation("RateExitPlaza")
   @@unique([expresswayId, name])
   @@index([expresswayId])
 }
@@ -83,6 +88,8 @@ model RateSource {
   contentHash String?
   notes String?
   versions RateVersion[]
+  snapshots SourceSnapshot[]
+  matrixImports MatrixImport[]
 }
 
 model RateVersion {
@@ -116,6 +123,8 @@ model TollRate {
   vatIncluded Boolean @default(true)
   rateVersion RateVersion @relation(fields: [rateVersionId], references: [id])
   vehicleClass VehicleClass @relation(fields: [vehicleClassId], references: [id])
+  entryPlaza TollPlaza @relation("RateEntryPlaza", fields: [entryPlazaId], references: [id])
+  exitPlaza TollPlaza @relation("RateExitPlaza", fields: [exitPlazaId], references: [id])
   @@unique([rateVersionId, entryPlazaId, exitPlazaId, vehicleClassId])
   @@index([entryPlazaId, exitPlazaId, vehicleClassId])
 }
@@ -138,4 +147,40 @@ model SourceSnapshot {
   contentHash String
   retrievedAt DateTime @default(now())
   requiresManualReview Boolean @default(false)
+  source RateSource @relation(fields: [sourceId], references: [id])
+  imports MatrixImport[]
+  @@unique([sourceId, contentHash])
+}
+
+model MatrixImport {
+  id String @id @default(cuid())
+  sourceId String
+  sourceSnapshotId String
+  contentHash String
+  sourceUrl String
+  retrievedAt DateTime @default(now())
+  reportedUpdatedAt DateTime?
+  status RateStatus @default(PENDING_REVIEW)
+  rowCount Int
+  notes String?
+  source RateSource @relation(fields: [sourceId], references: [id])
+  sourceSnapshot SourceSnapshot @relation(fields: [sourceSnapshotId], references: [id])
+  rows MatrixImportRow[]
+  @@unique([sourceId, contentHash])
+  @@index([sourceId, status, retrievedAt])
+}
+
+model MatrixImportRow {
+  id String @id @default(cuid())
+  matrixImportId String
+  entryExpresswayCode String
+  exitExpresswayCode String
+  entryName String
+  exitName String
+  vehicleClassCode String
+  tollCentavos Int
+  reversible Boolean @default(false)
+  matrixImport MatrixImport @relation(fields: [matrixImportId], references: [id], onDelete: Cascade)
+  @@unique([matrixImportId, entryExpresswayCode, exitExpresswayCode, entryName, exitName, vehicleClassCode])
+  @@index([entryExpresswayCode, exitExpresswayCode, entryName, exitName])
 }
