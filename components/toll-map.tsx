@@ -1,13 +1,14 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { GoogleTollMap } from "./google-toll-map";
 
 export type RouteGeometry = { type: "LineString"; coordinates: [number, number][] };
 
 const emptyRoute: RouteGeometry = { type: "LineString", coordinates: [] };
 
 /** Client-only map with a progressively drawn selected-route overlay. */
-export function TollMap({ route }: { route?: RouteGeometry }) {
+export function MapboxTollMap({ route }: { route?: RouteGeometry }) {
   const target = useRef<HTMLDivElement>(null);
   const mapRef = useRef<import("mapbox-gl").Map | undefined>(undefined);
   const currentRoute = useRef<RouteGeometry | undefined>(route);
@@ -85,4 +86,10 @@ export function TollMap({ route }: { route?: RouteGeometry }) {
   }, []);
 
   return <div ref={target} className="mapCanvas" aria-label="Interactive Luzon map with animated selected route" />;
+}
+
+/** Keep the renderer switch independent from server-side route calculations. */
+export function TollMap({ route }: { route?: RouteGeometry }) {
+  const useGoogle = process.env.NEXT_PUBLIC_MAP_PROVIDER === "google" && Boolean(process.env.NEXT_PUBLIC_GOOGLE_MAPS_BROWSER_KEY);
+  return useGoogle ? <GoogleTollMap route={route} /> : <MapboxTollMap route={route} />;
 }

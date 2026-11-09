@@ -1,5 +1,8 @@
 import { prisma } from "@/lib/db";
 import { isCustomerFacingSource } from "@/lib/toll/source-policy";
+import { getCurrentUser } from "@/lib/auth/session";
+import { isAdmin } from "@/lib/auth/authorization";
+import { notFound, redirect } from "next/navigation";
 
 export const dynamic = "force-dynamic";
 
@@ -26,6 +29,9 @@ async function loadAdminData(): Promise<{ sources: SourceRow[]; imports: ImportR
 }
 
 export default async function Admin() {
+  const user = await getCurrentUser();
+  if (!user) redirect("/login?next=/admin");
+  if (!isAdmin(user)) notFound();
   const data = await loadAdminData();
   const sources = data?.sources ?? null;
   const imports = data?.imports ?? null;

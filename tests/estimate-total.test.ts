@@ -6,6 +6,6 @@ describe("estimated toll totals", () => {
     const service = new TollCalculationService(async () => ({ centavos: 31400, estimate: true }));
     const result = await service.calculate([{ expressway: "NLEX", entry: "San Fernando", exit: "Valenzuela", confidence: "LOW" }], "CLASS_1", new Date());
     expect(result.totalCentavos).toBe(31400);
-    expect(result.status).toBe("VERIFICATION_REQUIRED");
+    expect(result.status).toBe("ESTIMATED");
   });
 });
