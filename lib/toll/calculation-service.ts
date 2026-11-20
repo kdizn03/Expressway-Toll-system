@@ -1,14 +1,41 @@
 import type { TollEstimate, TollSegment, VehicleCode } from "./types";
-export type MatchedRoad = { expressway:string; entry:string; exit:string; confidence:TollSegment["confidence"] };
+/** `exitExpressway` is set when one integrated fare spans two connected expressways (e.g. NLEX → SCTEX). */
+export type MatchedRoad = { expressway:string; exitExpressway?:string; entry:string; exit:string; confidence:TollSegment["confidence"] };
 export type RateLookup = (road:MatchedRoad, vehicle:VehicleCode, at:Date)=>Promise<{centavos?:number;version?:string;effectiveFrom?:Date;lastVerifiedAt?:Date|null;source?:string;sourceUrl?:string;estimate?:boolean;isFree?:boolean;unavailableReason?:string}|undefined>;
+
+/**
+ * Connected expressways that are tolled as one through-trip: the fare from an NLEX entry to an
+ * SCTEX exit (or Skyway to SLEX) is a single matrix amount, not the sum of two separate trips.
+ */
+const INTEGRATED_SYSTEMS = new Set(["NLEX>SCTEX", "SCTEX>NLEX", "SKYWAY>SLEX", "SLEX>SKYWAY"]);
+const confidenceRank = { HIGH: 2, MEDIUM: 1, LOW: 0 } as const;
+const lowerConfidence = (a: TollSegment["confidence"], b: TollSegment["confidence"]) => confidenceRank[a] <= confidenceRank[b] ? a : b;
+
 /** Pure orchestration: geometry matching is injected, keeping provider and PostGIS details outside pricing. */
 export class TollCalculationService {
   constructor(private readonly lookup:RateLookup) {}
-  async calculate(roads:MatchedRoad[], vehicle:VehicleCode, at:Date, roundTrip=false):Promise<TollEstimate>{
+
+  /** Replaces adjacent segments of an integrated system with one through-trip when a rate for it exists. */
+  private async mergeIntegrated(roads:MatchedRoad[], vehicle:VehicleCode, at:Date):Promise<MatchedRoad[]>{
+    const merged: MatchedRoad[] = [];
+    for (const road of roads) {
+      const previous = merged.at(-1);
+      if (previous && !previous.exitExpressway && !road.exitExpressway && INTEGRATED_SYSTEMS.has(`${previous.expressway}>${road.expressway}`)) {
+        const through: MatchedRoad = { expressway: previous.expressway, exitExpressway: road.expressway, entry: previous.entry, exit: road.exit, confidence: lowerConfidence(previous.confidence, road.confidence) };
+        const rate = await this.lookup(through, vehicle, at);
+        if (rate?.centavos !== undefined && rate.centavos > 0) { merged[merged.length - 1] = through; continue; }
+      }
+      merged.push(road);
+    }
+    return merged;
+  }
+
+  async calculate(matchedRoads:MatchedRoad[], vehicle:VehicleCode, at:Date, roundTrip=false):Promise<TollEstimate>{
+    const roads = await this.mergeIntegrated(matchedRoads, vehicle, at);
     const seen = new Set<string>();
     const duplicateWarnings: string[] = [];
     const uniqueRoads = roads.filter((road) => {
-      const key = `${road.expressway}|${road.entry}|${road.exit}`;
+      const key = `${road.expressway}|${road.exitExpressway ?? ""}|${road.entry}|${road.exit}`;
       if (!seen.has(key)) { seen.add(key); return true; }
       duplicateWarnings.push(`Duplicate ${road.expressway} segment (${road.entry} → ${road.exit}) was ignored.`);
       return false;

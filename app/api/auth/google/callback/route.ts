@@ -3,11 +3,13 @@ import { googleConfigured, googleRedirectUri, googleStateCookieName, googleState
 import { createSession, setSessionCookie } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
 import { requestMetadata } from "@/lib/auth/request";
+import { isAuthEnabled } from "@/lib/auth/config";
 
 type GoogleProfile = { sub?: string; email?: string; email_verified?: boolean; name?: string };
 const failure = (request: NextRequest) => NextResponse.redirect(new URL("/login?google=failed", request.url));
 
 export async function GET(request: NextRequest) {
+  if (!isAuthEnabled()) return NextResponse.redirect(new URL("/", request.url));
   const state = request.nextUrl.searchParams.get("state");
   const code = request.nextUrl.searchParams.get("code");
   const expectedState = request.cookies.get(googleStateCookieName())?.value;

@@ -1,0 +1,231 @@
+{
+ "note": "Recorded from Google Places API (New) Text Search and Routes API on 2026-11-19 for tests only; minimal fields.",
+ "places": {
+  "Baguio City": {
+   "places": [
+    {
+     "id": "ChIJP_HeeWihkTMRwHU6vjT13o4",
+     "displayName": {
+      "text": "Baguio",
+      "languageCode": "en"
+     },
+     "formattedAddress": "Baguio, Benguet",
+     "location": {
+      "latitude": 16.4129692,
+      "longitude": 120.5913973
+     },
+     "addressComponents": [
+      {
+       "longText": "Philippines",
+       "shortText": "PH",
+       "types": [
+        "country",
+        "political"
+       ],
+       "languageCode": "en"
+      }
+     ]
+    }
+   ]
+  },
+  "Manila": {
+   "places": [
+    {
+     "id": "ChIJi8MeVwPKlzMRH8FpEHXV0Wk",
+     "displayName": {
+      "text": "Manila",
+      "languageCode": "en"
+     },
+     "formattedAddress": "Manila, Metro Manila",
+     "location": {
+      "latitude": 14.5995133,
+      "longitude": 120.984234
+     },
+     "addressComponents": [
+      {
+       "longText": "Philippines",
+       "shortText": "PH",
+       "types": [
+        "country",
+        "political"
+       ],
+       "languageCode": "en"
+      }
+     ]
+    }
+   ]
+  },
+  "Clark, Pampanga": {
+   "places": [
+    {
+     "id": "ChIJ68RABViNljMRAMWKSRbmCn4",
+     "displayName": {
+      "text": "Clark Freeport Zone",
+      "languageCode": "en"
+     },
+     "formattedAddress": "Clark Freeport Zone, Angeles, Pampanga",
+     "location": {
+      "latitude": 15.177751,
+      "longitude": 120.5157571
+     },
+     "addressComponents": [
+      {
+       "longText": "Philippines",
+       "shortText": "PH",
+       "types": [
+        "country",
+        "political"
+       ],
+       "languageCode": "en"
+      }
+     ]
+    }
+   ]
+  },
+  "New Jersey": {
+   "places": [
+    {
+     "id": "ChIJn0AAnpX7wIkRjW0_-Ad70iw",
+     "displayName": {
+      "text": "New Jersey",
+      "languageCode": "en"
+     },
+     "formattedAddress": "New Jersey, USA",
+     "location": {
+      "latitude": 40.0583238,
+      "longitude": -74.4056612
+     },
+     "addressComponents": [
+      {
+       "longText": "United States",
+       "shortText": "US",
+       "types": [
+        "country",
+        "political"
+       ],
+       "languageCode": "en"
+      }
+     ]
+    }
+   ]
+  },
+  "New Jersey, USA": {
+   "places": [
+    {
+     "id": "ChIJn0AAnpX7wIkRjW0_-Ad70iw",
+     "displayName": {
+      "text": "New Jersey",
+      "languageCode": "en"
+     },
+     "formattedAddress": "New Jersey, USA",
+     "location": {
+      "latitude": 40.0583238,
+      "longitude": -74.4056612
+     },
+     "addressComponents": [
+      {
+       "longText": "United States",
+       "shortText": "US",
+       "types": [
+        "country",
+        "political"
+       ],
+       "languageCode": "en"
+      }
+     ]
+    }
+   ]
+  },
+  "Paris": {
+   "places": [
+    {
+     "id": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+     "displayName": {
+      "text": "Paris",
+      "languageCode": "en"
+     },
+     "formattedAddress": "Paris, France",
+     "location": {
+      "latitude": 48.857547499999995,
+      "longitude": 2.3513764999999998
+     },
+     "addressComponents": [
+      {
+       "longText": "France",
+       "shortText": "FR",
+       "types": [
+        "country",
+        "political"
+       ],
+       "languageCode": "en"
+      }
+     ]
+    }
+   ]
+  },
+  "San Fernando": {
+   "places": [
+    {
+     "id": "ChIJ26qoR5_3ljMRKpKB293hSyw",
+     "displayName": {
+      "text": "San Fernando",
+      "languageCode": "en"
+     },
+     "formattedAddress": "San Fernando, Pampanga",
+     "location": {
+      "latitude": 15.027812099999998,
+      "longitude": 120.69348819999999
+     },
+     "addressComponents": [
+      {
+       "longText": "Philippines",
+       "shortText": "PH",
+       "types": [
+        "country",
+        "political"
+       ],
+       "languageCode": "en"
+      }
+     ]
+    }
+   ]
+  },
+  "Cambridge": {
+   "places": [
+    {
+     "id": "ChIJ634Ozp7HlzMREsvCEtSnSYc",
+     "displayName": {
+      "text": "Cambridge Village Clubhouse",
+      "languageCode": "en"
+     },
+     "formattedAddress": "Cambridge St, Cainta, 1900 Metro Manila",
+     "location": {
+      "latitude": 14.5700845,
+      "longitude": 121.1089952
+     },
+     "addressComponents": [
+      {
+       "longText": "Philippines",
+       "shortText": "PH",
+       "types": [
+        "country",
+        "political"
+       ],
+       "languageCode": "en"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "routes": {
+  "Baguio→Manila": {
+   "distanceMeters": 248782,
+   "encodedPolyline": "mqbcB}{`_VQKSBMLARHNPFREHO@Qp@}@Ja@x@iGPg@p@mAX]TSbC_Bl@[~Ai@RUv@_BXONEbCEx@@`A\\p@b@RZJl@Hr@LZ`@\\~A`AdBv@f@Df@SPMn@q@z@mA^y@XgAf@{@XSXIh@AP@lA^hBp@j@Jd@ExBs@hKwBzI}AhAEt@@\\J|@f@X@j@G\\Mr@e@lAs@XOd@IxBAZQn@k@`DoDdBiCNOhFcEP_@Fc@NyBRyEL_A^mARa@d@]XKt@OjABp@Fv@`@dAx@v@^h@NrAHh@ATIj@cAXQXCl@HPHpBlANBRClAqAlB_@l@OVF|Az@T?TEXShAmALq@^m@r@q@~@gAn@k@b@WrAi@VENDHNBXK\\g@f@}CrBKVa@lBe@jAANFTPFRBZCXI`@_@hAoC^Yz@[d@_@TALDTXDJH`@FJx@j@VDf@IjBu@\\Gh@CjAB\\ARENIn@m@HGZEl@HtB`Ad@JXCLIDGZmAJe@HMb@]\\OT?NFRXJXdAtARPx@\\fAXVNv@VLTVfAJRt@l@^f@Rh@RRPDX?ZG\\Mb@E`@FLFFNC`@EJYJa@Cg@MyAGaB_@_AGKIy@iCOQ_@Yg@KWAODMPANLp@DnABXARKLYAk@Q[Cg@Fe@L_@JW@kAIiDCWBMJAPDJNLHBj@Hd@@d@DZJTT`@f@JHLDr@@r@O\\MRCX?tBb@TJRTNJJBhAFj@PLJTZTj@HLPFXC~@S|@CT@VDNDp@b@\\B`AERD`@TRTt@fANH`@FXCJI^y@fAmBj@w@`@O`@EN@tA`@j@\\Td@Zt@LLLFVHN@dCo@XM\\UZe@Rm@BU?]Ow@oBiEWg@Sm@[qBEeABSj@mBHS^_@d@QfAEl@DhCVjBBjBGLCt@U|DeB~FyAr@K^QLMRc@XqAXq@`@k@dBgBr@}@`@o@r@sAV[h@e@p@[~Bu@dEgBVSLMVu@TmA^s@b@g@pAeAfAs@~AoAZKb@@RBPHpA~@r@\\rAR|@VVAZIxBcAh@a@X]HSNu@VgBReDNk@v@_Bf@m@nAmAtC}AXEZ?PJJLf@z@f@n@x@z@vA~@t@vAZVXJTB`@GVO|@{@NY`AcC^m@x@gAz@yANIZ?j@PbAl@nAd@f@\\TX|@|AjEpGX\\TTdB~@|@d@n@T|@FtBRdBRfDWjAGbA@j@IzAg@RMV[LUPo@LOPEP@LJ^bCHPx@xARl@f@`DRj@N\\PTVLd@L\\TtHpGPHXBXGZQzAqAlAwAb@y@b@a@l@UhA[v@Mv@GfAc@tEqB`@ET@d@N`A^XD|AJlA\\|DMjBOt@UVQV_@Le@H}@JU|A_C\\o@NUbAeA^g@Vq@Ne@Pa@JO\\W^MZGfAE^FrA\\z@^t@RrGbAfAFnBl@jFfBlAn@XBTGf@g@f@Sb@GPBJNFXIp@Il@Eb@e@n@IPCZF\\NXrAxAf@b@xC|CLTDNPvCb@jATf@l@r@RPv@^PBz@GVGz@YlAMR?f@JZTlAnAd@v@Xh@t@x@p@d@bBx@p@`@fCvB`BxAn@^h@Jf@D~@A`AO`@Bp@Rr@f@bAdARRRn@\\zBVx@r@jAJV\\zBBTATIREp@D^N`@BTCv@k@hCGd@H^FJr@b@FL`@\\j@NrAB~@Rd@N|@f@XT\\b@v@|Bd@bAd@t@^dAXj@N\\z@pELfEFb@HPZLVBl@Tr@^d@Zf@f@n@|@Rt@DhBJZRNpC~AbB~@RNXLlBpA|Az@PLnChEzA|A^TvA\\p@HZ@TE^UlAeAZI\\BTNPZF`@DjA?jAItAM^_@p@yBvB{AjAwAvAKVBXNX`@PrAd@dBv@dAl@hCpBHPF^@l@D^`AbDVd@l@l@Xl@l@zBl@rA|AxB`CjCxAzBl@nALZN`AAp@KXo@|@G\\@ZJ^PR^v@Fn@PVx@h@jAh@lA`@j@Z^^`BxBz@xANz@Dz@Ap@Et@Bd@JPlBrBnAfAN~@T|CJ~@Nb@`ApA\\Xj@Vb@Rh@X^HrAHn@Hh@LdBx@ZDb@AFARQP@HDNXh@zAZf@\\`@j@j@R\\Rd@Lt@Hz@`@lB~@pB`@hAz@bBn@z@`@`@\\VrGxDxAz@b@Fl@?dBIt@?~AJ^AtAUN?d@H`@VTXb@p@`@^nAf@pDrAfA\\fAX~Dl@h@Lh@X~@|@\\^v@l@vDbBhErAb@XnA~Al@d@fAf@x@VfCh@pBl@v@^\\Xh@n@vBzDn@pALr@BpALlA^`C\\xAt@rBf@z@x@bBR`ADbAAjADz@D^f@lBt@jCH`@b@dDNt@j@tAp@bAZTZPn@Nz@DxEa@x@Ib@?~Bm@hAUdD_@z@AXDXHzAx@TVv@|BVj@\\zAn@rEJh@~@tC`AbCJf@|@vAhAvB^hA^~AN\\HFV^v@`B^~@jA`DZh@xBlCRPVHb@HjAGXMb@WfCm@VK\\AP@n@Pj@`@l@x@d@|@Fh@BnABRVfA|@`CX`APbAPd@Bd@AnAIdA?n@DlBHj@DLNZX^TRn@pAt@lARVNT^`@vAhAp@p@`A~BNPPt@lAnDR^bAbAR`@BZMdAGZBj@F~@Ab@BZf@jCPt@p@vAr@pANPTh@FX\\hALjBF~ACxAc@fFOhCe@pAQh@Gb@H|@Pr@`@j@l@lAh@`BRx@Bh@UrA]hAGdAD^fBtDVv@Df@D~CBdBHd@^rAd@x@rAfA|A`ARTNb@?\\MpABf@f@jCRh@dAbB\\l@\\jAbBpI\\bAr@|AtBvDj@v@dEfE`Ax@BLzBzBzAbAdB`AxCjA~CdAhGfBbC|@zBbAVNpFdCFPd@`@t@`AZh@b@jARx@PlABj@E^KhHOjKELWdBQr@@ZLXPNVDXCRMVULMf@OtMWjDEvQYrCCrDM~KClE?pGDtM\\bIZbCLjG^fGf@rNzA`NvAvCX|AHxA@~BIhBW`AOpBm@`CkAv@e@tAeAfBkB`A{AzAwCbEuJr@aBfAqC`MuYfBiE~DcJj@gAjBgC~@_A|@s@vBoAdBs@rAc@xBc@vE_@`BSdMaAhEi@vJyAvTkFhRmFtEmAbOgEhFsA~Ba@~BUdCItA?pId@`QlAjFZzCJ`C@xBGnDa@hAKjDk@bDo@zBo@t@W|@a@f@MvCyAvC_B`D}AfDsAhAa@jEqAzBi@fB]~Fy@bBQ`DStFO`D@~ENnLn@rFZfEVrP`AnCBz@CbAIjBSrGqAfFy@dBW`IyAdMgCrGyAdG}A`I{BzHaCvNeF`LuE|EyBvHsD`HsDhFyCfI_FxJ}GzKiIxJ}HxHyFxEcD`MyHlJgFzHcElKuEjIiD`E}AjKsDvZeJff@mNpEuAxOuEhBk@dKmDrNoFbKgEvDcB~N{G`KcEfLeE|JaDdKqCpLqCnH}AjQ{CdIiAn_@sD|d@_EnIu@fEc@jCSjC]tA[fBg@~Aq@|A{@tCyBzBuB|BuBtE}CvHwDnFwCfJwFpMiJjHgGrE_ElCuBvFuEpDkCjEuC~FmDpHaEtE_CpFcCpIkDzD{AhK}CfA_@xKmCdXiGdMcDpX}GzEqA`AY|]yIj_@{GtViCjOgApCQdFU`Pc@lSYrk@i@dHKbg@uB|SuA|TwB`OiBtUiDpUaEvL{BdPoD~UaGdg@}Odj@_UtUwK~HoDtKoFfQaIth@aWnJyD`LeEzRgGnEoAtA[`FmA~N}CpI{AlGcA|@S`NcBfLgAfGc@zF_@`Oi@|Yc@`Ro@nVeArNy@jDU~U{BtHe@`SsBvLyAxQmCfVuDr\\{GvMsCp[cIh`A{Vln@cPfKyBxJkBrQmC|H_AvFi@pNiArU_AjJOdEE|F?~QNjJXjMn@dIj@hMnA`I`AvO|BfRpDtKnC|HtBfIfCtItC~KhE`FrB|GzCnDfBtFrClJlFlGrDlJlGfJ|GbFzDbJrGfHtEhJxFnGnDdCrArHvDzMfG~IvDhBn@bC`AfJdDzJ`DtF`B`G~A`Dx@vD|@bNvCzHtAjAXrPdCrM`BbOpAxGd@`Id@lERfPb@rUJvVStWo@hHQt_AwD~Ts@xEWb_@uAdJq@lXkCjLyAdJsAb@EnOkC`LyB~LoCnLwCxOmEzLyDhKoDrIaDpm@yU`J}CtC_A|IiCnIyBfIiB|Cq@pNgCbFu@tKuAbJ_AhKw@dH_@rGYtN]zIGr{B?fw@AnNOpDKlLi@pF[jL}@~M{AzK{AvF}@rKsBrJwBlHgB`IyBrKgDhE{AbLiEvFaCfIuD~H}DrEcClHgEvGcE`ImF|CyBrQmNfM}IbEoCvIkFrDsBrM{G~BiAnK{EzO_GzHuCpImDbEiBvJyEdEyBtL_HnBkAx\\uTnJ}F|J_HhAo@hRaMlG{DdKyFhHmDrEmB|HyCnKgDlIgCrHgBvH{AlGeAnIiApFo@bHk@xJm@bL]dKGpHD`KR|XfAhJd@dHf@xDZjD\\tAR`DVrLxAdEj@zAZhLnBbC^nLbC`RpE~]xIjuBhh@tCv@hB`@`KfC`HbBrHjBdBf@lQxDxKlBnDl@xK~AzLvAjHr@lIp@lNx@nHX`LZxA@pADtLF`IAj@Ct@@|LQxUc@|BMfD?rXg@xOSbHGxJ?rEFvHPbGZ~DXlHp@jH~@bHlAlB^zEfAzGdBlF`B`IrC|CpA`KpEbFdChOdIrUtMzLxGjJpFzAv@frAvt@`t@da@h@PjBbAv@l@tBhA|IbFnu@bb@jGnDbDbB|PrJPLxKjGrGjD~QfKhXbOvQlJrOtH|MnG|RvIlHzClBx@vJxD|@ZfGdCtFtB|SjH`PpFxA`@jWbJjmCd~@vEhBpCvAnBnAlBvAtBjB`BdB~ArB|A`CrAfCbAbChAfDzArFfG|U|@lDvLle@bAnDv@tBlAbC~@xAxAdBrAnAzAlAp@d@dCrA|Bz@lCr@dC`@fALdCLrABxBGhBMnAM`GeAhSwDfYoFvZ{FnZuFdYoFrCi@zE_AvP}CpDq@|Ca@pGq@|F_@jEOjGQHHr@B|@Lp@b@d@p@b@~Af@pA\\h@~@l@d@Lr@Dn@Kf@S`@[Ze@Tk@Ny@HsA?}CGkC?}AB_AMiFGiAGiCS{O?cDFwC^oJZ_KFkJH}IAoAOiEY{DG{AC{CKyDFeAJi@P_@TYZWjA[FInCi@bOwDvPsEpN_EzFeBhMaEhQgGlHmCdLiExLcFbPeHbBk@`Cq@xAi@rGeDb@YjCoBt@g@pHyDjM{GhJcGlF}C~CkBlA{@~JwG~CsBfCcBhPkLdLsI|EwDdDwBhL}Jp@a@jDoDrH}G~MoMjImItLgMfMqNbK}L|H_J~AcBpC{CvJ{J`BkBjMcM`CwBtGiGfM{K|JcIb@WxEsDtMaKtEgDlM{IxL}HnEsChIcFlGqD|GkDhH_ElSgKrRgJzHkDhJ}DrNyFnGaCbN{EzOkFfOqEzOoEtDgAnX}IbPiGtRaIbCgAlI{DtRuJnE_CxI{EnEkC~@c@nLkHlLyHzLuIlJiHtAeArAkAxIcHpHqG`CwB|MqMxKaL|DiEnCqCt@_AhCwCvHeJzDaF`CwC|FwH~DwF|LwQnHiKlHoJjHgJvJyL|CgDdDwDtFaGbCqCxNyNlO{NrG}FtJmI`CuBrDsCnDwCfP_MrJeHjRkMbIeFxSgMzVcN~C_Bh\\uO`PkH`IoDnIeEtA{@pM_HnBkA`IkEpGuDh@_@vBmAlFiDrBmAbNcJ~GyEjDiC`D}B|GcFzMkKtPmN|DgDhZyVnQ{NfI_HjDsCnFoEbDsCdNeLdAcA`m@ig@xUcShWeTtj@me@vNwLpQgOvo@wi@hMoKzFaF|CeCjp@gj@pGqFfJwHfGsEpHmFdJkGzH}EhJqFvMgHrHkEtLuHpDaCfGkEpLmJjFuDdAy@lGsFlK}JxLaMrHuIfFiGbFoGvDgF~EeHlFeIhDuF|GgLfIwOzAaD`[cn@vDqH~DgH|AeCvBoDlCiEjHuK`GoIpN_RtBmCfKqN`GyIdEuGbG{JdGiKdLeTdE}ItDaI~DeJlDmIdFcL~v@ygBvWom@xAeDtAgDjD}HdCcElDqEvBoBbDaCjBiAxPkHhMuFr@YzQsIxBoAF_@`AeAdAuAf@w@dAmAj@g@x@k@nBcAf@QpAW`I[r@I|Bi@rBq@XGzUqKtnA_j@tcA{c@h_Aya@hJaElPuHfDwAbFqBjkCyjA`c@uR`CcAbLaFpFaC|cAad@bc@sRb@SzQcIld@aShCy@ZBf@Cr@Br@Jb@P`@ZdBlB`@n@L\\TnAHl@DrAFRCrPF|BZpEdAzMJ~DChCQbFa@zHU`IW`DUpBc@fCmApFYrBInAC`A@lBJT~AjSh@tFXfBp@rBl@~AtAzBbAtAX\\fAfAl@b@zA`ArCpAdBf@`Dv@xC^xBTfGLpDBpBItBUhCm@|Am@zK_F|Am@fCm@dBYrAMhEQfAChOo@pHe@vNe@|_@kA~k@oB~D[xCc@fDk@pEk@hD]zEm@vB]zG}@vMaBtVsClQuB`Ea@bBI~A@bEA~ABxBJvd@rDnWpBxJn@t@?|@Cj@Ix@Sh@SbAi@n@i@x@aATa@^aAVkAJkA`AeTh@oMR}EXsHLsAHk@Nk@Pi@p@qA~@kAtGkGdB{A|IoIpAiAPA`Ay@~JsJv@w@dGqFlBiBr@[XV~AlBhEvEh@r@h@h@`@h@dAfArBfCnF|FhFdGbBhBbAtArElFJb@fAfId@jCPb@jBN~En@tBTdC\\ZJfEd@`Fz@"
+  },
+  "Manila→Clark": {
+   "distanceMeters": 92441,
+   "encodedPolyline": "}mbxA{ulaVfIbANLvCb@`@Jd@Zp@w@[]_@Q}Fw@]DMBuAOk@KyJiAiEo@eAImN_BoH_ASGuGg@UAoAW{Tu@{@a@c@c@_CmCsFeG[KaAIuLOoIK{OM}MQm@CcA@_@D}IOi@@BqBmAc@gEaA_FsA{EeAi@Mq@KsD_A{A[wAc@oDs@qD{@yD_AsN_DQ[cBh@cAh@oHfDYHoAP_@AeHaCqKiDo@CsCeA_Bg@yGeCaUkHqJaDuDoBqDwAmBcAmCyAgAu@k@[kA{@oAq@y@W}@OgACsB?eAEaAKm@@kMGwA@cc@WwLCeLa@oCC}G?O@[JwGCeBHqD\\wG\\sCKOCuAq@SCoLUgSMcG?aDIyFAeIK_AAcEP}I|@gDb@}Cl@sDdAu@PuDxAkJdEsBz@cLbFcU|JwLrFiXpLodAnd@uAj@yDdB_KlEeRnIkaCleAyiAfg@}ErB}CvAea@rQiH|CyCrAgNfGg]dO{jAxg@{s@t[aA\\oAZ_BTmCJkCL{@HiB\\y@Vw@Z{@`@s@d@m@d@o@n@cBtBu@bAw@bAq@n@oAbAwA`AaVjK}HfDmNnGgB`AgBfAsBxAu@n@sApA_BhBgB|B}AbCu@tAm`@`~@qNb\\uVbk@wNt\\c@fAeLrW{GdOkFxKa@x@m@xAcMpUmEpH}HjMkH`LgGvImGvIwHxJsIjL_JlMiEpGaGlJyEnIcJlQiQ|]}IdQoHxMUVwDzG_GjJmHxKyHhKyGnIaHbIeK|KsLhL}I`ImB~AuFfEiOhLsHhF{MxIkJnFiP~IwCbBuKzGeNnJ_KpHgFbEiUnRsDtC_EfDqB~AqCfCiFdEq`@n\\yjAfaA{e@ba@yc@h_@_p@|i@w_@v[u[`XeBzA{N|L_\\dXw@l@iXfUeOvLoMpJgOpKcHtEkDxBmFpD}ExCuWpOyJfFeIhE_H|CmFlCkAh@kErB}JnEyL|F}BbAaLpFaR~J}KpGcNlIgHpEaHrEaHxE}P~LeSxO}GtFkO|M_IlHeIdIwCpC_E~DgIxIuIrJ{MzOoMpPyKfOyVb^yIfLoHbJoJ~KkGhHuI|IuLjLsH~GeFnEwAlAYRqJzHiMtJ}JfH_JbGyK`HeVfNoHzDoRjJ{G~CmD~AsH`D}H`DyDxAcL~DsKvDcIjCib@|LyC~@mUxHcNbFcI|CgLvE}ErBsRxIwHpDyGdDqQpJoJjFyNrIeI`FaKxGiKfHgKrHcQzMq@^oMrKoHrGiItHiLzK_PvPaJbKuAvAkHlI}HfJsAvAyGrHkHzHiOhOwPdPgC|BwChCoBpB}E~DaGhFmNlKcFnDgDdCkOnKqPxKyChBoBrAuE~CaRnKgFlCe@XcOxHoQnIaIpDyIpDW@uATaA?y@Mc@OkAKu@@YDiA\\YN[RUZYTUj@MtAATc@nFGdBUxCGN]~DAnEJpJ@tIPjP@j@DvF@`GNfBF^`@rAXt@^n@t@|@vAtBVl@Vt@T|@P~@xE{@fH{@HEvDc@zJ_BbMuBhAGTFLLLRd@jCXR`@H`Ba@t@LNLjBnHvAlGP|@P~ALdBCh@TjD`@nDlD|_@DdAAbBOtCk@zG{@bKy@dJ[rES`C]nCS`DGrACpBHlCXlFV|Ch@|LVrARp@|Nr^f@zAb@bB^dBJx@H~BEvBIhAQhAkFxRWt@w@rAyApBaTnZsDbFaAxAo@d@]Dg@AoIaC{@HmHxAm@TeANw@BsA?q@Ek@IuHkBuIwCyYuI}Bg@uASwAG{ABmALEaAFq@Fe@XmA`BaG]M"
+  }
+ }
+}

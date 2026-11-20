@@ -1,76 +1,114 @@
-import type { Coordinate, RouteCandidate, RouteGeometry } from "./types";
+import { isInPhilippines } from "../geo/philippines";
+import { isInLuzonCoverage, LUZON_SEARCH_BOUNDS } from "../geo/luzon";
+import { GoogleMapsError, googleErrorFromResponse, type GoogleService } from "./errors";
+import { normalizeGoogleRoutes, type GoogleRoutesResponse } from "./google-route-adapter";
+import { preciseAlias } from "./place-aliases";
+import { TtlCache } from "./ttl-cache";
+import type { Coordinate, ResolvedPlace, RouteCandidate } from "./types";
 
+/** Server-only key (Routes API + Places API (New) Text Search). Never prefix it with NEXT_PUBLIC_. */
 const serverKey = () => process.env.GOOGLE_MAPS_SERVER_API_KEY?.trim();
 export const isGoogleConfigured = () => Boolean(serverKey());
 
-type GoogleStep = {
-  distanceMeters?: number;
-  staticDuration?: string;
-  navigationInstruction?: { instructions?: string };
-  startLocation?: { latLng?: { latitude?: number; longitude?: number } };
-  endLocation?: { latLng?: { latitude?: number; longitude?: number } };
-};
-type GoogleRoute = { distanceMeters?: number; duration?: string; polyline?: { encodedPolyline?: string }; legs?: Array<{ steps?: GoogleStep[] }> };
+/** Rectangle around the Luzon coverage polygon, used only to bias free-text searches (validation uses the polygon). */
+const LUZON_BIAS = { rectangle: { low: { latitude: LUZON_SEARCH_BOUNDS.south, longitude: LUZON_SEARCH_BOUNDS.west }, high: { latitude: LUZON_SEARCH_BOUNDS.north, longitude: LUZON_SEARCH_BOUNDS.east } } };
+const ROUTE_FIELD_MASK = [
+  "routes.description", "routes.duration", "routes.distanceMeters", "routes.polyline.encodedPolyline",
+  "routes.legs.steps.distanceMeters", "routes.legs.steps.staticDuration", "routes.legs.steps.navigationInstruction",
+  "routes.legs.steps.startLocation", "routes.legs.steps.endLocation",
+].join(",");
 
-const seconds = (duration?: string) => duration ? Number.parseFloat(duration.replace("s", "")) || 0 : 0;
-const coordinate = (location?: GoogleStep["startLocation"]): Coordinate | undefined => {
-  const point = location?.latLng;
-  return point?.longitude !== undefined && point.latitude !== undefined ? [point.longitude, point.latitude] : undefined;
-};
+// Traffic-aware routes go stale quickly, so cache only briefly; this mainly absorbs
+// repeated clicks and identical searches. Place lookups are cached a little longer.
+const routeCache = new TtlCache<Promise<RouteCandidate[]>>(5 * 60_000);
+const placeCache = new TtlCache<Promise<ResolvedPlace | undefined>>(60 * 60_000);
 
-function decodePolyline(value = ""): Coordinate[] {
-  const points: Coordinate[] = [];
-  let index = 0; let latitude = 0; let longitude = 0;
-  while (index < value.length) {
-    let result = 0; let shift = 0; let byte: number;
-    do { byte = value.charCodeAt(index++) - 63; result |= (byte & 0x1f) << shift; shift += 5; } while (byte >= 0x20 && index < value.length);
-    latitude += result & 1 ? ~(result >> 1) : result >> 1;
-    result = 0; shift = 0;
-    do { byte = value.charCodeAt(index++) - 63; result |= (byte & 0x1f) << shift; shift += 5; } while (byte >= 0x20 && index < value.length);
-    longitude += result & 1 ? ~(result >> 1) : result >> 1;
-    points.push([longitude / 1e5, latitude / 1e5]);
+function requireKey() {
+  const key = serverKey();
+  if (!key) throw new GoogleMapsError("NOT_CONFIGURED", "Google Maps is not configured on the server. Set GOOGLE_MAPS_SERVER_API_KEY and restart the application.", 503);
+  return key;
+}
+
+async function googlePost<T>(service: GoogleService, url: string, fieldMask: string, payload: unknown): Promise<T> {
+  let response: Response;
+  try {
+    response = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Goog-Api-Key": requireKey(), "X-Goog-FieldMask": fieldMask },
+      body: JSON.stringify(payload),
+      cache: "no-store",
+      signal: AbortSignal.timeout(15_000),
+    });
+  } catch (error) {
+    if (error instanceof GoogleMapsError) throw error;
+    throw new GoogleMapsError("NETWORK", "Could not reach Google Maps. Check the server's internet connection and try again.", 502, String(error));
   }
-  return points;
+  const body = await response.json().catch(() => undefined);
+  if (!response.ok) throw googleErrorFromResponse(service, response.status, body);
+  return body as T;
 }
 
-export async function geocode(place: string): Promise<Coordinate | undefined> {
-  const key = serverKey(); if (!key) throw new Error("Google Maps server key is not configured.");
-  const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(place)}&region=ph&key=${key}`, { cache: "no-store" });
-  if (!response.ok) throw new Error("Google Geocoding request failed.");
-  const body = await response.json() as { status?: string; error_message?: string; results?: Array<{ geometry?: { location?: { lat?: number; lng?: number } } }> };
-  if (body.status && body.status !== "OK" && body.status !== "ZERO_RESULTS") throw new Error(`Google Geocoding is unavailable: ${body.error_message ?? body.status}`);
-  const point = body.results?.[0]?.geometry?.location;
-  return point?.lng !== undefined && point.lat !== undefined ? [point.lng, point.lat] : undefined;
+export type TextSearchResponse = { places?: Array<{ id?: string; displayName?: { text?: string }; formattedAddress?: string; location?: { latitude?: number; longitude?: number }; addressComponents?: Array<{ shortText?: string; types?: string[] }> }> };
+
+/**
+ * Accepts Google's best match only when it is in the Philippines: the address must name the
+ * Philippines (country "PH") and the coordinates must pass the boundary check. An overseas
+ * best match (e.g. "New Jersey" → New Jersey, USA) is rejected rather than replaced by a
+ * weaker Philippine result, so the user is asked to pick a Philippine place instead.
+ */
+export function philippinePlaceFromTextSearch(body: TextSearchResponse, text: string): ResolvedPlace | undefined {
+  const place = body.places?.[0]; const location = place?.location;
+  if (!place || !Number.isFinite(location?.latitude) || !Number.isFinite(location?.longitude)) return undefined;
+  const country = place.addressComponents?.find((component) => component.types?.includes("country"))?.shortText?.toUpperCase();
+  const coordinate: Coordinate = [location!.longitude!, location!.latitude!];
+  if (country !== "PH" || !isInPhilippines(coordinate)) return undefined;
+  return { placeId: place.id, name: place.displayName?.text ?? text, address: place.formattedAddress, coordinate };
 }
 
-export async function getDrivingRoutes(origin: Coordinate, destination: Coordinate, avoidTolls = false): Promise<RouteCandidate[]> {
-  const key = serverKey(); if (!key) throw new Error("Google Maps server key is not configured.");
-  const response = await fetch("https://routes.googleapis.com/directions/v2:computeRoutes", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Goog-Api-Key": key,
-      "X-Goog-FieldMask": "routes.duration,routes.distanceMeters,routes.polyline.encodedPolyline,routes.legs.steps.distanceMeters,routes.legs.steps.staticDuration,routes.legs.steps.navigationInstruction.instructions,routes.legs.steps.startLocation,routes.legs.steps.endLocation",
-    },
-    body: JSON.stringify({
-      origin: { location: { latLng: { latitude: origin[1], longitude: origin[0] } } },
-      destination: { location: { latLng: { latitude: destination[1], longitude: destination[0] } } },
-      travelMode: "DRIVE",
-      routingPreference: "TRAFFIC_AWARE",
-      computeAlternativeRoutes: !avoidTolls,
-      routeModifiers: { avoidTolls },
-      languageCode: "en-US",
-      units: "METRIC",
-    }),
-  });
-  if (!response.ok) throw new Error("Google Routes could not calculate this trip.");
-  const body = await response.json() as { routes?: GoogleRoute[] };
-  return (body.routes ?? []).map((route, index) => {
-    const geometry: RouteGeometry = { type: "LineString", coordinates: decodePolyline(route.polyline?.encodedPolyline) };
-    const steps = (route.legs ?? []).flatMap((leg) => (leg.steps ?? []).flatMap((step) => {
-      const start = coordinate(step.startLocation); const end = coordinate(step.endLocation);
-      return start && end ? [{ name: step.navigationInstruction?.instructions ?? "Unnamed road", start, end, distanceMeters: step.distanceMeters ?? 0, durationSeconds: seconds(step.staticDuration) }] : [];
-    }));
-    return { id: `${avoidTolls ? "google-avoid" : "google-drive"}-${index}`, distanceMeters: route.distanceMeters ?? 0, durationSeconds: seconds(route.duration), geometry, steps, provider: "google" as const };
-  });
+/**
+ * Like philippinePlaceFromTextSearch, but the best match must also fall inside the supported
+ * Luzon coverage polygon. "Cebu City" or "Davao City" are Philippine but outside coverage, so
+ * they are rejected instead of being replaced by a similarly named place in Luzon.
+ */
+export function luzonPlaceFromTextSearch(body: TextSearchResponse, text: string): ResolvedPlace | undefined {
+  const place = philippinePlaceFromTextSearch(body, text);
+  return place && isInLuzonCoverage(place.coordinate) ? place : undefined;
+}
+
+/**
+ * Resolves a typed place (one not picked from autocomplete) with Places API (New) Text Search,
+ * biased toward Luzon and accepted only when the best match is inside Luzon coverage.
+ */
+export function resolvePlace(text: string): Promise<ResolvedPlace | undefined> {
+  const alias = preciseAlias(text);
+  if (alias) return Promise.resolve({ name: text.trim(), coordinate: alias });
+  const cacheKey = text.trim().toLocaleLowerCase("en-PH");
+  const cached = placeCache.get(cacheKey); if (cached) return cached;
+  const request = googlePost<TextSearchResponse>("places", "https://places.googleapis.com/v1/places:searchText", "places.id,places.displayName,places.formattedAddress,places.location,places.addressComponents", {
+    textQuery: text, regionCode: "PH", languageCode: "en", locationBias: LUZON_BIAS, pageSize: 1,
+  }).then((body) => luzonPlaceFromTextSearch(body, text));
+  placeCache.set(cacheKey, request);
+  request.catch(() => placeCache.delete(cacheKey)); // never cache failures
+  return request;
+}
+
+/** Driving routes from the Routes API, normalized for the toll matcher. Alternatives are requested for normal routing. */
+export function getDrivingRoutes(origin: Coordinate, destination: Coordinate, avoidTolls = false): Promise<RouteCandidate[]> {
+  const cacheKey = [...origin, ...destination].map((value) => value.toFixed(5)).join(",") + (avoidTolls ? ":avoid" : "");
+  const cached = routeCache.get(cacheKey); if (cached) return cached;
+  const request = googlePost<GoogleRoutesResponse>("routes", "https://routes.googleapis.com/directions/v2:computeRoutes", ROUTE_FIELD_MASK, {
+    origin: { location: { latLng: { latitude: origin[1], longitude: origin[0] } } },
+    destination: { location: { latLng: { latitude: destination[1], longitude: destination[0] } } },
+    travelMode: "DRIVE",
+    routingPreference: "TRAFFIC_AWARE",
+    computeAlternativeRoutes: !avoidTolls,
+    // avoidTolls is a preference, not a guarantee; the toll engine still inspects the result.
+    routeModifiers: { avoidTolls },
+    languageCode: "en-US",
+    regionCode: "PH",
+    units: "METRIC",
+  }).then((body) => normalizeGoogleRoutes(body, avoidTolls));
+  routeCache.set(cacheKey, request);
+  request.catch(() => routeCache.delete(cacheKey)); // never cache failures
+  return request;
 }

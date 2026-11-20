@@ -6,8 +6,10 @@ import { consumeRateLimit } from "@/lib/auth/rate-limit";
 import { rateLimitKey } from "@/lib/auth/request";
 import { prisma } from "@/lib/db";
 import { registerSchema } from "@/lib/validation";
+import { authenticationDisabledResponse, isAuthEnabled } from "@/lib/auth/config";
 
 export async function POST(request: NextRequest) {
+  if (!isAuthEnabled()) return authenticationDisabledResponse();
   const limited = consumeRateLimit(rateLimitKey(request, "register"), 5, 15 * 60_000);
   if (!limited.allowed) return NextResponse.json({ message: "Too many registration attempts. Try again later." }, { status: 429, headers: { "Retry-After": String(limited.retryAfterSeconds) } });
   const parsed = registerSchema.safeParse(await request.json().catch(() => null));

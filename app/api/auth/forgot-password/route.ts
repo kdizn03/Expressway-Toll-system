@@ -5,9 +5,11 @@ import { consumeRateLimit } from "@/lib/auth/rate-limit";
 import { rateLimitKey } from "@/lib/auth/request";
 import { prisma } from "@/lib/db";
 import { forgotPasswordSchema } from "@/lib/validation";
+import { authenticationDisabledResponse, isAuthEnabled } from "@/lib/auth/config";
 
 const generic = { message: "If that address belongs to an account, a reset link has been sent." };
 export async function POST(request: NextRequest) {
+  if (!isAuthEnabled()) return authenticationDisabledResponse();
   const limited = consumeRateLimit(rateLimitKey(request, "forgot-password"), 5, 15 * 60_000);
   if (!limited.allowed) return NextResponse.json({ message: "Too many reset requests. Try again later." }, { status: 429, headers: { "Retry-After": String(limited.retryAfterSeconds) } });
   const parsed = forgotPasswordSchema.safeParse(await request.json().catch(() => null));

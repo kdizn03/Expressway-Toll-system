@@ -1,6 +1,7 @@
 import { cookies } from "next/headers";
 import { prisma } from "@/lib/db";
 import { createOpaqueToken, hashToken } from "@/lib/auth/tokens";
+import { isAuthEnabled } from "@/lib/auth/config";
 
 export const sessionCookieName = "luzon_tollmap_session";
 const sessionDays = 30;
@@ -24,6 +25,7 @@ export function clearSessionCookie(response: { cookies: { set: (name: string, va
 }
 
 export async function getCurrentUser(): Promise<CurrentUser | null> {
+  if (!isAuthEnabled()) return null;
   const token = (await cookies()).get(sessionCookieName)?.value;
   if (!token) return null;
   return getUserForSessionToken(token);

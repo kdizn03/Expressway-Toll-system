@@ -1,3 +1,5 @@
 import { AuthForm } from "@/components/auth-form";
 import { Suspense } from "react";
-export default function ResetPasswordPage() { return <Suspense><AuthForm mode="reset" /></Suspense>; }
+import { isAuthEnabled } from "@/lib/auth/config";
+import { redirect } from "next/navigation";
+export default function ResetPasswordPage() { if (!isAuthEnabled()) redirect("/"); return <Suspense><AuthForm mode="reset" /></Suspense>; }

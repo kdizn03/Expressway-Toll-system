@@ -1,10 +1,12 @@
 import { redirect } from "next/navigation";
 import { getCurrentUser } from "@/lib/auth/session";
 import { prisma } from "@/lib/db";
+import { isAuthEnabled } from "@/lib/auth/config";
 
 export const dynamic = "force-dynamic";
 
 export default async function Trips() {
+  if (!isAuthEnabled()) redirect("/");
   const user = await getCurrentUser();
   if (!user) redirect("/login?next=/trips");
   const trips = await prisma.tripHistory.findMany({ where: { userId: user.id }, orderBy: { traveledAt: "desc" }, take: 50, select: { id: true, origin: true, destination: true, vehicleClass: true, traveledAt: true } });

@@ -20,7 +20,6 @@
   },
   "dependencies": {
     "@prisma/client": "^6.1.0",
-    "mapbox-gl": "^3.8.0",
     "next": "^15.1.0",
     "nodemailer": "^10.4.0",
     "react": "^19.0.0",
@@ -28,7 +27,7 @@
     "zod": "^3.24.0"
   },
   "devDependencies": {
-    "@types/mapbox-gl": "^3.4.1",
+    "@types/google.maps": "^3.66.10",
     "@types/node": "^22",
     "@types/nodemailer": "^8.0.2",
     "@types/react": "^19",

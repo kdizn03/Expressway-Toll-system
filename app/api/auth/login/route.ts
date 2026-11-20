@@ -5,8 +5,10 @@ import { consumeRateLimit } from "@/lib/auth/rate-limit";
 import { rateLimitKey, requestMetadata } from "@/lib/auth/request";
 import { prisma } from "@/lib/db";
 import { loginSchema } from "@/lib/validation";
+import { authenticationDisabledResponse, isAuthEnabled } from "@/lib/auth/config";
 
 export async function POST(request: NextRequest) {
+  if (!isAuthEnabled()) return authenticationDisabledResponse();
   const limited = consumeRateLimit(rateLimitKey(request, "login"), 10, 15 * 60_000);
   if (!limited.allowed) return NextResponse.json({ message: "Too many sign-in attempts. Try again later." }, { status: 429, headers: { "Retry-After": String(limited.retryAfterSeconds) } });
   const parsed = loginSchema.safeParse(await request.json().catch(() => null));

@@ -4,6 +4,7 @@ import { createOpaqueToken, hashToken } from "../lib/auth/tokens";
 import { consumeRateLimit } from "../lib/auth/rate-limit";
 import { isAdmin, ownsRecord } from "../lib/auth/authorization";
 import { registerSchema, resetPasswordSchema, routeSearchSchema } from "../lib/validation";
+import { isAuthEnabled } from "../lib/auth/config";
 
 describe("authentication security primitives", () => {
   it("hashes passwords and rejects invalid credentials", async () => {
@@ -45,5 +46,12 @@ describe("authentication security primitives", () => {
 
   it("keeps route planning input public and independent of a user identity", () => {
     expect(routeSearchSchema.safeParse({ origin: "Baguio City", destination: "Manila", vehicleClass: "CLASS_1" }).success).toBe(true);
+  });
+
+  it("uses one opt-in feature flag to temporarily deactivate authentication", () => {
+    expect(isAuthEnabled("false")).toBe(false);
+    expect(isAuthEnabled(undefined)).toBe(false);
+    expect(isAuthEnabled("true")).toBe(true);
+    expect(isAuthEnabled("TRUE")).toBe(false);
   });
 });

@@ -3,8 +3,10 @@ import { hashPassword } from "@/lib/auth/password";
 import { hashToken } from "@/lib/auth/tokens";
 import { prisma } from "@/lib/db";
 import { resetPasswordSchema } from "@/lib/validation";
+import { authenticationDisabledResponse, isAuthEnabled } from "@/lib/auth/config";
 
 export async function POST(request: NextRequest) {
+  if (!isAuthEnabled()) return authenticationDisabledResponse();
   const parsed = resetPasswordSchema.safeParse(await request.json().catch(() => null));
   if (!parsed.success) return NextResponse.json({ message: parsed.error.issues[0]?.message ?? "Enter a valid new password." }, { status: 400 });
   const record = await prisma.passwordResetToken.findUnique({ where: { tokenHash: hashToken(parsed.data.token) } });

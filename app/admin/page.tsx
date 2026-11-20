@@ -3,6 +3,7 @@ import { isCustomerFacingSource } from "@/lib/toll/source-policy";
 import { getCurrentUser } from "@/lib/auth/session";
 import { isAdmin } from "@/lib/auth/authorization";
 import { notFound, redirect } from "next/navigation";
+import { isAuthEnabled } from "@/lib/auth/config";
 
 export const dynamic = "force-dynamic";
 
@@ -29,6 +30,7 @@ async function loadAdminData(): Promise<{ sources: SourceRow[]; imports: ImportR
 }
 
 export default async function Admin() {
+  if (!isAuthEnabled()) notFound();
   const user = await getCurrentUser();
   if (!user) redirect("/login?next=/admin");
   if (!isAdmin(user)) notFound();

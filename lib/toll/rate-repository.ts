@@ -7,7 +7,9 @@ import { canonicalMatrixPlaza } from "./plaza-name";
 /** Database boundary for toll pricing. React components must never read toll values directly. */
 export const databaseRateLookup: RateLookup = async (road, vehicleClass, travelDate) => {
   try {
-    const rate = await prisma.tollRate.findFirst({
+    // Published rate versions belong to one expressway, so an integrated through-trip
+    // (entry on one expressway, exit on another) can only come from a matrix.
+    const rate = road.exitExpressway ? null : await prisma.tollRate.findFirst({
     where: {
       vehicleClass: { code: vehicleClass },
       entryPlaza: { name: road.entry },
@@ -32,8 +34,9 @@ export const databaseRateLookup: RateLookup = async (road, vehicleClass, travelD
     // A staged secondary matrix can provide a clearly labelled estimate. It is
     // deliberately not a RateVersion and cannot be mistaken for verified data.
     const codes = sourceCodesForAppExpressway(road.expressway);
+    const exitCodes = sourceCodesForAppExpressway(road.exitExpressway ?? road.expressway);
     const entryName = canonicalMatrixPlaza(road.expressway, road.entry);
-    const exitName = canonicalMatrixPlaza(road.expressway, road.exit);
+    const exitName = canonicalMatrixPlaza(road.exitExpressway ?? road.expressway, road.exit);
     const imported = await prisma.matrixImportRow.findFirst({
       where: {
         vehicleClassCode: vehicleClass,
@@ -43,13 +46,15 @@ export const databaseRateLookup: RateLookup = async (road, vehicleClass, travelD
         // as well. Neither path is a published RateVersion.
         matrixImport: { status: "PENDING_REVIEW", source: { sourceType: { in: ["secondary_matrix_reference", "official_regulator"] } } },
         OR: [
-          { entryExpresswayCode: { in: codes }, exitExpresswayCode: { in: codes }, entryName, exitName },
-          { entryExpresswayCode: { in: codes }, exitExpresswayCode: { in: codes }, entryName: exitName, exitName: entryName, reversible: true },
+          { entryExpresswayCode: { in: codes }, exitExpresswayCode: { in: exitCodes }, entryName, exitName },
+          { entryExpresswayCode: { in: exitCodes }, exitExpresswayCode: { in: codes }, entryName: exitName, exitName: entryName, reversible: true },
         ],
       },
       include: { matrixImport: { include: { source: true } } },
       orderBy: { matrixImport: { retrievedAt: "desc" } },
     });
+    // The flat-rate fallback below describes a single road; never apply it to a through-trip.
+    if (!imported && road.exitExpressway) return undefined;
     if (!imported) {
       // Some roads use a genuinely flat matrix. If map geometry cannot tell
       // which connector ramp was used, a single matrix amount is still a

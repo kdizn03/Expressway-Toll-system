@@ -4,6 +4,7 @@ import type { MatchedRoad } from "./calculation-service";
 import type { RouteCandidate } from "@/lib/routing/types";
 import { matchedEntryName } from "./tplex-entry";
 import { nlexBoundaryPlazas, skywayStage3BoundaryPlazas } from "./nlex-boundary";
+import { usablePlazas } from "./plaza-coverage";
 
 const distanceMeters = ([lngA, latA]: [number, number], [lngB, latB]: [number, number]) => {
   const r = 6371000; const dLat = (latB - latA) * Math.PI / 180; const dLng = (lngB - lngA) * Math.PI / 180;
@@ -13,12 +14,15 @@ const distanceMeters = ([lngA, latA]: [number, number], [lngB, latB]: [number, n
 
 /** Maps route steps to plaza pairs only within the detected expressway. No global-nearest shortcut. */
 export async function matchRouteToTolls(route: RouteCandidate): Promise<MatchedRoad[]> {
-  const grouped = new Map<string, { start: [number, number]; end: [number, number] }>();
-  const add = (code: string, start: [number, number], end: [number, number]) => { const found = grouped.get(code); grouped.set(code, found ? { start: found.start, end } : { start, end }); };
+  const grouped = new Map<string, { start: [number, number]; end: [number, number]; tolled: boolean }>();
+  // `tolled` is undefined when the provider does not report toll status; treat that as tolled.
+  let stepTolled = true;
+  const add = (code: string, start: [number, number], end: [number, number]) => { const found = grouped.get(code); grouped.set(code, found ? { start: found.start, end, tolled: found.tolled || stepTolled } : { start, end, tolled: stepTolled }); };
   for (const step of route.steps) {
+    stepTolled = step.tolled !== false;
     const code = identifyExpressway(step.name, step.ref);
     if (code) { add(code, step.start, step.end); continue; }
-    // Mapbox occasionally reports E1 without its NLEX/TPLEX road name. Split
+    // Providers occasionally report E1 without its NLEX/TPLEX road name. Split
     // a cross-boundary E1 step at the physical La Paz/Sta. Ines hand-off.
     if (step.ref !== "E1") continue;
     const southbound = step.end[1] < step.start[1];
@@ -33,11 +37,14 @@ export async function matchRouteToTolls(route: RouteCandidate): Promise<MatchedR
   const matches: MatchedRoad[] = [];
   for (const [expressway, section] of grouped) {
     let plazas: Awaited<ReturnType<typeof prisma.tollPlaza.findMany>>;
-    try { plazas = await prisma.tollPlaza.findMany({ where: { expressway: { abbreviation: expressway } } }); }
+    try { plazas = usablePlazas(await prisma.tollPlaza.findMany({ where: { expressway: { abbreviation: expressway } } })); }
     catch { matches.push({ expressway, entry: "plaza data unavailable", exit: "plaza data unavailable", confidence: "LOW" }); continue; }
     const nearest = (point: [number, number]) => plazas.map((plaza) => ({ plaza, distance: distanceMeters(point, [plaza.longitude, plaza.latitude]) })).sort((a, b) => a.distance - b.distance)[0];
     const entry = nearest(section.start), exit = nearest(section.end);
     // Keep an unresolved segment visible rather than silently omitting it.
+    // A toll-free stretch of a named expressway (e.g. at-grade SLEX) that crosses no plaza and that
+    // the provider reports as untolled is not a toll segment.
+    if (entry && exit && entry.plaza.id === exit.plaza.id && !section.tolled) continue;
     if (!entry || !exit || entry.plaza.id === exit.plaza.id) {
       matches.push({ expressway, entry: entry?.plaza.name ?? "unresolved entry", exit: exit?.plaza.name ?? "unresolved exit", confidence: "LOW" });
       continue;

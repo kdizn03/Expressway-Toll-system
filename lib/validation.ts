@@ -1,12 +1,24 @@
 import { z } from "zod";
 export const routeRequestSchema=z.object({origin:z.object({longitude:z.number().gte(-180).lte(180),latitude:z.number().gte(-90).lte(90)}),destination:z.object({longitude:z.number().gte(-180).lte(180),latitude:z.number().gte(-90).lte(90)}),vehicleClass:z.enum(["CLASS_1","CLASS_2","CLASS_3"]),departureAt:z.coerce.date().optional(),roundTrip:z.boolean().default(false)}).refine(x=>x.origin.longitude!==x.destination.longitude||x.origin.latitude!==x.destination.latitude,{message:"Origin and destination must differ"});
+/** A place picked from Google Places autocomplete (Place ID plus its location). */
+export const selectedPlaceSchema = z.object({
+  placeId: z.string().trim().min(1).max(300),
+  name: z.string().trim().max(200).optional(),
+  address: z.string().trim().max(300).optional(),
+  latitude: z.number().gte(-90).lte(90),
+  longitude: z.number().gte(-180).lte(180),
+});
 export const routeSearchSchema = z.object({
   origin: z.string().trim().min(2).max(160),
   destination: z.string().trim().min(2).max(160),
+  originPlace: selectedPlaceSchema.optional(),
+  destinationPlace: selectedPlaceSchema.optional(),
   vehicleClass: z.enum(["CLASS_1", "CLASS_2", "CLASS_3"]),
   departureAt: z.coerce.date().optional(),
   roundTrip: z.boolean().default(false),
-}).refine((input) => input.origin.toLocaleLowerCase("en-US") !== input.destination.toLocaleLowerCase("en-US"), { message: "Origin and destination must differ." });
+}).refine((input) => input.originPlace && input.destinationPlace
+  ? input.originPlace.placeId !== input.destinationPlace.placeId
+  : input.origin.toLocaleLowerCase("en-US") !== input.destination.toLocaleLowerCase("en-US"), { message: "Origin and destination must differ." });
 
 const normalizedEmail = z.string().trim().email("Enter a valid email address.").max(254).transform((value) => value.toLocaleLowerCase("en-US"));
 const securePassword = z.string().min(12, "Use at least 12 characters.").max(128, "Password is too long.");
