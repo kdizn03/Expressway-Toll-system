@@ -44,6 +44,7 @@ export default async function Admin() {
   return <main className="admin">
     <a className="brand" href="/">LUZON <span>TOLLMAP</span></a>
     <h1>Rate administration</h1>
+    <p><a href="/admin/toll-data">Open toll data management →</a> (plaza locations, rate approvals, automated updates, data quality)</p>
     <p>Published historical rates are immutable. All changes require a source and an audit trail.</p>
     <section className="grid">
       <div className="metric"><strong>{primaryCount}</strong>Primary rate sources</div>

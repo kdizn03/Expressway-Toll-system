@@ -1,0 +1,68 @@
+{
+  "description": "TRB-approved toll adjustments, as reported by news outlets quoting the Toll Regulatory Board's announcements. These are evidence for cross-checking stored rates; they are not official documents. Amounts are VAT-inclusive pesos for Classes 1, 2 and 3. Each entry was checked against the article text on 2026-11-21.",
+  "announcements": [
+    {
+      "id": "slex-2026-07-01-alabang-calamba",
+      "expresswayCodes": ["SLEX", "SKYWAY"],
+      "entryNames": ["Alabang"],
+      "exitNames": ["Calamba"],
+      "fares": { "CLASS_1": 137, "CLASS_2": 274, "CLASS_3": 411 },
+      "effectiveFrom": "2026-07-01",
+      "sources": [
+        "https://www.gmanetwork.com/news/money/motoring/992933/slex-star-2nd-tranche-of-toll-hike-to-take-effect-july-1-trb/story/",
+        "https://portcalls.com/slex-star-toll-rates-rise-again-on-july-1/"
+      ]
+    },
+    {
+      "id": "slex-2026-07-01-calamba-sto-tomas",
+      "expresswayCodes": ["SLEX", "SKYWAY", "STAR"],
+      "entryNames": ["Calamba"],
+      "exitNames": ["Sto. Tomas"],
+      "fares": { "CLASS_1": 37, "CLASS_2": 74, "CLASS_3": 111 },
+      "effectiveFrom": "2026-07-01",
+      "sources": [
+        "https://www.gmanetwork.com/news/money/motoring/992933/slex-star-2nd-tranche-of-toll-hike-to-take-effect-july-1-trb/story/",
+        "https://portcalls.com/slex-star-toll-rates-rise-again-on-july-1/"
+      ]
+    },
+    {
+      "id": "star-2026-07-01-sto-tomas-lipa",
+      "expresswayCodes": ["STAR"],
+      "entryNames": ["Sto. Tomas"],
+      "exitNames": ["Lipa"],
+      "fares": { "CLASS_1": 64, "CLASS_2": 128, "CLASS_3": 192 },
+      "effectiveFrom": "2026-07-01",
+      "sources": ["https://www.gmanetwork.com/news/money/motoring/992933/slex-star-2nd-tranche-of-toll-hike-to-take-effect-july-1-trb/story/"]
+    },
+    {
+      "id": "star-2026-07-01-lipa-batangas",
+      "expresswayCodes": ["STAR"],
+      "entryNames": ["Lipa"],
+      "exitNames": ["Batangas"],
+      "fares": { "CLASS_1": 57, "CLASS_2": 114, "CLASS_3": 171 },
+      "effectiveFrom": "2026-07-01",
+      "sources": ["https://www.gmanetwork.com/news/money/motoring/992933/slex-star-2nd-tranche-of-toll-hike-to-take-effect-july-1-trb/story/"]
+    },
+    {
+      "id": "star-2026-07-01-sto-tomas-batangas",
+      "expresswayCodes": ["STAR"],
+      "entryNames": ["Sto. Tomas"],
+      "exitNames": ["Batangas"],
+      "fares": { "CLASS_1": 121, "CLASS_2": 242, "CLASS_3": 363 },
+      "effectiveFrom": "2026-07-01",
+      "sources": ["https://www.gmanetwork.com/news/money/motoring/992933/slex-star-2nd-tranche-of-toll-hike-to-take-effect-july-1-trb/story/"]
+    },
+    {
+      "id": "cavitex-r1-extension-2026-10-28-zapote-kawit",
+      "expresswayCodes": ["CAVITEX"],
+      "entryNames": ["Zapote", "Bacoor/Zapote"],
+      "exitNames": ["Kawit"],
+      "fares": { "CLASS_1": 103, "CLASS_2": 207, "CLASS_3": 310 },
+      "effectiveFrom": "2026-10-28",
+      "sources": [
+        "https://context.ph/2026/10/27/second-tranche-of-cavitex-toll-adjustments-takes-effect-october-28/",
+        "https://www.philstar.com/nation/2026/10/28/2566144/higher-cavitex-toll-starts"
+      ]
+    }
+  ]
+}

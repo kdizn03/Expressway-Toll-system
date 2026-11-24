@@ -171,6 +171,16 @@ model TollPlaza {
   externalId String?
   sequence Int?
   aliases Json?
+  /// ENTRY_EXIT, ENTRY, EXIT, BARRIER, or null when not yet determined.
+  plazaType String?
+  kmPost Float?
+  /// VERIFIED_GEODATA, UNVERIFIED, SUSPECT, or NEEDS_REVIEW. See lib/toll-data/statuses.ts.
+  verificationStatus String @default("UNVERIFIED")
+  verificationSource String?
+  verifiedAt DateTime?
+  /// Obsolete or duplicate locators are deactivated, never deleted, so historical rates stay interpretable.
+  active Boolean @default(true)
+  notes String?
   expressway Expressway @relation(fields: [expresswayId], references: [id])
   entryRates TollRate[] @relation("RateEntryPlaza")
   exitRates TollRate[] @relation("RateExitPlaza")
@@ -212,9 +222,21 @@ model RateSource {
   lastSuccessfulAt DateTime?
   contentHash String?
   notes String?
+  /// Monitoring: parser id (see lib/toll-data/parsers.ts); null means change detection only.
+  monitorEnabled Boolean @default(false)
+  parser String?
+  checkIntervalHours Int @default(24)
+  nextCheckAt DateTime?
+  etag String?
+  lastModified String?
+  consecutiveFailures Int @default(0)
+  lastError String?
+  /// Only honoured for authoritative sources when the global auto-publish policy is also enabled.
+  autoPublish Boolean @default(false)
   versions RateVersion[]
   snapshots SourceSnapshot[]
   matrixImports MatrixImport[]
+  checks SourceCheck[]
 }
 
 model RateVersion {
@@ -230,6 +252,8 @@ model RateVersion {
   notes String?
   createdBy String?
   approvedBy String?
+  verificationStatus String?
+  sourceReference String?
   createdAt DateTime @default(now())
   expressway Expressway @relation(fields: [expresswayId], references: [id])
   source RateSource @relation(fields: [sourceId], references: [id])
@@ -272,6 +296,11 @@ model SourceSnapshot {
   contentHash String
   retrievedAt DateTime @default(now())
   requiresManualReview Boolean @default(false)
+  /// The retrieved document (or a reproducible reference to it) so reviewers can inspect the original.
+  sourceUrl String?
+  contentType String?
+  byteLength Int?
+  content String?
   source RateSource @relation(fields: [sourceId], references: [id])
   imports MatrixImport[]
   @@unique([sourceId, contentHash])
@@ -288,9 +317,17 @@ model MatrixImport {
   status RateStatus @default(PENDING_REVIEW)
   rowCount Int
   notes String?
+  /// MatrixImport status meaning: PENDING_REVIEW = proposed, not used; PUBLISHED = approved for display
+  /// (as an estimate unless the source is authoritative); EXPIRED = superseded; REJECTED = declined.
+  verificationStatus String @default("THIRD_PARTY_ESTIMATE")
+  effectiveFrom DateTime?
+  reviewedBy String?
+  reviewedAt DateTime?
+  reviewNote String?
   source RateSource @relation(fields: [sourceId], references: [id])
   sourceSnapshot SourceSnapshot @relation(fields: [sourceSnapshotId], references: [id])
   rows MatrixImportRow[]
+  changeReport RateChangeReport?
   @@unique([sourceId, contentHash])
   @@index([sourceId, status, retrievedAt])
 }
@@ -305,7 +342,46 @@ model MatrixImportRow {
   vehicleClassCode String
   tollCentavos Int
   reversible Boolean @default(false)
+  /// Per-row override, e.g. INDEPENDENTLY_VERIFIED (matches a TRB announcement) or SUPERSEDED (a newer approved rate exists).
+  verificationStatus String?
+  verificationNote String?
   matrixImport MatrixImport @relation(fields: [matrixImportId], references: [id], onDelete: Cascade)
   @@unique([matrixImportId, entryExpresswayCode, exitExpresswayCode, entryName, exitName, vehicleClassCode])
   @@index([entryExpresswayCode, exitExpresswayCode, entryName, exitName])
+}
+
+/// One monitoring attempt for a source (scheduled, weekly, or manual).
+model SourceCheck {
+  id String @id @default(cuid())
+  sourceId String
+  trigger String
+  startedAt DateTime @default(now())
+  finishedAt DateTime?
+  /// UNCHANGED, CHANGED, FAILED, or SKIPPED
+  outcome String
+  httpStatus Int?
+  message String?
+  snapshotId String?
+  matrixImportId String?
+  source RateSource @relation(fields: [sourceId], references: [id])
+  @@index([sourceId, startedAt])
+}
+
+/// Structured difference between a proposed matrix import and the rates currently in use.
+model RateChangeReport {
+  id String @id @default(cuid())
+  matrixImportId String @unique
+  baselineImportId String?
+  summary Json
+  details Json
+  createdAt DateTime @default(now())
+  matrixImport MatrixImport @relation(fields: [matrixImportId], references: [id], onDelete: Cascade)
+}
+
+/// Global toll-data settings (key/value), e.g. the auto-publish policy.
+model TollDataSetting {
+  key String @id
+  value Json
+  updatedBy String?
+  updatedAt DateTime @updatedAt
 }

@@ -5,6 +5,8 @@ import type { RouteCandidate } from "@/lib/routing/types";
 import { matchedEntryName } from "./tplex-entry";
 import { nlexBoundaryPlazas, skywayStage3BoundaryPlazas } from "./nlex-boundary";
 import { usablePlazas } from "./plaza-coverage";
+import { skywayStageSplit } from "./skyway-stages";
+import { continueAtHandover } from "./route-matcher-handover";
 
 const distanceMeters = ([lngA, latA]: [number, number], [lngB, latB]: [number, number]) => {
   const r = 6371000; const dLat = (latB - latA) * Math.PI / 180; const dLng = (lngB - lngA) * Math.PI / 180;
@@ -17,7 +19,15 @@ export async function matchRouteToTolls(route: RouteCandidate): Promise<MatchedR
   const grouped = new Map<string, { start: [number, number]; end: [number, number]; tolled: boolean }>();
   // `tolled` is undefined when the provider does not report toll status; treat that as tolled.
   let stepTolled = true;
-  const add = (code: string, start: [number, number], end: [number, number]) => { const found = grouped.get(code); grouped.set(code, found ? { start: found.start, end, tolled: found.tolled || stepTolled } : { start, end, tolled: stepTolled }); };
+  // Sections are contiguous runs: returning to an expressway after driving another one (e.g. at-grade SLEX →
+  // Skyway → SLEX) starts a new section, so separately charged stretches are never merged into one trip.
+  let lastCode: string | undefined; const runs = new Map<string, number>();
+  const add = (code: string, start: [number, number], end: [number, number]) => {
+    if (code !== lastCode) runs.set(code, (runs.get(code) ?? 0) + 1);
+    lastCode = code;
+    const key = runs.get(code)! > 1 ? `${code}#run${runs.get(code)}` : code;
+    const found = grouped.get(key); grouped.set(key, found ? { start: found.start, end, tolled: found.tolled || stepTolled } : { start, end, tolled: stepTolled });
+  };
   for (const step of route.steps) {
     stepTolled = step.tolled !== false;
     const code = identifyExpressway(step.name, step.ref);
@@ -34,10 +44,20 @@ export async function matchRouteToTolls(route: RouteCandidate): Promise<MatchedR
       else { add("NLEX", step.start, nlexBoundary); add("TPLEX", tplexBoundary, step.end); }
     } else add(step.start[1] >= 15.3 ? "TPLEX" : "NLEX", step.start, step.end);
   }
+  // Skyway Stage 3 (north of Buendia) and Stages 1–2 (south of it) are separately priced systems.
+  for (const [key, section] of [...grouped]) {
+    if (key.split("#")[0] !== "SKYWAY") continue;
+    const split = skywayStageSplit(section.start, section.end);
+    if (!split) continue;
+    // Rebuild the map so the two Skyway parts keep their place in the route order.
+    const entries = [...grouped].flatMap(([k, v]) => k === key ? [[k, { ...v, end: split.boundary }], [`${k}#stage12`, { ...v, start: split.boundary }]] as Array<[string, typeof v]> : [[k, v] as [string, typeof v]]);
+    grouped.clear(); for (const [k, v] of entries) grouped.set(k, v);
+  }
   const matches: MatchedRoad[] = [];
-  for (const [expressway, section] of grouped) {
+  for (const [groupKey, section] of grouped) {
+    const expressway = groupKey.split("#")[0];
     let plazas: Awaited<ReturnType<typeof prisma.tollPlaza.findMany>>;
-    try { plazas = usablePlazas(await prisma.tollPlaza.findMany({ where: { expressway: { abbreviation: expressway } } })); }
+    try { plazas = usablePlazas(await prisma.tollPlaza.findMany({ where: { expressway: { abbreviation: expressway }, active: true } })); }
     catch { matches.push({ expressway, entry: "plaza data unavailable", exit: "plaza data unavailable", confidence: "LOW" }); continue; }
     const nearest = (point: [number, number]) => plazas.map((plaza) => ({ plaza, distance: distanceMeters(point, [plaza.longitude, plaza.latitude]) })).sort((a, b) => a.distance - b.distance)[0];
     const entry = nearest(section.start), exit = nearest(section.end);
@@ -60,5 +80,14 @@ export async function matchRouteToTolls(route: RouteCandidate): Promise<MatchedR
     const confidence = entry.distance <= 2000 && exit.distance <= 2000 ? "HIGH" : entry.distance <= 8000 && exit.distance <= 8000 ? "MEDIUM" : "LOW";
     matches.push({ expressway, entry: entryName, exit: exitName, confidence });
   }
-  return matches;
+  return continueAtHandover(matches, await handoverNames());
+}
+
+/** Plaza names that exist on both Skyway and SLEX (shared interchanges such as Alabang). */
+async function handoverNames() {
+  try {
+    const plazas = await prisma.tollPlaza.findMany({ where: { active: true, expressway: { abbreviation: { in: ["SKYWAY", "SLEX"] } } }, select: { name: true, expressway: { select: { abbreviation: true } } } });
+    const skyway = new Set(plazas.filter((plaza) => plaza.expressway.abbreviation === "SKYWAY").map((plaza) => plaza.name));
+    return new Set(plazas.filter((plaza) => plaza.expressway.abbreviation === "SLEX" && skyway.has(plaza.name)).map((plaza) => plaza.name));
+  } catch { return new Set<string>(); }
 }

@@ -1,0 +1,3759 @@
+{
+ "batchId": "plaza-verification-2026-11-21T16-02-21-910Z",
+ "generatedAt": "2026-11-21T16:02:21.910Z",
+ "evidence": "data/evidence/osm-toll-booths-2026-11-21.json",
+ "expressways": {
+  "TPLEX": {
+   "corridorLines": 3,
+   "corridorPoints": 375,
+   "results": [
+    {
+     "plaza": "Gerona",
+     "variants": [
+      "Gerona"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Gerona"
+    },
+    {
+     "plaza": "Rosario",
+     "variants": [
+      "Rosario"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.498338,
+      16.217582
+     ],
+     "booths": [
+      "node/7059265349 Rosario",
+      "node/7059265350 Rosario"
+     ],
+     "existing": "Rosario"
+    },
+    {
+     "plaza": "Rosario/Baguio",
+     "variants": [
+      "Rosario/Baguio"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.498338,
+      16.217582
+     ],
+     "booths": [
+      "node/7059265349 Rosario",
+      "node/7059265350 Rosario"
+     ],
+     "existing": "Rosario/Baguio"
+    },
+    {
+     "plaza": "Carmen",
+     "variants": [
+      "Carmen"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Carmen"
+    },
+    {
+     "plaza": "Sison",
+     "variants": [
+      "Sison"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.513965,
+      16.183297
+     ],
+     "booths": [
+      "node/7264859883 Sison",
+      "node/7264901597 Sison"
+     ],
+     "existing": "Sison"
+    },
+    {
+     "plaza": "Urdaneta",
+     "variants": [
+      "Urdaneta"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.579837,
+      16.002043
+     ],
+     "booths": [
+      "node/6437827490 Urdaneta",
+      "node/6437827491 Urdaneta"
+     ],
+     "existing": "Urdaneta"
+    },
+    {
+     "plaza": "Victoria",
+     "variants": [
+      "Victoria"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Victoria"
+    },
+    {
+     "plaza": "La Paz",
+     "variants": [
+      "La Paz"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "La Paz"
+    },
+    {
+     "plaza": "Binalonan",
+     "variants": [
+      "Binalonan"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Binalonan"
+    },
+    {
+     "plaza": "Moncada",
+     "variants": [
+      "Moncada"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Moncada"
+    },
+    {
+     "plaza": "Pozorrubio",
+     "variants": [
+      "Pozorrubio"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.525687,
+      16.12968
+     ],
+     "booths": [
+      "node/5276803128 Pozorrubio",
+      "node/5276803134 Pozorrubio"
+     ],
+     "existing": "Pozorrubio"
+    },
+    {
+     "plaza": "Pozorrubbio",
+     "variants": [
+      "Pozorrubbio"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Pozorrubbio"
+    },
+    {
+     "plaza": "Paniqui",
+     "variants": [
+      "Paniqui"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Paniqui"
+    }
+   ]
+  },
+  "MCX": {
+   "corridorLines": 5,
+   "corridorPoints": 67,
+   "results": []
+  },
+  "NLEX_CONNECTOR": {
+   "corridorLines": 0,
+   "corridorPoints": 0,
+   "results": [
+    {
+     "plaza": "Magsaysay",
+     "variants": [
+      "Magsaysay"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "España",
+     "variants": [
+      "España"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "No road line available for this expressway.",
+     "candidates": [
+      "node/5534878942 España Toll Plaza (NLEX Corporation) 14.6184,120.9912",
+      "node/10711094759 España Toll Plaza (NLEX Corporation) 14.6185,120.9912"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "C-3 Road/5th Ave.",
+     "variants": [
+      "C-3 Road/5th Ave."
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Caloocan (C-3 Road)",
+     "variants": [
+      "Caloocan (C-3 Road)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    }
+   ]
+  },
+  "SLEX": {
+   "corridorLines": 4,
+   "corridorPoints": 240,
+   "results": [
+    {
+     "plaza": "Southwoods",
+     "variants": [
+      "Southwoods"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.0543,
+      14.333232
+     ],
+     "booths": [
+      "node/261663161 Southwoods",
+      "node/671193387 Southwoods",
+      "node/1065128763 Southwoods",
+      "node/1539148800 Southwoods"
+     ],
+     "existing": "Southwoods"
+    },
+    {
+     "plaza": "Magallanes",
+     "variants": [
+      "Magallanes"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Magallanes"
+    },
+    {
+     "plaza": "C-5",
+     "variants": [
+      "C-5"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/33626133 C-5 (no operator) 14.5132,121.0337",
+      "node/2138782158 C-5 (no operator) 14.5141,121.0343"
+     ],
+     "existing": "C-5"
+    },
+    {
+     "plaza": "Bicutan",
+     "variants": [
+      "Bicutan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.043668,
+      14.487885
+     ],
+     "booths": [
+      "node/299382573 Bicutan",
+      "node/299382651 Bicutan"
+     ],
+     "existing": "Bicutan"
+    },
+    {
+     "plaza": "Merville",
+     "variants": [
+      "Merville"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/554200178 Merville (no operator) 14.5116,121.0320"
+     ],
+     "existing": "Merville"
+    },
+    {
+     "plaza": "Sucat",
+     "variants": [
+      "Sucat"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.043909,
+      14.454765
+     ],
+     "booths": [
+      "node/832367837 Sucat",
+      "node/848331335 Sucat"
+     ],
+     "existing": "Sucat"
+    },
+    {
+     "plaza": "Alabang",
+     "variants": [
+      "Alabang"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.044932,
+      14.413369
+     ],
+     "booths": [
+      "node/253125628 Alabang"
+     ],
+     "existing": "Alabang"
+    },
+    {
+     "plaza": "Filinvest",
+     "variants": [
+      "Filinvest"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.041474,
+      14.411471
+     ],
+     "booths": [
+      "node/36230148 Filinvest",
+      "node/36230150 Filinvest",
+      "node/253125862 Filinvest",
+      "node/253127717 Filinvest",
+      "node/3477881964 Filinvest"
+     ],
+     "existing": "Filinvest"
+    },
+    {
+     "plaza": "Susana Heights",
+     "variants": [
+      "Susana Heights"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.039365,
+      14.381778
+     ],
+     "booths": [
+      "node/29273489 Susana Heights",
+      "node/410579306 Susana Heights",
+      "node/4177675458 Susana Heights",
+      "node/4178318025 Susana Heights"
+     ],
+     "existing": "Susana Heights"
+    },
+    {
+     "plaza": "San Pedro",
+     "variants": [
+      "San Pedro"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.043049,
+      14.368318
+     ],
+     "booths": [
+      "node/382982957 San Pedro",
+      "node/1078599677 San Pedro",
+      "node/12498230697 San Pedro",
+      "node/12498230698 San Pedro"
+     ],
+     "existing": "San Pedro"
+    },
+    {
+     "plaza": "Carmona",
+     "variants": [
+      "Carmona"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.062932,
+      14.322862
+     ],
+     "booths": [
+      "node/261762466 Carmona Toll Plaza B",
+      "node/1044313828 Carmona Toll Plaza A",
+      "node/2894898573 Carmona Toll Plaza A",
+      "node/3152310087 Carmona",
+      "node/3152310104 Carmona"
+     ],
+     "existing": "Carmona"
+    },
+    {
+     "plaza": "MCX",
+     "variants": [
+      "MCX"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/3648745752 MCX Toll Plaza (no operator) 14.3762,121.0179",
+      "node/3648745757 MCX Toll Plaza (no operator) 14.3765,121.0178"
+     ],
+     "existing": "MCX"
+    },
+    {
+     "plaza": "Mamplasan",
+     "variants": [
+      "Mamplasan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.078225,
+      14.303395
+     ],
+     "booths": [
+      "node/1078571001 Mamplasan",
+      "node/1078571060 Mamplasan",
+      "node/1078571078 Mamplasan",
+      "node/1078571101 Mamplasan"
+     ],
+     "existing": "Mamplasan"
+    },
+    {
+     "plaza": "Sta. Rosa",
+     "variants": [
+      "Sta. Rosa"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.088514,
+      14.285145
+     ],
+     "booths": [
+      "node/360190643 Santa Rosa",
+      "node/458768118 Santa Rosa",
+      "node/921133940 Santa Rosa",
+      "node/1517444746 Santa Rosa"
+     ],
+     "existing": "Sta. Rosa"
+    },
+    {
+     "plaza": "ABI/Greenfield",
+     "variants": [
+      "ABI/Greenfield"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/6921661916 Greenfield Toll Plaza (MPCALA Holdings Inc.) 14.2919,121.0681",
+      "node/7919250022 Greenfield Toll Plaza (MPCALA Holdings Inc.) 14.2919,121.0680"
+     ],
+     "existing": "ABI/Greenfield"
+    },
+    {
+     "plaza": "Cabuyao",
+     "variants": [
+      "Cabuyao"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Cabuyao"
+    },
+    {
+     "plaza": "Silangan",
+     "variants": [
+      "Silangan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.118673,
+      14.229705
+     ],
+     "booths": [
+      "node/666537276 Silangan",
+      "node/1078541451 Silangan",
+      "node/1078541491 Silangan",
+      "node/1078541547 Silangan"
+     ],
+     "existing": "Silangan"
+    },
+    {
+     "plaza": "Calamba",
+     "variants": [
+      "Calamba"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.141243,
+      14.192962
+     ],
+     "booths": [
+      "node/27367236 Calamba",
+      "node/340220562 Calamba",
+      "node/340221223 Calamba",
+      "node/1938118763 Calamba",
+      "node/2789787462 Calamba",
+      "node/10572428838 Calamba",
+      "node/13670636750 Calamba"
+     ],
+     "existing": "Calamba"
+    }
+   ]
+  },
+  "NLEX": {
+   "corridorLines": 4,
+   "corridorPoints": 336,
+   "results": [
+    {
+     "plaza": "Balagtas",
+     "variants": [
+      "Balagtas"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.899544,
+      14.8408
+     ],
+     "booths": [
+      "node/2147281074 Balagtas Toll Plaza",
+      "node/2147281086 Balagtas Toll Plaza",
+      "way/1221221108 Balagtas Toll Plaza"
+     ],
+     "existing": "Balagtas"
+    },
+    {
+     "plaza": "Tabang",
+     "variants": [
+      "Tabang"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/391725074 Tabang Toll Plaza (no operator) 14.8372,120.8681",
+      "node/391988327 Tabang Toll Plaza (no operator) 14.8375,120.8681",
+      "way/1221221109 Tabang Toll Plaza (no operator) 14.8374,120.8681"
+     ],
+     "existing": "Tabang"
+    },
+    {
+     "plaza": "Balintawak",
+     "variants": [
+      "Balintawak"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.000424,
+      14.679163
+     ],
+     "booths": [
+      "node/379019519 Balintawak Toll Plaza A",
+      "node/379019520 Balintawak Toll Plaza A",
+      "node/5720654257 Balintawak Toll Plaza B",
+      "way/1221221127 Balintawak Toll Plaza A",
+      "way/1221221128 Balintawak Toll Plaza B"
+     ],
+     "existing": "Balintawak"
+    },
+    {
+     "plaza": "Sta. Rita",
+     "variants": [
+      "Sta. Rita"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.858688,
+      14.862397
+     ],
+     "booths": [
+      "node/148901956 Santa Rita",
+      "node/480772480 Santa Rita",
+      "node/480772504 Santa Rita",
+      "node/481704792 Santa Rita",
+      "way/1221221106 Santa Rita Northbound Toll Plaza",
+      "way/1221221107 Santa Rita Southbound Toll Plaza"
+     ],
+     "existing": "Sta. Rita"
+    },
+    {
+     "plaza": "Mindanao Avenue",
+     "variants": [
+      "Mindanao Avenue",
+      "Mindanao Ave."
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Mindanao Ave."
+    },
+    {
+     "plaza": "Karuhatan",
+     "variants": [
+      "Karuhatan"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/3557388319 Karuhatan Toll Plaza (no operator) 14.6938,120.9768",
+      "node/6300698824 Karuhatan (NLEX Corporation) 14.6895,120.9699",
+      "node/6725455536 Karuhatan (NLEX Corporation) 14.6899,120.9706",
+      "way/1221221133 Karuhatan Toll Plaza (no operator) 14.6938,120.9768"
+     ],
+     "existing": "Karuhatan"
+    },
+    {
+     "plaza": "Valenzuela",
+     "variants": [
+      "Valenzuela"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Valenzuela"
+    },
+    {
+     "plaza": "Meycauayan",
+     "variants": [
+      "Meycauayan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.972524,
+      14.746194
+     ],
+     "booths": [
+      "node/441527354 Meycauayan",
+      "node/441527355 Meycauayan",
+      "way/1221221122 Meycauayan Northbound Toll Plaza",
+      "way/1221221123 Meycauayan Southbound Toll Plaza"
+     ],
+     "existing": "Meycauayan"
+    },
+    {
+     "plaza": "Marilao",
+     "variants": [
+      "Marilao"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.956849,
+      14.774475
+     ],
+     "booths": [
+      "node/1761823196 Marilao",
+      "node/1761916420 Marilao"
+     ],
+     "existing": "Marilao"
+    },
+    {
+     "plaza": "Ciudad de Victoria",
+     "variants": [
+      "Ciudad de Victoria"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Ciudad de Victoria"
+    },
+    {
+     "plaza": "Bocaue",
+     "variants": [
+      "Bocaue"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.941766,
+      14.803337
+     ],
+     "booths": [
+      "node/379119563 Bocaue Toll Plaza A",
+      "node/379119565 Bocaue Toll Plaza A",
+      "node/1129127463 Bocaue",
+      "node/6340974730 Bocaue Toll Plaza B",
+      "node/8327487971 Bocaue",
+      "way/1221221116 Bocaue Toll Plaza A",
+      "way/1221221117 Bocaue Toll Plaza B"
+     ],
+     "existing": "Bocaue"
+    },
+    {
+     "plaza": "Tambubong",
+     "variants": [
+      "Tambubong"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.93542,
+      14.814916
+     ],
+     "booths": [
+      "node/7025129268 Tambubong",
+      "node/7025129278 Tambubong",
+      "node/11129046035 Tambubong",
+      "way/1221221110 Tambubong Northbound Exit",
+      "way/1221221111 Tambubong Northbound Entry",
+      "way/1221221112 Tambubong Southbound Entry"
+     ],
+     "existing": "Tambubong"
+    },
+    {
+     "plaza": "Pulilan",
+     "variants": [
+      "Pulilan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.816979,
+      14.908359
+     ],
+     "booths": [
+      "node/148901195 Pulilan",
+      "node/243676249 Pulilan",
+      "node/964505932 Pulilan",
+      "node/1129127394 Pulilan",
+      "way/1221221102 Pulilan Southbound Exit",
+      "way/1221221103 Pulilan Northbound Entry",
+      "way/1221221104 Pulilan Northbound Exit",
+      "way/1221221105 Pulilan Southbound Entry"
+     ],
+     "existing": "Pulilan"
+    },
+    {
+     "plaza": "San Simon",
+     "variants": [
+      "San Simon"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.749904,
+      14.99024
+     ],
+     "booths": [
+      "node/448809409 San Simon",
+      "node/538627621 San Simon",
+      "node/1129127392 San Simon",
+      "node/1129127472 San Simon",
+      "way/1221221099 San Simon Northbound Entry",
+      "way/1512455697 San Simon Northbound Exit",
+      "way/1512455698 San Simon Southbound Exit",
+      "way/1512455699 San Simon Southbound Entry"
+     ],
+     "existing": "San Simon"
+    },
+    {
+     "plaza": "San Fernando",
+     "variants": [
+      "San Fernando"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.694979,
+      15.049988
+     ],
+     "booths": [
+      "node/347274736 San Fernando",
+      "node/457322052 San Fernando",
+      "node/1129050334 San Fernando",
+      "node/1129050391 San Fernando",
+      "way/1221221095 San Fernando Southbound Exit",
+      "way/1221221096 San Fernando Southbound Entry",
+      "way/1221221097 San Fernando Toll Plaza"
+     ],
+     "existing": "San Fernando"
+    },
+    {
+     "plaza": "Mexico",
+     "variants": [
+      "Mexico"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.663048,
+      15.108242
+     ],
+     "booths": [
+      "node/1128955855 Mexico",
+      "node/1128955874 Mexico"
+     ],
+     "existing": "Mexico"
+    },
+    {
+     "plaza": "Angeles",
+     "variants": [
+      "Angeles"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.611911,
+      15.161627
+     ],
+     "booths": [
+      "node/322051815 Angeles",
+      "node/498715153 Angeles",
+      "way/526500537 Angeles Toll Plaza",
+      "way/1512455696 Angeles Toll Plaza"
+     ],
+     "existing": "Angeles"
+    },
+    {
+     "plaza": "Dau",
+     "variants": [
+      "Dau"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.604311,
+      15.178801
+     ],
+     "booths": [
+      "node/12093526 Dau",
+      "node/317179566 Dau",
+      "node/674048192 Dau",
+      "node/4127292338 Dau",
+      "way/1221221089 Dau Southbound Exit",
+      "way/1221221090 Dau Southbound Entry",
+      "way/1221221091 Dau Northbound Exit",
+      "way/1221221092 Dau Northbound Entry"
+     ],
+     "existing": "Dau"
+    },
+    {
+     "plaza": "Sta. Ines",
+     "variants": [
+      "Sta. Ines"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.587999,
+      15.221948
+     ],
+     "booths": [
+      "node/4127294438 Santa Ines Toll Plaza",
+      "node/4127294439 Santa Ines Toll Plaza",
+      "way/1221221084 Santa Ines Toll Plaza"
+     ],
+     "existing": "Sta. Ines"
+    },
+    {
+     "plaza": "Mindanao Avenue",
+     "status": "NOT_RATED",
+     "reason": "No rate refers to this name.",
+     "referencedByPublishedRates": false
+    }
+   ]
+  },
+  "SKYWAY": {
+   "corridorLines": 2,
+   "corridorPoints": 273,
+   "results": [
+    {
+     "plaza": "Buendia",
+     "variants": [
+      "Buendia"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.004462,
+      14.563394
+     ],
+     "booths": [
+      "node/6634673610 Buendia Southbound Exit",
+      "node/8945933133 Buendia"
+     ],
+     "existing": "Buendia"
+    },
+    {
+     "plaza": "Amorsolo",
+     "variants": [
+      "Amorsolo"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Amorsolo"
+    },
+    {
+     "plaza": "Magallanes (Skyway)",
+     "variants": [
+      "Magallanes (Skyway)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Magallanes (Skyway)"
+    },
+    {
+     "plaza": "Nagtahan",
+     "variants": [
+      "Nagtahan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.002067,
+      14.585634
+     ],
+     "booths": [
+      "node/8663716172 Nagtahan",
+      "node/10940858843 Nagtahan"
+     ],
+     "existing": "Nagtahan"
+    },
+    {
+     "plaza": "Skyway-NAIAX Interchange",
+     "variants": [
+      "Skyway-NAIAX Interchange"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Skyway-NAIAX Interchange"
+    },
+    {
+     "plaza": "NLEX-Skyway Exit Ramp",
+     "variants": [
+      "NLEX-Skyway Exit Ramp"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "NLEX-Skyway Exit Ramp"
+    },
+    {
+     "plaza": "Quezon Ave.",
+     "variants": [
+      "Quezon Ave."
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.013721,
+      14.626887
+     ],
+     "booths": [
+      "node/6434727229 Quezon Avenue Northbound Entry",
+      "node/8341325979 Quezon Avenue",
+      "node/8663716183 Quezon Avenue Southbound Entry"
+     ],
+     "existing": "Quezon Ave."
+    },
+    {
+     "plaza": "Quirino",
+     "variants": [
+      "Quirino"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Quirino"
+    },
+    {
+     "plaza": "Balintawak (Skyway 3)",
+     "variants": [
+      "Balintawak (Skyway 3)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Balintawak (Skyway 3)"
+    },
+    {
+     "plaza": "E. Rodriguez",
+     "variants": [
+      "E. Rodriguez"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.017026,
+      14.611954
+     ],
+     "booths": [
+      "node/8447494406 E. Rodriguez Northbound Entry"
+     ],
+     "existing": "E. Rodriguez"
+    },
+    {
+     "plaza": "Plaza Dilao",
+     "variants": [
+      "Plaza Dilao"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.999603,
+      14.580598
+     ],
+     "booths": [
+      "node/8256018541 Plaza Dilao"
+     ],
+     "existing": "Plaza Dilao"
+    },
+    {
+     "plaza": "Don Bosco",
+     "variants": [
+      "Don Bosco"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Don Bosco"
+    },
+    {
+     "plaza": "Skyway",
+     "variants": [
+      "Skyway"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Bicutan",
+     "variants": [
+      "Bicutan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.043668,
+      14.487885
+     ],
+     "booths": [
+      "node/299382573 Bicutan",
+      "node/299382651 Bicutan"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Magallanes (SLEX)",
+     "variants": [
+      "Magallanes (SLEX)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "C-5",
+     "variants": [
+      "C-5"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.033981,
+      14.51366
+     ],
+     "booths": [
+      "node/33626133 C-5",
+      "node/2138782158 C-5"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Sucat",
+     "variants": [
+      "Sucat"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.044824,
+      14.454068
+     ],
+     "booths": [
+      "node/316010705 Sucat",
+      "node/832367837 Sucat",
+      "node/848331335 Sucat",
+      "node/2956984395 Sucat",
+      "node/2956984398 Sucat",
+      "node/3429707884 Sucat"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Alabang",
+     "variants": [
+      "Alabang"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.04545,
+      14.428533
+     ],
+     "booths": [
+      "node/262432613 Alabang",
+      "node/542953291 Alabang",
+      "node/9569904365 Alabang"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Filinvest",
+     "variants": [
+      "Filinvest"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/36230148 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4120,121.0408",
+      "node/36230150 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4121,121.0408",
+      "node/253125862 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4106,121.0425",
+      "node/253127717 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4106,121.0424",
+      "node/3477881964 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4122,121.0409"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "MCX",
+     "variants": [
+      "MCX"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/3648745752 MCX Toll Plaza (no operator) 14.3762,121.0179",
+      "node/3648745757 MCX Toll Plaza (no operator) 14.3765,121.0178"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Susana Heights",
+     "variants": [
+      "Susana Heights"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/29273489 Susana Heights (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3818,121.0395",
+      "node/410579306 Susana Heights (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3818,121.0393",
+      "node/4177675458 Susana Heights (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3818,121.0394",
+      "node/4178318025 Susana Heights (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3818,121.0392"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "San Pedro",
+     "variants": [
+      "San Pedro"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/382982957 San Pedro (SMC Infrastructure) 14.3679,121.0423",
+      "node/1078599677 San Pedro (SMC Infrastructure) 14.3679,121.0422",
+      "node/12498230697 San Pedro (SMC Infrastructure) 14.3687,121.0439",
+      "node/12498230698 San Pedro (SMC Infrastructure) 14.3687,121.0437"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Southwoods",
+     "variants": [
+      "Southwoods"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/261663161 Southwoods (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3338,121.0529",
+      "node/671193387 Southwoods (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3339,121.0531",
+      "node/1065128763 Southwoods (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3326,121.0555",
+      "node/1539148800 Southwoods (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3326,121.0557"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Carmona",
+     "variants": [
+      "Carmona"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/261762466 Carmona Toll Plaza B (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3238,121.0636",
+      "node/1044313828 Carmona Toll Plaza A (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3232,121.0634",
+      "node/2894898573 Carmona Toll Plaza A (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3233,121.0633",
+      "node/3152310087 Carmona (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3217,121.0617",
+      "node/3152310104 Carmona (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3223,121.0626"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Mamplasan",
+     "variants": [
+      "Mamplasan"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/1078571001 Mamplasan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3035,121.0802",
+      "node/1078571060 Mamplasan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3033,121.0763",
+      "node/1078571078 Mamplasan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3032,121.0764",
+      "node/1078571101 Mamplasan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3036,121.0801"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Sta. Rosa",
+     "variants": [
+      "Sta. Rosa"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/360190643 Santa Rosa (SMC Infrastructure) 14.2852,121.0899",
+      "node/458768118 Santa Rosa (SMC Infrastructure) 14.2851,121.0873",
+      "node/921133940 Santa Rosa (SMC Infrastructure) 14.2853,121.0898",
+      "node/1517444746 Santa Rosa (SMC Infrastructure) 14.2850,121.0871"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "ABI/Greenfield",
+     "variants": [
+      "ABI/Greenfield"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/6921661916 Greenfield Toll Plaza (MPCALA Holdings Inc.) 14.2919,121.0681",
+      "node/7919250022 Greenfield Toll Plaza (MPCALA Holdings Inc.) 14.2919,121.0680"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Cabuyao",
+     "variants": [
+      "Cabuyao"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Silangan",
+     "variants": [
+      "Silangan"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/666537276 Silangan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.2300,121.1174",
+      "node/1078541451 Silangan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.2295,121.1198",
+      "node/1078541491 Silangan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.2294,121.1199",
+      "node/1078541547 Silangan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.2300,121.1176"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Calamba",
+     "variants": [
+      "Calamba"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/27367236 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1928,121.1419",
+      "node/340220562 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1940,121.1412",
+      "node/340221223 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1924,121.1405",
+      "node/1938118763 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1921,121.1412",
+      "node/2789787462 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1937,121.1424",
+      "node/10572428838 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1927,121.1399",
+      "node/13670636750 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1931,121.1415"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Sto. Tomas",
+     "variants": [
+      "Sto. Tomas"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/1042281243 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1274,121.1401",
+      "node/1078514243 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1252,121.1393",
+      "node/10312424154 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1278,121.1369",
+      "node/10607438483 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1274,121.1359"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Merville",
+     "variants": [
+      "Merville"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.031978,
+      14.511638
+     ],
+     "booths": [
+      "node/554200178 Merville"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Balintawak",
+     "variants": [
+      "Balintawak"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/379019519 Balintawak Toll Plaza A (no operator) 14.6786,121.0003",
+      "node/379019520 Balintawak Toll Plaza A (no operator) 14.6786,121.0006",
+      "node/5720654257 Balintawak Toll Plaza B (no operator) 14.6800,121.0004",
+      "way/1221221127 Balintawak Toll Plaza A (no operator) 14.6786,121.0004",
+      "way/1221221128 Balintawak Toll Plaza B (no operator) 14.6800,121.0004"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "NLEX",
+     "variants": [
+      "NLEX"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    }
+   ]
+  },
+  "CALAX": {
+   "corridorLines": 5,
+   "corridorPoints": 257,
+   "results": [
+    {
+     "plaza": "Greenfield/Mamplasan",
+     "variants": [
+      "Greenfield/Mamplasan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.068013,
+      14.291888
+     ],
+     "booths": [
+      "node/6921661916 Greenfield Toll Plaza",
+      "node/7919250022 Greenfield Toll Plaza"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Laguna Blvd.",
+     "variants": [
+      "Laguna Blvd.",
+      "Laguna Boulevard"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.057431,
+      14.25266
+     ],
+     "booths": [
+      "node/5585628123 Laguna Boulevard",
+      "node/5585628127 Laguna Boulevard",
+      "node/5599624849 Laguna Boulevard",
+      "node/5678583018 Laguna Boulevard"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Sta. Rosa/Tagaytay",
+     "variants": [
+      "Sta. Rosa/Tagaytay",
+      "Santa Rosa-Tagaytay"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.047497,
+      14.234627
+     ],
+     "booths": [
+      "node/5599624887 Santa Rosa City",
+      "node/6802528628 Santa Rosa City"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Silang East",
+     "variants": [
+      "Silang East"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.001115,
+      14.232305
+     ],
+     "booths": [
+      "node/1307705634 Silang East",
+      "node/1307705739 Silang East"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Silang Interchange",
+     "variants": [
+      "Silang Interchange"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.975703,
+      14.254514
+     ],
+     "booths": [
+      "node/5659379769 Silang",
+      "node/10648011703 Silang",
+      "node/11185674472 Silang"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Technopark",
+     "variants": [
+      "Technopark"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Greenfield",
+     "variants": [
+      "Greenfield"
+     ],
+     "status": "ALIAS",
+     "aliasOf": "Greenfield/Mamplasan"
+    }
+   ]
+  },
+  "CAVITEX": {
+   "corridorLines": 3,
+   "corridorPoints": 101,
+   "results": [
+    {
+     "plaza": "Kawit",
+     "variants": [
+      "Kawit"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.916984,
+      14.454252
+     ],
+     "booths": [
+      "node/3415486025 Kawit Toll Plaza",
+      "node/3415486026 Kawit Toll Plaza"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Bacoor/Zapote",
+     "variants": [
+      "Bacoor/Zapote"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Parañaque/Sucat",
+     "variants": [
+      "Parañaque/Sucat"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/832367837 Sucat (no operator) 14.4548,121.0439",
+      "node/848331335 Sucat (no operator) 14.4547,121.0439",
+      "node/7710052201 Sucat (CAVITEX Infrastructure Corporation) 14.4911,120.9960",
+      "node/7710052214 Sucat Toll Plaza (CAVITEX Infrastructure Corporation) 14.4910,120.9960",
+      "node/11787275797 Sucat (CAVITEX Infrastructure Corporation) 14.4877,120.9957",
+      "node/13551210795 Sucat Toll Plaza (CAVITEX Infrastructure Corporation) 14.4892,120.9970",
+      "node/13551210796 Sucat Toll Plaza (CAVITEX Infrastructure Corporation) 14.4891,120.9971",
+      "node/13551210797 Sucat (CAVITEX Infrastructure Corporation) 14.4889,120.9973"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Roxas Blvd.",
+     "variants": [
+      "Roxas Blvd."
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Taguig",
+     "variants": [
+      "Taguig"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Merville",
+     "variants": [
+      "Merville"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/554200178 Merville (no operator) 14.5116,121.0320"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Zapote",
+     "variants": [
+      "Zapote"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Sucat Road /Dr. A Santos Avenue",
+     "variants": [
+      "Sucat Road /Dr. A Santos Avenue"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "C5 Road Extension/C.P. Garcia",
+     "variants": [
+      "C5 Road Extension/C.P. Garcia"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    }
+   ]
+  },
+  "SCTEX": {
+   "corridorLines": 6,
+   "corridorPoints": 666,
+   "results": [
+    {
+     "plaza": "Tipo/SFEX",
+     "variants": [
+      "Tipo/SFEX"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.353974,
+      14.841868
+     ],
+     "booths": [
+      "node/1447619473 Tipo",
+      "node/1641396017 Tipo",
+      "node/1651147906 Tipo",
+      "node/3012404104 Tipo"
+     ],
+     "existing": "Tipo/SFEX"
+    },
+    {
+     "plaza": "Tipo/Subic",
+     "variants": [
+      "Tipo/Subic"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.353974,
+      14.841868
+     ],
+     "booths": [
+      "node/1447619473 Tipo",
+      "node/1641396017 Tipo",
+      "node/1651147906 Tipo",
+      "node/3012404104 Tipo"
+     ],
+     "existing": "Tipo/Subic"
+    },
+    {
+     "plaza": "Dinalupihan",
+     "variants": [
+      "Dinalupihan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.456166,
+      14.855026
+     ],
+     "booths": [
+      "node/1407775144 Dinalupihan",
+      "node/1407775145 Dinalupihan"
+     ],
+     "existing": "Dinalupihan"
+    },
+    {
+     "plaza": "Floridablanca",
+     "variants": [
+      "Floridablanca"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.47409,
+      15.015363
+     ],
+     "booths": [
+      "node/642934283 Floridablanca",
+      "node/642968642 Floridablanca"
+     ],
+     "existing": "Floridablanca"
+    },
+    {
+     "plaza": "Porac",
+     "variants": [
+      "Porac"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.51141,
+      15.122918
+     ],
+     "booths": [
+      "node/642932378 Porac",
+      "node/642933646 Porac"
+     ],
+     "existing": "Porac"
+    },
+    {
+     "plaza": "Clark South",
+     "variants": [
+      "Clark South"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.570705,
+      15.181681
+     ],
+     "booths": [
+      "node/393731176 Clark South",
+      "node/393731800 Clark South",
+      "node/765801665 Clark South",
+      "node/1127700474 Clark South"
+     ],
+     "existing": "Clark South"
+    },
+    {
+     "plaza": "Mabalacat (Mabiga)",
+     "variants": [
+      "Mabalacat (Mabiga)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Mabalacat (Mabiga)"
+    },
+    {
+     "plaza": "Clark North",
+     "variants": [
+      "Clark North"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.561299,
+      15.229128
+     ],
+     "booths": [
+      "node/966465075 Clark North",
+      "node/967632643 Clark North"
+     ],
+     "existing": "Clark North"
+    },
+    {
+     "plaza": "Dolores",
+     "variants": [
+      "Dolores"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.571953,
+      15.239994
+     ],
+     "booths": [
+      "node/1127578243 Dolores",
+      "node/1127578249 Dolores"
+     ],
+     "existing": "Dolores"
+    },
+    {
+     "plaza": "Bamban (New Clark City)",
+     "variants": [
+      "Bamban (New Clark City)",
+      "Bamban/New Clark City"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Bamban/New Clark City"
+    },
+    {
+     "plaza": "San Miguel",
+     "variants": [
+      "San Miguel"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "San Miguel"
+    },
+    {
+     "plaza": "Hacienda Luisita",
+     "variants": [
+      "Hacienda Luisita"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.666609,
+      15.433697
+     ],
+     "booths": [
+      "node/316174238 Hacienda Luisita",
+      "node/446063386 Hacienda Luisita"
+     ],
+     "existing": "Hacienda Luisita"
+    },
+    {
+     "plaza": "Concepcion",
+     "variants": [
+      "Concepcion"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.628654,
+      15.316864
+     ],
+     "booths": [
+      "node/6437794039 Concepcion",
+      "node/6437794040 Concepcion"
+     ],
+     "existing": "Concepcion"
+    },
+    {
+     "plaza": "Tarlac",
+     "variants": [
+      "Tarlac"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.675815,
+      15.462808
+     ],
+     "booths": [
+      "node/5715611902 Tarlac City Toll Plaza",
+      "node/5715611903 Tarlac City Toll Plaza"
+     ],
+     "existing": "Tarlac"
+    },
+    {
+     "plaza": "Tipo",
+     "status": "DUPLICATE",
+     "reason": "Duplicate of \"Tipo/SFEX\" (spelling variant used by an import).",
+     "referencedByPublishedRates": true
+    },
+    {
+     "plaza": "Mabalacat",
+     "status": "NOT_RATED",
+     "reason": "No rate refers to this name.",
+     "referencedByPublishedRates": true
+    },
+    {
+     "plaza": "Bamban (New Clark City)",
+     "status": "SUSPECT",
+     "reason": "Stored location is 5.4 km from the expressway line used for checking; needs review.",
+     "referencedByPublishedRates": false
+    }
+   ]
+  },
+  "STAR": {
+   "corridorLines": 2,
+   "corridorPoints": 276,
+   "results": [
+    {
+     "plaza": "Sto. Tomas",
+     "variants": [
+      "Sto. Tomas"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/1042281243 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1274,121.1401",
+      "node/1078514243 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1252,121.1393",
+      "node/10312424154 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1278,121.1369",
+      "node/10607438483 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1274,121.1359"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Tanauan",
+     "variants": [
+      "Tanauan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.132515,
+      14.086311
+     ],
+     "booths": [
+      "node/313470387 Tanauan City",
+      "node/318300553 Tanauan City",
+      "node/318300554 Tanauan City",
+      "node/1067896499 Tanauan City"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Calamba",
+     "variants": [
+      "Calamba"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/27367236 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1928,121.1419",
+      "node/340220562 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1940,121.1412",
+      "node/340221223 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1924,121.1405",
+      "node/1938118763 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1921,121.1412",
+      "node/2789787462 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1937,121.1424",
+      "node/10572428838 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1927,121.1399",
+      "node/13670636750 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1931,121.1415"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Malvar",
+     "variants": [
+      "Malvar"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.150172,
+      14.039375
+     ],
+     "booths": [
+      "node/1096202490 Malvar",
+      "node/1275415451 Malvar",
+      "node/1275415467 Malvar",
+      "node/6441711696 Malvar"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Sto. Toribio",
+     "variants": [
+      "Sto. Toribio"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.148933,
+      13.974473
+     ],
+     "booths": [
+      "node/3089095521 Santo Toribio",
+      "node/3089095522 Santo Toribio",
+      "node/3089095533 Santo Toribio",
+      "node/3089095534 Santo Toribio"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Lipa",
+     "variants": [
+      "Lipa"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.13823,
+      13.941876
+     ],
+     "booths": [
+      "node/281157436 Lipa City",
+      "node/318268683 Lipa City",
+      "node/318300535 Lipa City",
+      "node/318300542 Lipa City"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Ibaan",
+     "variants": [
+      "Ibaan"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.121076,
+      13.839873
+     ],
+     "booths": [
+      "node/467070141 Ibaan",
+      "node/911785242 Ibaan",
+      "node/911790153 Ibaan",
+      "node/2890622165 Ibaan"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Batangas",
+     "variants": [
+      "Batangas"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.076656,
+      13.797084
+     ],
+     "booths": [
+      "node/378845243 Batangas City Toll Plaza",
+      "node/657880294 Batangas City Toll Plaza"
+     ],
+     "existing": null
+    }
+   ]
+  },
+  "C5_LINK": {
+   "corridorLines": 0,
+   "corridorPoints": 0,
+   "results": []
+  },
+  "NAIAX": {
+   "corridorLines": 1,
+   "corridorPoints": 32,
+   "results": [
+    {
+     "plaza": "Skyway-NAIAX Interchange",
+     "variants": [
+      "Skyway-NAIAX Interchange"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Andrews Ave./Terminal 3",
+     "variants": [
+      "Andrews Ave./Terminal 3"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "NAIA Terminal 1",
+     "variants": [
+      "NAIA Terminal 1"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "NAIA Terminal 2",
+     "variants": [
+      "NAIA Terminal 2"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Entertainment City",
+     "variants": [
+      "Entertainment City"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Macapagal Blvd.",
+     "variants": [
+      "Macapagal Blvd."
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "CAVITEX",
+     "variants": [
+      "CAVITEX"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "NAIA Terminal 3",
+     "variants": [
+      "NAIA Terminal 3"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Aurora Blvd. (Tramo)",
+     "variants": [
+      "Aurora Blvd. (Tramo)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    }
+   ]
+  }
+ },
+ "operations": [
+  {
+   "kind": "suspect",
+   "id": "cmv2lz5yi002vu05s9pmv5uqz",
+   "expressway": "TPLEX",
+   "name": "Gerona",
+   "reason": "Stored location is 3.4 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmw28dpo5000lu0nkhhv5126t",
+   "expressway": "TPLEX",
+   "name": "Rosario",
+   "movedKm": 1.903798221559909,
+   "old": {
+    "latitude": 16.23,
+    "longitude": 120.486,
+    "aliases": [
+     "Rosario",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 16.217582,
+    "longitude": 120.498338,
+    "aliases": [
+     "Rosario"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/7059265349, node/7059265350 (2 booths, ≤0.03 km from the TPLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 1
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lz5yk002xu05s6te929mv",
+   "expressway": "TPLEX",
+   "name": "Rosario/Baguio",
+   "movedKm": 21.960332561894905,
+   "old": {
+    "latitude": 16.389817,
+    "longitude": 120.600687,
+    "aliases": [
+     "Rosario/Baguio",
+     "Imported from Toll.ph (TPLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 16.217582,
+    "longitude": 120.498338,
+    "aliases": [
+     "Rosario/Baguio",
+     "Imported from Toll.ph (TPLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/7059265349, node/7059265350 (2 booths, ≤0.03 km from the TPLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 2
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lz63t0031u05s941gaafy",
+   "expressway": "TPLEX",
+   "name": "Carmen",
+   "reason": "Stored location is 6.3 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lz63g002zu05sej2qqx2x",
+   "expressway": "TPLEX",
+   "name": "Sison",
+   "movedKm": 1.2497116196413294,
+   "old": {
+    "latitude": 16.1727,
+    "longitude": 120.5099,
+    "aliases": [
+     "Sison",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 16.183297,
+    "longitude": 120.513965,
+    "aliases": [
+     "Sison"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/7264859883, node/7264901597 (2 booths, ≤0.14 km from the TPLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 3
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lz65t0035u05s367r6nu3",
+   "expressway": "TPLEX",
+   "name": "Urdaneta",
+   "movedKm": 3.055234796316163,
+   "old": {
+    "latitude": 15.9758,
+    "longitude": 120.5709,
+    "aliases": [
+     "Urdaneta",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 16.002043,
+    "longitude": 120.579837,
+    "aliases": [
+     "Urdaneta"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/6437827490, node/6437827491 (2 booths, ≤0.42 km from the TPLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 4
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lz69y0037u05sd68bj8wj",
+   "expressway": "TPLEX",
+   "name": "La Paz",
+   "reason": "Stored location is 14.8 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lz6cb0039u05s84dlakft",
+   "expressway": "TPLEX",
+   "name": "Binalonan",
+   "reason": "Stored location is 3.0 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lz6cx003bu05stw11qj8d",
+   "expressway": "TPLEX",
+   "name": "Moncada",
+   "reason": "Stored location is 4.6 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmw28dpnv000hu0nkedzx8c9e",
+   "expressway": "TPLEX",
+   "name": "Pozorrubio",
+   "movedKm": 2.942929272568593,
+   "old": {
+    "latitude": 16.1099,
+    "longitude": 120.5441,
+    "aliases": [
+     "Pozorrubio",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 16.12968,
+    "longitude": 120.525687,
+    "aliases": [
+     "Pozorrubio"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/5276803128, node/5276803134 (2 booths, ≤0.40 km from the TPLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 5
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lz6dx003du05su7wbmr4o",
+   "expressway": "TPLEX",
+   "name": "Pozorrubbio",
+   "reason": "Stored location is 257.2 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lz6ga003fu05svzlkqrsf",
+   "expressway": "TPLEX",
+   "name": "Paniqui",
+   "reason": "Stored location is 3.8 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mldm30002u0ksxoqbljlb",
+   "expressway": "SLEX",
+   "name": "Southwoods",
+   "movedKm": 442.66498443230694,
+   "old": {
+    "latitude": 18.3026,
+    "longitude": 121.59405,
+    "aliases": [
+     "Southwoods",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.333232,
+    "longitude": 121.0543,
+    "aliases": [
+     "Southwoods",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/261663161, node/671193387, node/1065128763, node/1539148800 (4 booths, ≤0.12 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 7
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2mldm30003u0kszte8iw7q",
+   "expressway": "SLEX",
+   "name": "Magallanes",
+   "reason": "Stored location is outside Luzon.",
+   "deactivate": true,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2mldp50007u0ksewum2lom",
+   "expressway": "SLEX",
+   "name": "C-5",
+   "reason": "Stored location is 12.8 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mldnf0005u0ksvxrxgtdd",
+   "expressway": "SLEX",
+   "name": "Bicutan",
+   "movedKm": 425.8686702691605,
+   "old": {
+    "latitude": 18.3026,
+    "longitude": 121.59405,
+    "aliases": [
+     "Bicutan",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.487885,
+    "longitude": 121.043668,
+    "aliases": [
+     "Bicutan",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/299382573, node/299382651 (2 booths, ≤0.33 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 1
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mldtr000bu0kstbrzddx4",
+   "expressway": "SLEX",
+   "name": "Sucat",
+   "movedKm": 1.0229306427003844,
+   "old": {
+    "latitude": 14.457029,
+    "longitude": 121.05311,
+    "aliases": [
+     "Sucat",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.454765,
+    "longitude": 121.043909,
+    "aliases": [
+     "Sucat",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/832367837, node/848331335 (2 booths, ≤0.14 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 2
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mldym000fu0ksgpezls92",
+   "expressway": "SLEX",
+   "name": "Alabang",
+   "movedKm": 0.6470789259785987,
+   "old": {
+    "latitude": 14.419207,
+    "longitude": 121.04535,
+    "aliases": [
+     "Alabang",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.413369,
+    "longitude": 121.044932,
+    "aliases": [
+     "Alabang",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/253125628 (1 booth, ≤0.04 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 3
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mldvr000du0ksppwcvjlg",
+   "expressway": "SLEX",
+   "name": "Filinvest",
+   "movedKm": 434.2718213032125,
+   "old": {
+    "latitude": 18.3026,
+    "longitude": 121.59405,
+    "aliases": [
+     "Filinvest",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.411471,
+    "longitude": 121.041474,
+    "aliases": [
+     "Filinvest",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/36230148, node/36230150, node/253125862, node/253127717, node/3477881964 (5 booths, ≤0.27 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 4
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mle09000hu0ksmxmic58v",
+   "expressway": "SLEX",
+   "name": "Susana Heights",
+   "movedKm": 1.7266685465462854,
+   "old": {
+    "latitude": 14.367513,
+    "longitude": 121.03285,
+    "aliases": [
+     "Susana Heights",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.381778,
+    "longitude": 121.039365,
+    "aliases": [
+     "Susana Heights",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/29273489, node/410579306, node/4177675458, node/4178318025 (4 booths, ≤0.14 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 5
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mle0k000ju0ks6woru3zw",
+   "expressway": "SLEX",
+   "name": "San Pedro",
+   "movedKm": 1.5213779053690613,
+   "old": {
+    "latitude": 14.364077,
+    "longitude": 121.05647,
+    "aliases": [
+     "San Pedro",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.368318,
+    "longitude": 121.043049,
+    "aliases": [
+     "San Pedro",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/382982957, node/1078599677, node/12498230697, node/12498230698 (4 booths, ≤0.11 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 6
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mle2i000lu0ksqw425f6l",
+   "expressway": "SLEX",
+   "name": "Carmona",
+   "movedKm": 1.3823937886309177,
+   "old": {
+    "latitude": 14.3127,
+    "longitude": 121.055466,
+    "aliases": [
+     "Carmona",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.322862,
+    "longitude": 121.062932,
+    "aliases": [
+     "Carmona",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/261762466, node/1044313828, node/2894898573, node/3152310087, node/3152310104 (5 booths, ≤0.27 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 8
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2mle5j000nu0kse29bn4y6",
+   "expressway": "SLEX",
+   "name": "MCX",
+   "reason": "Stored location is shared with 4 other plazas (a failed geocode).",
+   "deactivate": true,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mle6x000pu0ksn39q2sje",
+   "expressway": "SLEX",
+   "name": "Mamplasan",
+   "movedKm": 445.61335898193903,
+   "old": {
+    "latitude": 18.3026,
+    "longitude": 121.59405,
+    "aliases": [
+     "Mamplasan",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.303395,
+    "longitude": 121.078225,
+    "aliases": [
+     "Mamplasan",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1078571001, node/1078571060, node/1078571078, node/1078571101 (4 booths, ≤0.17 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 9
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mle76000ru0ksoojojz0j",
+   "expressway": "SLEX",
+   "name": "Sta. Rosa",
+   "movedKm": 191.81245338411452,
+   "old": {
+    "latitude": 15.976217,
+    "longitude": 120.69045,
+    "aliases": [
+     "Sta. Rosa",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.285145,
+    "longitude": 121.088514,
+    "aliases": [
+     "Sta. Rosa",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/360190643, node/458768118, node/921133940, node/1517444746 (4 booths, ≤0.14 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 10
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2mle9h000tu0ksyb7uyfr8",
+   "expressway": "SLEX",
+   "name": "ABI/Greenfield",
+   "reason": "Stored location is outside Luzon.",
+   "deactivate": true,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mledk000xu0ks4ridvxvj",
+   "expressway": "SLEX",
+   "name": "Silangan",
+   "movedKm": 22.99098376545109,
+   "old": {
+    "latitude": 14.147003,
+    "longitude": 121.314127,
+    "aliases": [
+     "Silangan",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.229705,
+    "longitude": 121.118673,
+    "aliases": [
+     "Silangan",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/666537276, node/1078541451, node/1078541491, node/1078541547 (4 booths, ≤0.10 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 11
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mledt000zu0ksbzslahc5",
+   "expressway": "SLEX",
+   "name": "Calamba",
+   "movedKm": 680.320436072613,
+   "old": {
+    "latitude": 8.558017,
+    "longitude": 123.64459,
+    "aliases": [
+     "Calamba",
+     "Imported from Toll.ph (SLEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.192962,
+    "longitude": 121.141243,
+    "aliases": [
+     "Calamba",
+     "Imported from Toll.ph (SLEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/27367236, node/340220562, node/340221223, node/1938118763, node/2789787462, node/10572428838, node/13670636750 (7 booths, ≤0.14 km from the SLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 12
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwsk1000bu05stv7r77eg",
+   "expressway": "NLEX",
+   "name": "Balagtas",
+   "movedKm": 2.9131374965955525,
+   "old": {
+    "latitude": 14.8163,
+    "longitude": 120.9095,
+    "aliases": [
+     "Balagtas",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.8408,
+    "longitude": 120.899544,
+    "aliases": [
+     "Balagtas"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/2147281074, node/2147281086, way/1221221108 (3 booths, ≤0.56 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 6
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwsjm0005u05sajqvqycd",
+   "expressway": "NLEX",
+   "name": "Balintawak",
+   "movedKm": 2.5875412256663584,
+   "old": {
+    "latitude": 14.656,
+    "longitude": 120.997,
+    "aliases": [
+     "Balintawak",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.679163,
+    "longitude": 121.000424,
+    "aliases": [
+     "Balintawak"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/379019519, node/379019520, node/5720654257, way/1221221127, way/1221221128 (5 booths, ≤0.03 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 1
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwsgo0001u05schn6d6p1",
+   "expressway": "NLEX",
+   "name": "Sta. Rita",
+   "movedKm": 3.6804062145572445,
+   "old": {
+    "latitude": 14.849,
+    "longitude": 120.89,
+    "aliases": [
+     "Sta. Rita",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.862397,
+    "longitude": 120.858688,
+    "aliases": [
+     "Sta. Rita"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/148901956, node/480772480, node/480772504, node/481704792, way/1221221106, way/1221221107 (6 booths, ≤0.15 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 7
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lwsp5000lu05sebj860id",
+   "expressway": "NLEX",
+   "name": "Mindanao Ave.",
+   "reason": "Stored location is outside Luzon.",
+   "deactivate": true,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwsrr000tu05scsyzn9aa",
+   "expressway": "NLEX",
+   "name": "Meycauayan",
+   "movedKm": 0.017764139618003695,
+   "old": {
+    "latitude": 14.7463,
+    "longitude": 120.9724,
+    "aliases": [
+     "Meycauayan",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.746194,
+    "longitude": 120.972524,
+    "aliases": [
+     "Meycauayan"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/441527354, node/441527355, way/1221221122, way/1221221123 (4 booths, ≤0.06 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 2
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwsx00013u05szwi2ooyw",
+   "expressway": "NLEX",
+   "name": "Marilao",
+   "movedKm": 2.207924182065473,
+   "old": {
+    "latitude": 14.7547,
+    "longitude": 120.954,
+    "aliases": [
+     "Marilao",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.774475,
+    "longitude": 120.956849,
+    "aliases": [
+     "Marilao"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1761823196, node/1761916420 (2 booths, ≤0.19 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 3
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwt2m0019u05s2o9cmdfl",
+   "expressway": "NLEX",
+   "name": "Bocaue",
+   "movedKm": 1.4985390193860006,
+   "old": {
+    "latitude": 14.7975,
+    "longitude": 120.9292,
+    "aliases": [
+     "Bocaue",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.803337,
+    "longitude": 120.941766,
+    "aliases": [
+     "Bocaue"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/379119563, node/379119565, node/1129127463, node/6340974730, node/8327487971, way/1221221116, way/1221221117 (7 booths, ≤0.15 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 4
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwt3n001du05sxqg8dek7",
+   "expressway": "NLEX",
+   "name": "Tambubong",
+   "movedKm": 1.8385560940015802,
+   "old": {
+    "latitude": 14.806,
+    "longitude": 120.921,
+    "aliases": [
+     "Tambubong",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.814916,
+    "longitude": 120.93542,
+    "aliases": [
+     "Tambubong"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/7025129268, node/7025129278, node/11129046035, way/1221221110, way/1221221111, way/1221221112 (6 booths, ≤0.17 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 5
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwt8f001ju05s4sofbi5f",
+   "expressway": "NLEX",
+   "name": "Pulilan",
+   "movedKm": 3.507086067900873,
+   "old": {
+    "latitude": 14.9024,
+    "longitude": 120.849,
+    "aliases": [
+     "Pulilan",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.908359,
+    "longitude": 120.816979,
+    "aliases": [
+     "Pulilan"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/148901195, node/243676249, node/964505932, node/1129127394, way/1221221102, way/1221221103, way/1221221104, way/1221221105 (8 booths, ≤0.09 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 8
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwt8y001lu05swqq0djfa",
+   "expressway": "NLEX",
+   "name": "San Simon",
+   "movedKm": 3.2014617737053968,
+   "old": {
+    "latitude": 14.9954,
+    "longitude": 120.7792,
+    "aliases": [
+     "San Simon",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.99024,
+    "longitude": 120.749904,
+    "aliases": [
+     "San Simon"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/448809409, node/538627621, node/1129127392, node/1129127472, way/1221221099, way/1512455697, way/1512455698, way/1512455699 (8 booths, ≤0.05 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 9
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwt9k001pu05spsdb4g9g",
+   "expressway": "NLEX",
+   "name": "San Fernando",
+   "movedKm": 2.459193073519526,
+   "old": {
+    "latitude": 15.0278,
+    "longitude": 120.6934,
+    "aliases": [
+     "San Fernando",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.049988,
+    "longitude": 120.694979,
+    "aliases": [
+     "San Fernando"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/347274736, node/457322052, node/1129050334, node/1129050391, way/1221221095, way/1221221096, way/1221221097 (7 booths, ≤0.19 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 10
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwthr0023u05sxombsjzj",
+   "expressway": "NLEX",
+   "name": "Mexico",
+   "movedKm": 7.828474133281277,
+   "old": {
+    "latitude": 15.0646,
+    "longitude": 120.7204,
+    "aliases": [
+     "Mexico",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.108242,
+    "longitude": 120.663048,
+    "aliases": [
+     "Mexico"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1128955855, node/1128955874 (2 booths, ≤0.13 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 11
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwthv0027u05sw7s6j987",
+   "expressway": "NLEX",
+   "name": "Angeles",
+   "movedKm": 3.632469918714984,
+   "old": {
+    "latitude": 15.1389,
+    "longitude": 120.5875,
+    "aliases": [
+     "Angeles",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.161627,
+    "longitude": 120.611911,
+    "aliases": [
+     "Angeles"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/322051815, node/498715153, way/526500537, way/1512455696 (4 booths, ≤0.34 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 12
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwthv0029u05spmft5g49",
+   "expressway": "NLEX",
+   "name": "Dau",
+   "movedKm": 1.8110572664715952,
+   "old": {
+    "latitude": 15.1755,
+    "longitude": 120.5878,
+    "aliases": [
+     "Dau",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.178801,
+    "longitude": 120.604311,
+    "aliases": [
+     "Dau"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/12093526, node/317179566, node/674048192, node/4127292338, way/1221221089, way/1221221090, way/1221221091, way/1221221092 (8 booths, ≤0.12 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 13
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwths0025u05s1456g7f7",
+   "expressway": "NLEX",
+   "name": "Sta. Ines",
+   "movedKm": 0.7977420587768688,
+   "old": {
+    "latitude": 15.215,
+    "longitude": 120.59,
+    "aliases": [
+     "Sta. Ines",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.221948,
+    "longitude": 120.587999,
+    "aliases": [
+     "Sta. Ines"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/4127294438, node/4127294439, way/1221221084 (3 booths, ≤0.02 km from the NLEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 14
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwsjl0003u05szt69pntd",
+   "expressway": "SKYWAY",
+   "name": "Buendia",
+   "movedKm": 418.2091465854956,
+   "old": {
+    "latitude": 18.3026,
+    "longitude": 121.59405,
+    "aliases": [
+     "Buendia",
+     "Imported from Toll.ph (SKYWAY)"
+    ]
+   },
+   "data": {
+    "latitude": 14.563394,
+    "longitude": 121.004462,
+    "aliases": [
+     "Buendia",
+     "Imported from Toll.ph (SKYWAY)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/6634673610, node/8945933133 (2 booths, ≤0.01 km from the SKYWAY road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 5
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lwsjm0007u05s3aognuwq",
+   "expressway": "SKYWAY",
+   "name": "Amorsolo",
+   "reason": "Stored location is shared with 5 other plazas (a failed geocode).",
+   "deactivate": true,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lwsr7000pu05s9rrttwl9",
+   "expressway": "SKYWAY",
+   "name": "Magallanes (Skyway)",
+   "reason": "Stored location is outside Luzon.",
+   "deactivate": true,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwsw9000xu05sbkfxhmvb",
+   "expressway": "SKYWAY",
+   "name": "Nagtahan",
+   "movedKm": 415.8164983309228,
+   "old": {
+    "latitude": 18.3026,
+    "longitude": 121.59405,
+    "aliases": [
+     "Nagtahan",
+     "Imported from Toll.ph (SKYWAY3)"
+    ]
+   },
+   "data": {
+    "latitude": 14.585634,
+    "longitude": 121.002067,
+    "aliases": [
+     "Nagtahan",
+     "Imported from Toll.ph (SKYWAY3)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/8663716172, node/10940858843 (2 booths, ≤0.23 km from the SKYWAY road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 3
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lwswb000zu05stuvhkb39",
+   "expressway": "SKYWAY",
+   "name": "Skyway-NAIAX Interchange",
+   "reason": "Stored location is shared with 5 other plazas (a failed geocode).",
+   "deactivate": true,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lwswy0011u05s3spkxobl",
+   "expressway": "SKYWAY",
+   "name": "NLEX-Skyway Exit Ramp",
+   "reason": "Stored location is shared with 5 other plazas (a failed geocode).",
+   "deactivate": true,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwt290015u05sm5b0dio8",
+   "expressway": "SKYWAY",
+   "name": "Quezon Ave.",
+   "movedKm": 7.362127204819021,
+   "old": {
+    "latitude": 14.650927,
+    "longitude": 121.077464,
+    "aliases": [
+     "Quezon Ave.",
+     "Imported from Toll.ph (SKYWAY3)"
+    ]
+   },
+   "data": {
+    "latitude": 14.626887,
+    "longitude": 121.013721,
+    "aliases": [
+     "Quezon Ave.",
+     "Imported from Toll.ph (SKYWAY3)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/6434727229, node/8341325979, node/8663716183 (3 booths, ≤0.02 km from the SKYWAY road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 1
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lwt8d001hu05snq99g2x1",
+   "expressway": "SKYWAY",
+   "name": "Quirino",
+   "reason": "Stored location is 212.7 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2lwt8c001fu05sk3w0eay8",
+   "expressway": "SKYWAY",
+   "name": "Balintawak (Skyway 3)",
+   "reason": "Stored location is outside Luzon.",
+   "deactivate": true,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwt90001nu05s5poxjkpy",
+   "expressway": "SKYWAY",
+   "name": "E. Rodriguez",
+   "movedKm": 4.128865088734588,
+   "old": {
+    "latitude": 14.627323,
+    "longitude": 121.05196,
+    "aliases": [
+     "E. Rodriguez",
+     "Imported from Toll.ph (SKYWAY3)"
+    ]
+   },
+   "data": {
+    "latitude": 14.611954,
+    "longitude": 121.017026,
+    "aliases": [
+     "E. Rodriguez",
+     "Imported from Toll.ph (SKYWAY3)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/8447494406 (1 booth, ≤0.03 km from the SKYWAY road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 2
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2lwt9l001ru05s9lt6aclp",
+   "expressway": "SKYWAY",
+   "name": "Plaza Dilao",
+   "movedKm": 416.40700819394846,
+   "old": {
+    "latitude": 18.3026,
+    "longitude": 121.59405,
+    "aliases": [
+     "Plaza Dilao",
+     "Imported from Toll.ph (SKYWAY3)"
+    ]
+   },
+   "data": {
+    "latitude": 14.580598,
+    "longitude": 120.999603,
+    "aliases": [
+     "Plaza Dilao",
+     "Imported from Toll.ph (SKYWAY3)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/8256018541 (1 booth, ≤0.01 km from the SKYWAY road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 4
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "SKYWAY",
+   "expresswayId": "cmv2h5tyg000bu0loxys3sfmi",
+   "name": "Bicutan",
+   "data": {
+    "latitude": 14.487885,
+    "longitude": 121.043668,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/299382573, node/299382651 (2 booths, ≤0.11 km from the SKYWAY road per Google Routes; ODbL)",
+    "sequence": 8
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "SKYWAY",
+   "expresswayId": "cmv2h5tyg000bu0loxys3sfmi",
+   "name": "C-5",
+   "data": {
+    "latitude": 14.51366,
+    "longitude": 121.033981,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/33626133, node/2138782158 (2 booths, ≤0.25 km from the SKYWAY road per Google Routes; ODbL)",
+    "sequence": 6
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "SKYWAY",
+   "expresswayId": "cmv2h5tyg000bu0loxys3sfmi",
+   "name": "Sucat",
+   "data": {
+    "latitude": 14.454068,
+    "longitude": 121.044824,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/316010705, node/832367837, node/848331335, node/2956984395, node/2956984398, node/3429707884 (6 booths, ≤0.15 km from the SKYWAY road per Google Routes; ODbL)",
+    "sequence": 9
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "SKYWAY",
+   "expresswayId": "cmv2h5tyg000bu0loxys3sfmi",
+   "name": "Alabang",
+   "data": {
+    "latitude": 14.428533,
+    "longitude": 121.04545,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/262432613, node/542953291, node/9569904365 (3 booths, ≤0.09 km from the SKYWAY road per Google Routes; ODbL)",
+    "sequence": 10
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "SKYWAY",
+   "expresswayId": "cmv2h5tyg000bu0loxys3sfmi",
+   "name": "Merville",
+   "data": {
+    "latitude": 14.511638,
+    "longitude": 121.031978,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/554200178 (1 booth, ≤0.10 km from the SKYWAY road per Google Routes; ODbL)",
+    "sequence": 7
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "CALAX",
+   "expresswayId": "cmv2h5tvu0002u0loc9qhqb47",
+   "name": "Greenfield/Mamplasan",
+   "data": {
+    "latitude": 14.291888,
+    "longitude": 121.068013,
+    "aliases": [
+     "Greenfield"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/6921661916, node/7919250022 (2 booths, ≤0.01 km from the CALAX road per Google Routes; ODbL)",
+    "sequence": 1
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "CALAX",
+   "expresswayId": "cmv2h5tvu0002u0loc9qhqb47",
+   "name": "Laguna Blvd.",
+   "data": {
+    "latitude": 14.25266,
+    "longitude": 121.057431,
+    "aliases": [
+     "Laguna Boulevard"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/5585628123, node/5585628127, node/5599624849, node/5678583018 (4 booths, ≤0.02 km from the CALAX road per Google Routes; ODbL)",
+    "sequence": 2
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "CALAX",
+   "expresswayId": "cmv2h5tvu0002u0loc9qhqb47",
+   "name": "Sta. Rosa/Tagaytay",
+   "data": {
+    "latitude": 14.234627,
+    "longitude": 121.047497,
+    "aliases": [
+     "Santa Rosa-Tagaytay"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/5599624887, node/6802528628 (2 booths, ≤0.20 km from the CALAX road per Google Routes; ODbL)",
+    "sequence": 3
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "CALAX",
+   "expresswayId": "cmv2h5tvu0002u0loc9qhqb47",
+   "name": "Silang East",
+   "data": {
+    "latitude": 14.232305,
+    "longitude": 121.001115,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1307705634, node/1307705739 (2 booths, ≤0.05 km from the CALAX road per Google Routes; ODbL)",
+    "sequence": 4
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "CALAX",
+   "expresswayId": "cmv2h5tvu0002u0loc9qhqb47",
+   "name": "Silang Interchange",
+   "data": {
+    "latitude": 14.254514,
+    "longitude": 120.975703,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/5659379769, node/10648011703, node/11185674472 (3 booths, ≤0.05 km from the CALAX road per Google Routes; ODbL)",
+    "sequence": 5
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "CAVITEX",
+   "expresswayId": "cmv2h5txu0009u0lo9c1t8gpo",
+   "name": "Kawit",
+   "data": {
+    "latitude": 14.454252,
+    "longitude": 120.916984,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/3415486025, node/3415486026 (2 booths, ≤0.02 km from the CAVITEX road per Google Routes; ODbL)",
+    "sequence": 1
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmw28dpp8001pu0nkmkq30hwf",
+   "expressway": "SCTEX",
+   "name": "Tipo/SFEX",
+   "movedKm": 0.014012424321543773,
+   "old": {
+    "latitude": 14.8419,
+    "longitude": 120.3541,
+    "aliases": [
+     "Tipo/SFEX",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.841868,
+    "longitude": 120.353974,
+    "aliases": [
+     "Tipo/SFEX"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1447619473, node/1641396017, node/1651147906, node/3012404104 (4 booths, ≤0.05 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 1
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mmt4g0015u0kszlpjz8sj",
+   "expressway": "SCTEX",
+   "name": "Tipo/Subic",
+   "movedKm": 13.497931412893493,
+   "old": {
+    "latitude": 14.878201,
+    "longitude": 120.23421,
+    "aliases": [
+     "Tipo/Subic",
+     "Imported from Toll.ph (SCTEX)"
+    ]
+   },
+   "data": {
+    "latitude": 14.841868,
+    "longitude": 120.353974,
+    "aliases": [
+     "Tipo/Subic",
+     "Imported from Toll.ph (SCTEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1447619473, node/1641396017, node/1651147906, node/3012404104 (4 booths, ≤0.05 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 2
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mmt4i0017u0ks9h3zw2rf",
+   "expressway": "SCTEX",
+   "name": "Dinalupihan",
+   "movedKm": 1.7744495524960164,
+   "old": {
+    "latitude": 14.8694,
+    "longitude": 120.4635,
+    "aliases": [
+     "Dinalupihan",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 14.855026,
+    "longitude": 120.456166,
+    "aliases": [
+     "Dinalupihan"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1407775144, node/1407775145 (2 booths, ≤0.33 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 3
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mmt4g0013u0kszwx68qik",
+   "expressway": "SCTEX",
+   "name": "Floridablanca",
+   "movedKm": 7.380288054333719,
+   "old": {
+    "latitude": 14.9743,
+    "longitude": 120.5282,
+    "aliases": [
+     "Floridablanca",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.015363,
+    "longitude": 120.47409,
+    "aliases": [
+     "Floridablanca"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/642934283, node/642968642 (2 booths, ≤0.29 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 4
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mmt4a0011u0kstaj56hfk",
+   "expressway": "SCTEX",
+   "name": "Porac",
+   "movedKm": 6.511487553766114,
+   "old": {
+    "latitude": 15.0722,
+    "longitude": 120.5422,
+    "aliases": [
+     "Porac",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.122918,
+    "longitude": 120.51141,
+    "aliases": [
+     "Porac"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/642932378, node/642933646 (2 booths, ≤0.27 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 5
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mmtbo001bu0ksqlhevpft",
+   "expressway": "SCTEX",
+   "name": "Clark South",
+   "movedKm": 4.7500308608786925,
+   "old": {
+    "latitude": 15.14,
+    "longitude": 120.56,
+    "aliases": [
+     "Clark South",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.181681,
+    "longitude": 120.570705,
+    "aliases": [
+     "Clark South"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/393731176, node/393731800, node/765801665, node/1127700474 (4 booths, ≤0.15 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 6
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mmtda001fu0kssf1qrvcs",
+   "expressway": "SCTEX",
+   "name": "Clark North",
+   "movedKm": 2.489854398177883,
+   "old": {
+    "latitude": 15.25,
+    "longitude": 120.57,
+    "aliases": [
+     "Clark North",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.229128,
+    "longitude": 120.561299,
+    "aliases": [
+     "Clark North"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/966465075, node/967632643 (2 booths, ≤0.01 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 7
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mmtbs001du0kstf0vfz73",
+   "expressway": "SCTEX",
+   "name": "Dolores",
+   "movedKm": 3.4007598759553184,
+   "old": {
+    "latitude": 15.27,
+    "longitude": 120.565,
+    "aliases": [
+     "Dolores",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.239994,
+    "longitude": 120.571953,
+    "aliases": [
+     "Dolores"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1127578243, node/1127578249 (2 booths, ≤0.22 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 8
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2mmti4001ju0ksiq9yqre2",
+   "expressway": "SCTEX",
+   "name": "Bamban/New Clark City",
+   "reason": "Stored location is 3.3 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mmti3001hu0ksjpgk17le",
+   "expressway": "SCTEX",
+   "name": "Hacienda Luisita",
+   "movedKm": 518.6804586274058,
+   "old": {
+    "latitude": 12.455722,
+    "longitude": 124.37599,
+    "aliases": [
+     "Hacienda Luisita",
+     "Imported from Toll.ph (SCTEX)"
+    ]
+   },
+   "data": {
+    "latitude": 15.433697,
+    "longitude": 120.666609,
+    "aliases": [
+     "Hacienda Luisita",
+     "Imported from Toll.ph (SCTEX)"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/316174238, node/446063386 (2 booths, ≤0.19 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 9
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2mmtka001lu0ksfj411nob",
+   "expressway": "SCTEX",
+   "name": "Concepcion",
+   "movedKm": 2.832036142727342,
+   "old": {
+    "latitude": 15.3246,
+    "longitude": 120.6538,
+    "aliases": [
+     "Concepcion",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.316864,
+    "longitude": 120.628654,
+    "aliases": [
+     "Concepcion"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/6437794039, node/6437794040 (2 booths, ≤0.46 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 10
+   }
+  },
+  {
+   "kind": "update",
+   "id": "cmv2hhin7000ku0rsxactwux7",
+   "expressway": "SCTEX",
+   "name": "Tarlac",
+   "movedKm": 9.748053406860729,
+   "old": {
+    "latitude": 15.4872,
+    "longitude": 120.5885,
+    "aliases": [
+     "Tarlac",
+     "Canonical matrix locator"
+    ]
+   },
+   "data": {
+    "latitude": 15.462808,
+    "longitude": 120.675815,
+    "aliases": [
+     "Tarlac"
+    ],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/5715611902, node/5715611903 (2 booths, ≤0.01 km from the SCTEX road per Google Routes; ODbL)",
+    "active": true,
+    "sequence": 11
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmv2hhin7000ju0rsdqeunx15",
+   "expressway": "SCTEX",
+   "name": "Tipo",
+   "reason": "Duplicate of \"Tipo/SFEX\" (spelling variant used by an import).",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "suspect",
+   "id": "cmw28dppr0025u0nk1zpmtp83",
+   "expressway": "SCTEX",
+   "name": "Bamban (New Clark City)",
+   "reason": "Stored location is 5.4 km from the expressway line used for checking; needs review.",
+   "deactivate": false,
+   "old": {
+    "verificationStatus": "UNVERIFIED"
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "STAR",
+   "expresswayId": "cmv2h5tx20006u0losxrnpm44",
+   "name": "Tanauan",
+   "data": {
+    "latitude": 14.086311,
+    "longitude": 121.132515,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/313470387, node/318300553, node/318300554, node/1067896499 (4 booths, ≤0.05 km from the STAR road per Google Routes; ODbL)",
+    "sequence": 1
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "STAR",
+   "expresswayId": "cmv2h5tx20006u0losxrnpm44",
+   "name": "Malvar",
+   "data": {
+    "latitude": 14.039375,
+    "longitude": 121.150172,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1096202490, node/1275415451, node/1275415467, node/6441711696 (4 booths, ≤0.08 km from the STAR road per Google Routes; ODbL)",
+    "sequence": 2
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "STAR",
+   "expresswayId": "cmv2h5tx20006u0losxrnpm44",
+   "name": "Sto. Toribio",
+   "data": {
+    "latitude": 13.974473,
+    "longitude": 121.148933,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/3089095521, node/3089095522, node/3089095533, node/3089095534 (4 booths, ≤0.05 km from the STAR road per Google Routes; ODbL)",
+    "sequence": 3
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "STAR",
+   "expresswayId": "cmv2h5tx20006u0losxrnpm44",
+   "name": "Lipa",
+   "data": {
+    "latitude": 13.941876,
+    "longitude": 121.13823,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/281157436, node/318268683, node/318300535, node/318300542 (4 booths, ≤0.21 km from the STAR road per Google Routes; ODbL)",
+    "sequence": 4
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "STAR",
+   "expresswayId": "cmv2h5tx20006u0losxrnpm44",
+   "name": "Ibaan",
+   "data": {
+    "latitude": 13.839873,
+    "longitude": 121.121076,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/467070141, node/911785242, node/911790153, node/2890622165 (4 booths, ≤0.05 km from the STAR road per Google Routes; ODbL)",
+    "sequence": 5
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "STAR",
+   "expresswayId": "cmv2h5tx20006u0losxrnpm44",
+   "name": "Batangas",
+   "data": {
+    "latitude": 13.797084,
+    "longitude": 121.076656,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/378845243, node/657880294 (2 booths, ≤0.00 km from the STAR road per Google Routes; ODbL)",
+    "sequence": 6
+   }
+  }
+ ]
+}

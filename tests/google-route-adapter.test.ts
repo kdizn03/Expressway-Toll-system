@@ -79,7 +79,7 @@ describe("Google step normalization", () => {
     expect(steps.map((item) => identifyExpressway(item.name))).toEqual(["TPLEX", "TPLEX", "SCTEX", "SCTEX"]);
     // TPLEX ends at its La Paz plaza; SCTEX begins at its Tarlac plaza.
     expect(steps[1].end).toEqual([120.7284, 15.4408]);
-    expect(steps[2].start).toEqual([120.5885, 15.4872]);
+    expect(steps[2].start).toEqual([120.6758, 15.4628]);
     expect(steps[1].distanceMeters + steps[2].distanceMeters).toBeCloseTo(96261);
   });
 

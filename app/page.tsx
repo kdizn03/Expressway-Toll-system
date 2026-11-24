@@ -7,7 +7,7 @@ import { AuthLinks } from "@/components/auth-links";
 
 type TollStatus = "VERIFIED" | "ESTIMATED" | "INCOMPLETE" | "UNAVAILABLE";
 type RouteMode = "FASTEST" | "CHEAPEST" | "BALANCED" | "AVOID_TOLLS";
-type TollSegment = { expressway: string; exitExpressway?: string; entry: string; exit: string; vehicleClass: "CLASS_1" | "CLASS_2" | "CLASS_3"; tollCentavos?: number; estimate?: boolean; warning?: string };
+type TollSegment = { expressway: string; exitExpressway?: string; entry: string; exit: string; vehicleClass: "CLASS_1" | "CLASS_2" | "CLASS_3"; tollCentavos?: number; estimate?: boolean; verification?: string; warning?: string };
 type Toll = { totalCentavos?: number; status: TollStatus; tollsAvoided?: boolean; noExpressway?: boolean; segments: TollSegment[]; warnings?: string[] };
 type Result = { id: string; mode: RouteMode; preferences?: RouteMode[]; distanceMeters: number; durationSeconds: number; expressways: string[]; toll: Toll; geometry: RouteGeometry };
 
@@ -122,7 +122,7 @@ export default function Home() {
           <h2>{route.expressways.join(" → ") || (route.mode === "AVOID_TOLLS" ? "No toll roads detected" : route.toll.noExpressway ? "Ordinary roads · no expressway" : "Toll road not in supported network")}</h2>
           <div className="stats"><span>{formatTime(route.durationSeconds)}</span><span>{(route.distanceMeters / 1000).toFixed(1)} km</span></div><div className="toll">{tollText(route.toll)}</div>
           {estimated && <small className="estimateNote">Estimate · verify before travel</small>}
-          {unavailable ? <small className="cardNote">Start PostgreSQL to load verified plaza and toll-rate data.</small> : route.toll.segments.map((segment) => <small className="segment" key={`${segment.expressway}-${segment.exitExpressway ?? ""}-${segment.entry}`}>{segment.exitExpressway ? `${segment.expressway}–${segment.exitExpressway} (${segment.entry} → ${segment.exit})` : segment.expressway} · {vehicleLabel(segment.vehicleClass)}: {segment.tollCentavos === undefined ? `${segment.entry} → ${segment.exit}: rate unavailable` : `${currency(segment.tollCentavos)}${segment.estimate ? " estimate" : ""}`}</small>)}
+          {unavailable ? <small className="cardNote">Start PostgreSQL to load verified plaza and toll-rate data.</small> : route.toll.segments.map((segment) => <small className="segment" key={`${segment.expressway}-${segment.exitExpressway ?? ""}-${segment.entry}`}>{segment.exitExpressway ? `${segment.expressway}–${segment.exitExpressway} (${segment.entry} → ${segment.exit})` : segment.expressway} · {vehicleLabel(segment.vehicleClass)}: {segment.tollCentavos === undefined ? `${segment.entry} → ${segment.exit}: rate unavailable` : `${currency(segment.tollCentavos)}${segment.verification === "INDEPENDENTLY_VERIFIED" ? " · matches TRB-approved rate" : segment.verification === "OFFICIALLY_PUBLISHED" ? " · official rate" : segment.estimate ? " estimate" : ""}`}</small>)}
           {route.toll.warnings?.map((warning) => <small className="cardNote" key={warning}>{warning}</small>)}
         </button>;
       })}</div>}

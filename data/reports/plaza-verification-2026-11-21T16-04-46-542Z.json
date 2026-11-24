@@ -1,0 +1,1711 @@
+{
+ "batchId": "plaza-verification-2026-11-21T16-04-46-542Z",
+ "generatedAt": "2026-11-21T16:04:46.542Z",
+ "evidence": "data/evidence/osm-toll-booths-2026-11-21.json",
+ "expressways": {
+  "TPLEX": {
+   "corridorLines": 3,
+   "corridorPoints": 375,
+   "results": [
+    {
+     "plaza": "Gerona",
+     "variants": [
+      "Gerona"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Gerona"
+    },
+    {
+     "plaza": "Rosario",
+     "variants": [
+      "Rosario"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Rosario/Baguio",
+     "variants": [
+      "Rosario/Baguio"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Carmen",
+     "variants": [
+      "Carmen"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Carmen"
+    },
+    {
+     "plaza": "Sison",
+     "variants": [
+      "Sison"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Urdaneta",
+     "variants": [
+      "Urdaneta"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Victoria",
+     "variants": [
+      "Victoria"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Victoria"
+    },
+    {
+     "plaza": "La Paz",
+     "variants": [
+      "La Paz"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "La Paz"
+    },
+    {
+     "plaza": "Binalonan",
+     "variants": [
+      "Binalonan"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Binalonan"
+    },
+    {
+     "plaza": "Moncada",
+     "variants": [
+      "Moncada"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Moncada"
+    },
+    {
+     "plaza": "Pozorrubio",
+     "variants": [
+      "Pozorrubio"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Pozorrubbio",
+     "variants": [
+      "Pozorrubbio"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Pozorrubbio"
+    },
+    {
+     "plaza": "Paniqui",
+     "variants": [
+      "Paniqui"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Paniqui"
+    }
+   ]
+  },
+  "MCX": {
+   "corridorLines": 5,
+   "corridorPoints": 67,
+   "results": []
+  },
+  "NLEX_CONNECTOR": {
+   "corridorLines": 2,
+   "corridorPoints": 62,
+   "results": [
+    {
+     "plaza": "Magsaysay",
+     "variants": [
+      "Magsaysay"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "España",
+     "variants": [
+      "España"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      120.991185,
+      14.618426
+     ],
+     "booths": [
+      "node/5534878942 España Toll Plaza",
+      "node/10711094759 España Toll Plaza"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "C-3 Road/5th Ave.",
+     "variants": [
+      "C-3 Road/5th Ave."
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Caloocan (C-3 Road)",
+     "variants": [
+      "Caloocan (C-3 Road)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    }
+   ]
+  },
+  "SLEX": {
+   "corridorLines": 4,
+   "corridorPoints": 240,
+   "results": [
+    {
+     "plaza": "Buendia",
+     "variants": [
+      "Buendia"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/6634673610 Buendia Southbound Exit (no operator) 14.5632,121.0045",
+      "node/8945933133 Buendia (no operator) 14.5636,121.0045"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Southwoods",
+     "variants": [
+      "Southwoods"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Magallanes",
+     "variants": [
+      "Magallanes"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Magallanes"
+    },
+    {
+     "plaza": "C-5",
+     "variants": [
+      "C-5"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/33626133 C-5 (no operator) 14.5132,121.0337",
+      "node/2138782158 C-5 (no operator) 14.5141,121.0343"
+     ],
+     "existing": "C-5"
+    },
+    {
+     "plaza": "Amorsolo",
+     "variants": [
+      "Amorsolo"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Bicutan",
+     "variants": [
+      "Bicutan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Magallanes (Skyway)",
+     "variants": [
+      "Magallanes (Skyway)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Merville",
+     "variants": [
+      "Merville"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/554200178 Merville (no operator) 14.5116,121.0320"
+     ],
+     "existing": "Merville"
+    },
+    {
+     "plaza": "Nagtahan",
+     "variants": [
+      "Nagtahan"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/8663716172 Nagtahan (no operator) 14.5852,121.0022",
+      "node/10940858843 Nagtahan (no operator) 14.5860,121.0020"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Skyway-NAIAX Interchange",
+     "variants": [
+      "Skyway-NAIAX Interchange"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "NLEX-Skyway Exit Ramp",
+     "variants": [
+      "NLEX-Skyway Exit Ramp"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Quezon Ave.",
+     "variants": [
+      "Quezon Ave."
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/6434727229 Quezon Avenue Northbound Entry (no operator) 14.6313,121.0102",
+      "node/8341325979 Quezon Avenue (no operator) 14.6249,121.0156",
+      "node/8663716183 Quezon Avenue Southbound Entry (no operator) 14.6245,121.0154"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Sucat",
+     "variants": [
+      "Sucat"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Alabang",
+     "variants": [
+      "Alabang"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Filinvest",
+     "variants": [
+      "Filinvest"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Susana Heights",
+     "variants": [
+      "Susana Heights"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "San Pedro",
+     "variants": [
+      "San Pedro"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Carmona",
+     "variants": [
+      "Carmona"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "MCX",
+     "variants": [
+      "MCX"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/3648745752 MCX Toll Plaza (no operator) 14.3762,121.0179",
+      "node/3648745757 MCX Toll Plaza (no operator) 14.3765,121.0178"
+     ],
+     "existing": "MCX"
+    },
+    {
+     "plaza": "Mamplasan",
+     "variants": [
+      "Mamplasan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Sta. Rosa",
+     "variants": [
+      "Sta. Rosa"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Quirino",
+     "variants": [
+      "Quirino"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Balintawak (Skyway 3)",
+     "variants": [
+      "Balintawak (Skyway 3)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "E. Rodriguez",
+     "variants": [
+      "E. Rodriguez"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/8447494406 E. Rodriguez Northbound Entry (Skyway Operations and Maintenance Corporation) 14.6120,121.0170"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Plaza Dilao",
+     "variants": [
+      "Plaza Dilao"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/8256018541 Plaza Dilao (no operator) 14.5806,120.9996"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Don Bosco",
+     "variants": [
+      "Don Bosco"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Sto. Tomas",
+     "variants": [
+      "Sto. Tomas"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.138053,
+      14.126935
+     ],
+     "booths": [
+      "node/1042281243 Santo Tomas",
+      "node/1078514243 Santo Tomas",
+      "node/10312424154 Santo Tomas",
+      "node/10607438483 Santo Tomas"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Tanauan",
+     "variants": [
+      "Tanauan"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/313470387 Tanauan City (STAR Tollway Corporation) 14.0872,121.1330",
+      "node/318300553 Tanauan City (STAR Tollway Corporation) 14.0874,121.1323",
+      "node/318300554 Tanauan City (STAR Tollway Corporation) 14.0852,121.1320",
+      "node/1067896499 Tanauan City (STAR Tollway Corporation) 14.0855,121.1328"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Calamba",
+     "variants": [
+      "Calamba"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Malvar",
+     "variants": [
+      "Malvar"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/1096202490 Malvar (STAR Tollway Corporation) 14.0388,121.1511",
+      "node/1275415451 Malvar (STAR Tollway Corporation) 14.0399,121.1493",
+      "node/1275415467 Malvar (STAR Tollway Corporation) 14.0373,121.1507",
+      "node/6441711696 Malvar (STAR Tollway Corporation) 14.0414,121.1497"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Sto. Toribio",
+     "variants": [
+      "Sto. Toribio"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/3089095521 Santo Toribio (STAR Tollway Corporation) 13.9737,121.1492",
+      "node/3089095522 Santo Toribio (STAR Tollway Corporation) 13.9734,121.1484",
+      "node/3089095533 Santo Toribio (STAR Tollway Corporation) 13.9753,121.1487",
+      "node/3089095534 Santo Toribio (STAR Tollway Corporation) 13.9755,121.1494"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Lipa",
+     "variants": [
+      "Lipa"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/281157436 Lipa City (STAR Tollway Corporation) 13.9416,121.1361",
+      "node/318268683 Lipa City (STAR Tollway Corporation) 13.9421,121.1405",
+      "node/318300535 Lipa City (STAR Tollway Corporation) 13.9421,121.1404",
+      "node/318300542 Lipa City (STAR Tollway Corporation) 13.9416,121.1360"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Ibaan",
+     "variants": [
+      "Ibaan"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/467070141 Ibaan (STAR Tollway Corporation) 13.8385,121.1207",
+      "node/911785242 Ibaan (STAR Tollway Corporation) 13.8413,121.1207",
+      "node/911790153 Ibaan (STAR Tollway Corporation) 13.8413,121.1214",
+      "node/2890622165 Ibaan (STAR Tollway Corporation) 13.8384,121.1214"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Batangas",
+     "variants": [
+      "Batangas"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/378845243 Batangas City Toll Plaza (STAR Tollway Corporation) 13.7972,121.0767",
+      "node/657880294 Batangas City Toll Plaza (STAR Tollway Corporation) 13.7970,121.0767"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "ABI/Greenfield",
+     "variants": [
+      "ABI/Greenfield"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/6921661916 Greenfield Toll Plaza (MPCALA Holdings Inc.) 14.2919,121.0681",
+      "node/7919250022 Greenfield Toll Plaza (MPCALA Holdings Inc.) 14.2919,121.0680"
+     ],
+     "existing": "ABI/Greenfield"
+    },
+    {
+     "plaza": "Cabuyao",
+     "variants": [
+      "Cabuyao"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Cabuyao"
+    },
+    {
+     "plaza": "Silangan",
+     "variants": [
+      "Silangan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Skyway",
+     "variants": [
+      "Skyway"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Magallanes (SLEX)",
+     "variants": [
+      "Magallanes (SLEX)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Balintawak",
+     "variants": [
+      "Balintawak"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/379019519 Balintawak Toll Plaza A (no operator) 14.6786,121.0003",
+      "node/379019520 Balintawak Toll Plaza A (no operator) 14.6786,121.0006",
+      "node/5720654257 Balintawak Toll Plaza B (no operator) 14.6800,121.0004",
+      "way/1221221127 Balintawak Toll Plaza A (no operator) 14.6786,121.0004",
+      "way/1221221128 Balintawak Toll Plaza B (no operator) 14.6800,121.0004"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "NLEX",
+     "variants": [
+      "NLEX"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    }
+   ]
+  },
+  "NLEX": {
+   "corridorLines": 4,
+   "corridorPoints": 336,
+   "results": [
+    {
+     "plaza": "Balagtas",
+     "variants": [
+      "Balagtas"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Tabang",
+     "variants": [
+      "Tabang"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/391725074 Tabang Toll Plaza (no operator) 14.8372,120.8681",
+      "node/391988327 Tabang Toll Plaza (no operator) 14.8375,120.8681",
+      "way/1221221109 Tabang Toll Plaza (no operator) 14.8374,120.8681"
+     ],
+     "existing": "Tabang"
+    },
+    {
+     "plaza": "Balintawak",
+     "variants": [
+      "Balintawak"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Sta. Rita",
+     "variants": [
+      "Sta. Rita"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Mindanao Avenue",
+     "variants": [
+      "Mindanao Avenue",
+      "Mindanao Ave."
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Mindanao Avenue"
+    },
+    {
+     "plaza": "Karuhatan",
+     "variants": [
+      "Karuhatan"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/3557388319 Karuhatan Toll Plaza (no operator) 14.6938,120.9768",
+      "node/6300698824 Karuhatan (NLEX Corporation) 14.6895,120.9699",
+      "node/6725455536 Karuhatan (NLEX Corporation) 14.6899,120.9706",
+      "way/1221221133 Karuhatan Toll Plaza (no operator) 14.6938,120.9768"
+     ],
+     "existing": "Karuhatan"
+    },
+    {
+     "plaza": "Valenzuela",
+     "variants": [
+      "Valenzuela"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Valenzuela"
+    },
+    {
+     "plaza": "Meycauayan",
+     "variants": [
+      "Meycauayan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Marilao",
+     "variants": [
+      "Marilao"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Ciudad de Victoria",
+     "variants": [
+      "Ciudad de Victoria"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Ciudad de Victoria"
+    },
+    {
+     "plaza": "Bocaue",
+     "variants": [
+      "Bocaue"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Tambubong",
+     "variants": [
+      "Tambubong"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Pulilan",
+     "variants": [
+      "Pulilan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "San Simon",
+     "variants": [
+      "San Simon"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "San Fernando",
+     "variants": [
+      "San Fernando"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Mexico",
+     "variants": [
+      "Mexico"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Angeles",
+     "variants": [
+      "Angeles"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Dau",
+     "variants": [
+      "Dau"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Sta. Ines",
+     "variants": [
+      "Sta. Ines"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Mindanao Ave.",
+     "status": "DUPLICATE",
+     "reason": "Duplicate of \"Mindanao Avenue\" (spelling variant used by an import).",
+     "referencedByPublishedRates": false
+    }
+   ]
+  },
+  "SKYWAY": {
+   "corridorLines": 2,
+   "corridorPoints": 273,
+   "results": [
+    {
+     "plaza": "Buendia",
+     "variants": [
+      "Buendia"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Amorsolo",
+     "variants": [
+      "Amorsolo"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Amorsolo"
+    },
+    {
+     "plaza": "Magallanes (Skyway)",
+     "variants": [
+      "Magallanes (Skyway)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Magallanes (Skyway)"
+    },
+    {
+     "plaza": "Nagtahan",
+     "variants": [
+      "Nagtahan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Skyway-NAIAX Interchange",
+     "variants": [
+      "Skyway-NAIAX Interchange"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Skyway-NAIAX Interchange"
+    },
+    {
+     "plaza": "NLEX-Skyway Exit Ramp",
+     "variants": [
+      "NLEX-Skyway Exit Ramp"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "NLEX-Skyway Exit Ramp"
+    },
+    {
+     "plaza": "Quezon Ave.",
+     "variants": [
+      "Quezon Ave."
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Quirino",
+     "variants": [
+      "Quirino"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Quirino"
+    },
+    {
+     "plaza": "Balintawak (Skyway 3)",
+     "variants": [
+      "Balintawak (Skyway 3)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Balintawak (Skyway 3)"
+    },
+    {
+     "plaza": "E. Rodriguez",
+     "variants": [
+      "E. Rodriguez"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Plaza Dilao",
+     "variants": [
+      "Plaza Dilao"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Don Bosco",
+     "variants": [
+      "Don Bosco"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Don Bosco"
+    },
+    {
+     "plaza": "Skyway",
+     "variants": [
+      "Skyway"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Bicutan",
+     "variants": [
+      "Bicutan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Magallanes (SLEX)",
+     "variants": [
+      "Magallanes (SLEX)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "C-5",
+     "variants": [
+      "C-5"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Sucat",
+     "variants": [
+      "Sucat"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Alabang",
+     "variants": [
+      "Alabang"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Filinvest",
+     "variants": [
+      "Filinvest"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/36230148 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4120,121.0408",
+      "node/36230150 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4121,121.0408",
+      "node/253125862 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4106,121.0425",
+      "node/253127717 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4106,121.0424",
+      "node/3477881964 Filinvest (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.4122,121.0409"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "MCX",
+     "variants": [
+      "MCX"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/3648745752 MCX Toll Plaza (no operator) 14.3762,121.0179",
+      "node/3648745757 MCX Toll Plaza (no operator) 14.3765,121.0178"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Susana Heights",
+     "variants": [
+      "Susana Heights"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/29273489 Susana Heights (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3818,121.0395",
+      "node/410579306 Susana Heights (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3818,121.0393",
+      "node/4177675458 Susana Heights (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3818,121.0394",
+      "node/4178318025 Susana Heights (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3818,121.0392"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "San Pedro",
+     "variants": [
+      "San Pedro"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/382982957 San Pedro (SMC Infrastructure) 14.3679,121.0423",
+      "node/1078599677 San Pedro (SMC Infrastructure) 14.3679,121.0422",
+      "node/12498230697 San Pedro (SMC Infrastructure) 14.3687,121.0439",
+      "node/12498230698 San Pedro (SMC Infrastructure) 14.3687,121.0437"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Southwoods",
+     "variants": [
+      "Southwoods"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/261663161 Southwoods (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3338,121.0529",
+      "node/671193387 Southwoods (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3339,121.0531",
+      "node/1065128763 Southwoods (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3326,121.0555",
+      "node/1539148800 Southwoods (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3326,121.0557"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Carmona",
+     "variants": [
+      "Carmona"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/261762466 Carmona Toll Plaza B (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3238,121.0636",
+      "node/1044313828 Carmona Toll Plaza A (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3232,121.0634",
+      "node/2894898573 Carmona Toll Plaza A (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3233,121.0633",
+      "node/3152310087 Carmona (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3217,121.0617",
+      "node/3152310104 Carmona (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3223,121.0626"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Mamplasan",
+     "variants": [
+      "Mamplasan"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/1078571001 Mamplasan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3035,121.0802",
+      "node/1078571060 Mamplasan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3033,121.0763",
+      "node/1078571078 Mamplasan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3032,121.0764",
+      "node/1078571101 Mamplasan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.3036,121.0801"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Sta. Rosa",
+     "variants": [
+      "Sta. Rosa"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/360190643 Santa Rosa (SMC Infrastructure) 14.2852,121.0899",
+      "node/458768118 Santa Rosa (SMC Infrastructure) 14.2851,121.0873",
+      "node/921133940 Santa Rosa (SMC Infrastructure) 14.2853,121.0898",
+      "node/1517444746 Santa Rosa (SMC Infrastructure) 14.2850,121.0871"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "ABI/Greenfield",
+     "variants": [
+      "ABI/Greenfield"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths belong to a different operator.",
+     "candidates": [
+      "node/6921661916 Greenfield Toll Plaza (MPCALA Holdings Inc.) 14.2919,121.0681",
+      "node/7919250022 Greenfield Toll Plaza (MPCALA Holdings Inc.) 14.2919,121.0680"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Cabuyao",
+     "variants": [
+      "Cabuyao"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Silangan",
+     "variants": [
+      "Silangan"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/666537276 Silangan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.2300,121.1174",
+      "node/1078541451 Silangan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.2295,121.1198",
+      "node/1078541491 Silangan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.2294,121.1199",
+      "node/1078541547 Silangan (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.2300,121.1176"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Calamba",
+     "variants": [
+      "Calamba"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/27367236 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1928,121.1419",
+      "node/340220562 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1940,121.1412",
+      "node/340221223 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1924,121.1405",
+      "node/1938118763 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1921,121.1412",
+      "node/2789787462 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1937,121.1424",
+      "node/10572428838 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1927,121.1399",
+      "node/13670636750 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1931,121.1415"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Sto. Tomas",
+     "variants": [
+      "Sto. Tomas"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/1042281243 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1274,121.1401",
+      "node/1078514243 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1252,121.1393",
+      "node/10312424154 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1278,121.1369",
+      "node/10607438483 Santo Tomas (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1274,121.1359"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Merville",
+     "variants": [
+      "Merville"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Balintawak",
+     "variants": [
+      "Balintawak"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/379019519 Balintawak Toll Plaza A (no operator) 14.6786,121.0003",
+      "node/379019520 Balintawak Toll Plaza A (no operator) 14.6786,121.0006",
+      "node/5720654257 Balintawak Toll Plaza B (no operator) 14.6800,121.0004",
+      "way/1221221127 Balintawak Toll Plaza A (no operator) 14.6786,121.0004",
+      "way/1221221128 Balintawak Toll Plaza B (no operator) 14.6800,121.0004"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "NLEX",
+     "variants": [
+      "NLEX"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    }
+   ]
+  },
+  "CALAX": {
+   "corridorLines": 5,
+   "corridorPoints": 257,
+   "results": [
+    {
+     "plaza": "Greenfield/Mamplasan",
+     "variants": [
+      "Greenfield/Mamplasan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Laguna Blvd.",
+     "variants": [
+      "Laguna Blvd.",
+      "Laguna Boulevard"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Sta. Rosa/Tagaytay",
+     "variants": [
+      "Sta. Rosa/Tagaytay",
+      "Santa Rosa-Tagaytay"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Silang East",
+     "variants": [
+      "Silang East"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Silang Interchange",
+     "variants": [
+      "Silang Interchange"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Technopark",
+     "variants": [
+      "Technopark"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Greenfield",
+     "variants": [
+      "Greenfield"
+     ],
+     "status": "ALIAS",
+     "aliasOf": "Greenfield/Mamplasan"
+    }
+   ]
+  },
+  "CAVITEX": {
+   "corridorLines": 1,
+   "corridorPoints": 93,
+   "results": [
+    {
+     "plaza": "Kawit",
+     "variants": [
+      "Kawit"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Bacoor/Zapote",
+     "variants": [
+      "Bacoor/Zapote"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Parañaque/Sucat",
+     "variants": [
+      "Parañaque/Sucat"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/832367837 Sucat (no operator) 14.4548,121.0439",
+      "node/848331335 Sucat (no operator) 14.4547,121.0439",
+      "node/7710052201 Sucat (CAVITEX Infrastructure Corporation) 14.4911,120.9960",
+      "node/7710052214 Sucat Toll Plaza (CAVITEX Infrastructure Corporation) 14.4910,120.9960",
+      "node/11787275797 Sucat (CAVITEX Infrastructure Corporation) 14.4877,120.9957",
+      "node/13551210795 Sucat Toll Plaza (CAVITEX Infrastructure Corporation) 14.4892,120.9970",
+      "node/13551210796 Sucat Toll Plaza (CAVITEX Infrastructure Corporation) 14.4891,120.9971",
+      "node/13551210797 Sucat (CAVITEX Infrastructure Corporation) 14.4889,120.9973"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Roxas Blvd.",
+     "variants": [
+      "Roxas Blvd."
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Taguig",
+     "variants": [
+      "Taguig"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Merville",
+     "variants": [
+      "Merville"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/554200178 Merville (no operator) 14.5116,121.0320"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Zapote",
+     "variants": [
+      "Zapote"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Sucat Road /Dr. A Santos Avenue",
+     "variants": [
+      "Sucat Road /Dr. A Santos Avenue"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "C5 Road Extension/C.P. Garcia",
+     "variants": [
+      "C5 Road Extension/C.P. Garcia"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    }
+   ]
+  },
+  "SCTEX": {
+   "corridorLines": 6,
+   "corridorPoints": 666,
+   "results": [
+    {
+     "plaza": "Tipo/SFEX",
+     "variants": [
+      "Tipo/SFEX"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Tipo/Subic",
+     "variants": [
+      "Tipo/Subic"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Dinalupihan",
+     "variants": [
+      "Dinalupihan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Floridablanca",
+     "variants": [
+      "Floridablanca"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Porac",
+     "variants": [
+      "Porac"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Clark South",
+     "variants": [
+      "Clark South"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Mabalacat (Mabiga)",
+     "variants": [
+      "Mabalacat (Mabiga)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Mabalacat (Mabiga)"
+    },
+    {
+     "plaza": "Clark North",
+     "variants": [
+      "Clark North"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Dolores",
+     "variants": [
+      "Dolores"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Bamban (New Clark City)",
+     "variants": [
+      "Bamban (New Clark City)",
+      "Bamban/New Clark City"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "Bamban/New Clark City"
+    },
+    {
+     "plaza": "San Miguel",
+     "variants": [
+      "San Miguel"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": "San Miguel"
+    },
+    {
+     "plaza": "Hacienda Luisita",
+     "variants": [
+      "Hacienda Luisita"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Concepcion",
+     "variants": [
+      "Concepcion"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Tarlac",
+     "variants": [
+      "Tarlac"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Tipo",
+     "status": "DUPLICATE",
+     "reason": "Duplicate of \"Tipo/SFEX\" (spelling variant used by an import).",
+     "referencedByPublishedRates": true
+    },
+    {
+     "plaza": "Mabalacat",
+     "status": "NOT_RATED",
+     "reason": "No rate refers to this name.",
+     "referencedByPublishedRates": true
+    },
+    {
+     "plaza": "Bamban (New Clark City)",
+     "status": "SUSPECT",
+     "reason": "Stored location is 5.4 km from the expressway line used for checking; needs review.",
+     "referencedByPublishedRates": false
+    }
+   ]
+  },
+  "STAR": {
+   "corridorLines": 2,
+   "corridorPoints": 276,
+   "results": [
+    {
+     "plaza": "Sto. Tomas",
+     "variants": [
+      "Sto. Tomas"
+     ],
+     "status": "VERIFIED_GEODATA",
+     "coordinate": [
+      121.138053,
+      14.126935
+     ],
+     "booths": [
+      "node/1042281243 Santo Tomas",
+      "node/1078514243 Santo Tomas",
+      "node/10312424154 Santo Tomas",
+      "node/10607438483 Santo Tomas"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Tanauan",
+     "variants": [
+      "Tanauan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Calamba",
+     "variants": [
+      "Calamba"
+     ],
+     "status": "NEEDS_REVIEW",
+     "reason": "Named booths are more than 1 km from this expressway.",
+     "candidates": [
+      "node/27367236 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1928,121.1419",
+      "node/340220562 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1940,121.1412",
+      "node/340221223 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1924,121.1405",
+      "node/1938118763 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1921,121.1412",
+      "node/2789787462 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1937,121.1424",
+      "node/10572428838 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1927,121.1399",
+      "node/13670636750 Calamba (South Luzon Tollway Corporation;Manila Toll Expressway Systems) 14.1931,121.1415"
+     ],
+     "existing": null
+    },
+    {
+     "plaza": "Malvar",
+     "variants": [
+      "Malvar"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Sto. Toribio",
+     "variants": [
+      "Sto. Toribio"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Lipa",
+     "variants": [
+      "Lipa"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Ibaan",
+     "variants": [
+      "Ibaan"
+     ],
+     "status": "UNCHANGED"
+    },
+    {
+     "plaza": "Batangas",
+     "variants": [
+      "Batangas"
+     ],
+     "status": "UNCHANGED"
+    }
+   ]
+  },
+  "C5_LINK": {
+   "corridorLines": 0,
+   "corridorPoints": 0,
+   "results": []
+  },
+  "NAIAX": {
+   "corridorLines": 1,
+   "corridorPoints": 32,
+   "results": [
+    {
+     "plaza": "Skyway-NAIAX Interchange",
+     "variants": [
+      "Skyway-NAIAX Interchange"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Andrews Ave./Terminal 3",
+     "variants": [
+      "Andrews Ave./Terminal 3"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "NAIA Terminal 1",
+     "variants": [
+      "NAIA Terminal 1"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "NAIA Terminal 2",
+     "variants": [
+      "NAIA Terminal 2"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Entertainment City",
+     "variants": [
+      "Entertainment City"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Macapagal Blvd.",
+     "variants": [
+      "Macapagal Blvd."
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "CAVITEX",
+     "variants": [
+      "CAVITEX"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "NAIA Terminal 3",
+     "variants": [
+      "NAIA Terminal 3"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    },
+    {
+     "plaza": "Aurora Blvd. (Tramo)",
+     "variants": [
+      "Aurora Blvd. (Tramo)"
+     ],
+     "status": "UNRESOLVED",
+     "reason": "No OpenStreetMap toll booth has this name.",
+     "candidates": [],
+     "existing": null
+    }
+   ]
+  }
+ },
+ "operations": [
+  {
+   "kind": "create",
+   "expressway": "NLEX_CONNECTOR",
+   "expresswayId": "cmv2h5txi0007u0lopmyh0uao",
+   "name": "España",
+   "data": {
+    "latitude": 14.618426,
+    "longitude": 120.991185,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/5534878942, node/10711094759 (2 booths, ≤0.01 km from the NLEX_CONNECTOR road per Google Routes; ODbL)",
+    "sequence": 1
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "SLEX",
+   "expresswayId": "cmv2h5ttk0000u0lo6yzsk0s6",
+   "name": "Sto. Tomas",
+   "data": {
+    "latitude": 14.126935,
+    "longitude": 121.138053,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1042281243, node/1078514243, node/10312424154, node/10607438483 (4 booths, ≤0.17 km from the SLEX road per Google Routes; ODbL)",
+    "sequence": 13
+   }
+  },
+  {
+   "kind": "create",
+   "expressway": "STAR",
+   "expresswayId": "cmv2h5tx20006u0losxrnpm44",
+   "name": "Sto. Tomas",
+   "data": {
+    "latitude": 14.126935,
+    "longitude": 121.138053,
+    "aliases": [],
+    "verificationStatus": "VERIFIED_GEODATA",
+    "verificationSource": "OpenStreetMap node/1042281243, node/1078514243, node/10312424154, node/10607438483 (4 booths, ≤0.34 km from the STAR road per Google Routes; ODbL)",
+    "sequence": 1
+   }
+  }
+ ]
+}

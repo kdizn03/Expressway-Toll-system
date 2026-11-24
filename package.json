@@ -16,7 +16,13 @@
     "db:stage:tplex": "node scripts/stage-tplex-trb.mjs",
     "db:stage:expresswayph-rest": "node scripts/stage-expresswayph-rest.mjs",
     "db:stage:skyway-stage3": "node scripts/stage-skyway-stage3-2026.mjs",
-    "db:repair:plaza-locators": "node scripts/repair-luzon-plaza-locators.mjs"
+    "db:repair:plaza-locators": "node scripts/repair-luzon-plaza-locators.mjs",
+    "toll:setup-monitoring": "tsx --env-file=.env scripts/setup-toll-monitoring.ts",
+    "toll:monitor": "tsx --env-file=.env scripts/run-toll-monitor.ts daily",
+    "toll:monitor:weekly": "tsx --env-file=.env scripts/run-toll-monitor.ts weekly",
+    "toll:verify-plazas": "tsx --env-file=.env scripts/verify-plaza-locators.ts",
+    "toll:rollback-plazas": "tsx --env-file=.env scripts/rollback-plaza-batch.ts",
+    "toll:regression": "tsx --env-file=.env scripts/toll-regression.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.1.0",

@@ -1,0 +1,251 @@
+{
+ "Baguio → Manila": {
+  "km": 249,
+  "CLASS_1": {
+   "total": 1100,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱311 UNVERIFIED",
+    "SCTEX–NLEX Tarlac→Balintawak ₱670 THIRD_PARTY_ESTIMATE",
+    "NLEX_CONNECTOR unresolved entry→unresolved exit ₱119 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": 2636,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱778 UNVERIFIED",
+    "SCTEX–NLEX Tarlac→Balintawak ₱1559 THIRD_PARTY_ESTIMATE",
+    "NLEX_CONNECTOR unresolved entry→unresolved exit ₱299 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": 3359,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱933 UNVERIFIED",
+    "SCTEX–NLEX Tarlac→Balintawak ₱2008 THIRD_PARTY_ESTIMATE",
+    "NLEX_CONNECTOR unresolved entry→unresolved exit ₱418 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Baguio → Clark": {
+  "km": 164,
+  "CLASS_1": {
+   "total": 514,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱311 UNVERIFIED",
+    "SCTEX Tarlac→Clark North ₱203 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": 1183,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱778 UNVERIFIED",
+    "SCTEX Tarlac→Clark North ₱405 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": 1541,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱933 UNVERIFIED",
+    "SCTEX Tarlac→Clark North ₱608 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Manila → Tarlac City": {
+  "km": 129,
+  "CLASS_1": {
+   "total": 638,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→Hacienda Luisita ₱638 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": 1494,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→Hacienda Luisita ₱1494 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": 1912,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→Hacienda Luisita ₱1912 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Manila → Subic": {
+  "km": 124,
+  "CLASS_1": {
+   "total": 857,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→Tipo/SFEX ₱857 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": 1956,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→Tipo/SFEX ₱1956 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": 2569,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→Tipo/SFEX ₱2569 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Makati → Calamba": {
+  "km": 49,
+  "CLASS_1": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SLEX Merville→Calamba N/A  (No rate is available for this plaza pair.)",
+    "SKYWAY C-5→Alabang ₱118 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SLEX Merville→Calamba N/A  (No rate is available for this plaza pair.)",
+    "SKYWAY C-5→Alabang ₱237 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SLEX Merville→Calamba N/A  (No rate is available for this plaza pair.)",
+    "SKYWAY C-5→Alabang ₱356 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Manila → Batangas City": {
+  "km": 106,
+  "CLASS_1": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY Plaza Dilao→Alabang N/A  (No rate is available for this plaza pair.)",
+    "SLEX Filinvest→Calamba ₱131 THIRD_PARTY_ESTIMATE",
+    "STAR Tanauan→Batangas ₱107 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY Plaza Dilao→Alabang N/A  (No rate is available for this plaza pair.)",
+    "SLEX Filinvest→Calamba ₱262 THIRD_PARTY_ESTIMATE",
+    "STAR Tanauan→Batangas ₱213 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY Plaza Dilao→Alabang N/A  (No rate is available for this plaza pair.)",
+    "SLEX Filinvest→Calamba ₱393 THIRD_PARTY_ESTIMATE",
+    "STAR Tanauan→Batangas ₱320 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Manila → Lipa": {
+  "km": 82,
+  "CLASS_1": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY Plaza Dilao→Alabang N/A  (No rate is available for this plaza pair.)",
+    "SLEX Filinvest→Calamba ₱131 THIRD_PARTY_ESTIMATE",
+    "STAR Tanauan→Sto. Toribio ₱38 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY Plaza Dilao→Alabang N/A  (No rate is available for this plaza pair.)",
+    "SLEX Filinvest→Calamba ₱262 THIRD_PARTY_ESTIMATE",
+    "STAR Tanauan→Sto. Toribio ₱75 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY Plaza Dilao→Alabang N/A  (No rate is available for this plaza pair.)",
+    "SLEX Filinvest→Calamba ₱393 THIRD_PARTY_ESTIMATE",
+    "STAR Tanauan→Sto. Toribio ₱113 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Manila → Kawit, Cavite": {
+  "km": 30,
+  "CLASS_1": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY Plaza Dilao→C-5 N/A  (No rate is available for this plaza pair.)",
+    "NAIAX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)",
+    "CAVITEX Kawit→Kawit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_2": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY Plaza Dilao→C-5 N/A  (No rate is available for this plaza pair.)",
+    "NAIAX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)",
+    "CAVITEX Kawit→Kawit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_3": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY Plaza Dilao→C-5 N/A  (No rate is available for this plaza pair.)",
+    "NAIAX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)",
+    "CAVITEX Kawit→Kawit N/A  (No rate is available for this plaza pair.)"
+   ]
+  }
+ },
+ "Alabang → Silang (CALAX)": {
+  "km": 34,
+  "CLASS_1": {
+   "total": 133,
+   "status": "ESTIMATED",
+   "segments": [
+    "SLEX Alabang→Mamplasan ₱69 THIRD_PARTY_ESTIMATE",
+    "CALAX Greenfield/Mamplasan→Silang East ₱64 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": 267,
+   "status": "ESTIMATED",
+   "segments": [
+    "SLEX Alabang→Mamplasan ₱139 THIRD_PARTY_ESTIMATE",
+    "CALAX Greenfield/Mamplasan→Silang East ₱128 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": 400,
+   "status": "ESTIMATED",
+   "segments": [
+    "SLEX Alabang→Mamplasan ₱208 THIRD_PARTY_ESTIMATE",
+    "CALAX Greenfield/Mamplasan→Silang East ₱192 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ }
+}

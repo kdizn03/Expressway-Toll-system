@@ -74,7 +74,8 @@ const TPLEX_SCTEX_LATITUDE = 15.45;
  * boundary used by the toll matcher) and enters SCTEX at its Tarlac plaza.
  */
 const TPLEX_SIDE_OF_JUNCTION: Coordinate = [120.7284, 15.4408];
-const SCTEX_SIDE_OF_JUNCTION: Coordinate = [120.5885, 15.4872];
+// SCTEX "Tarlac" plaza, location verified from OpenStreetMap booths (data/evidence/osm-toll-booths-2026-11-21.json).
+const SCTEX_SIDE_OF_JUNCTION: Coordinate = [120.6758, 15.4628];
 const junctionPoint = (code: string) => code === "TPLEX" ? TPLEX_SIDE_OF_JUNCTION : SCTEX_SIDE_OF_JUNCTION;
 
 const routeNumbers = (road: string) => road.split("/").map((part) => part.trim().toUpperCase());

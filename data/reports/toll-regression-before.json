@@ -1,0 +1,251 @@
+{
+ "Baguio → Manila": {
+  "km": 249,
+  "CLASS_1": {
+   "total": 1068,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱311 UNVERIFIED",
+    "SCTEX–NLEX San Miguel→Balintawak ₱638 THIRD_PARTY_ESTIMATE",
+    "NLEX_CONNECTOR unresolved entry→unresolved exit ₱119 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": 2571,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱778 UNVERIFIED",
+    "SCTEX–NLEX San Miguel→Balintawak ₱1494 THIRD_PARTY_ESTIMATE",
+    "NLEX_CONNECTOR unresolved entry→unresolved exit ₱299 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": 3263,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱933 UNVERIFIED",
+    "SCTEX–NLEX San Miguel→Balintawak ₱1912 THIRD_PARTY_ESTIMATE",
+    "NLEX_CONNECTOR unresolved entry→unresolved exit ₱418 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Baguio → Clark": {
+  "km": 164,
+  "CLASS_1": {
+   "total": 509,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱311 UNVERIFIED",
+    "SCTEX San Miguel→Mabalacat (Mabiga) ₱198 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": 1173,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱778 UNVERIFIED",
+    "SCTEX San Miguel→Mabalacat (Mabiga) ₱395 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": 1526,
+   "status": "ESTIMATED",
+   "segments": [
+    "TPLEX Rosario→La Paz ₱933 UNVERIFIED",
+    "SCTEX San Miguel→Mabalacat (Mabiga) ₱593 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Manila → Tarlac City": {
+  "km": 129,
+  "CLASS_1": {
+   "total": 638,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→San Miguel ₱638 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": 1494,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→San Miguel ₱1494 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": 1912,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→San Miguel ₱1912 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Manila → Subic": {
+  "km": 124,
+  "CLASS_1": {
+   "total": 857,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→Tipo ₱857 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_2": {
+   "total": 1956,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→Tipo ₱1956 THIRD_PARTY_ESTIMATE"
+   ]
+  },
+  "CLASS_3": {
+   "total": 2569,
+   "status": "ESTIMATED",
+   "segments": [
+    "NLEX–SCTEX Balintawak→Tipo ₱2569 THIRD_PARTY_ESTIMATE"
+   ]
+  }
+ },
+ "Makati → Calamba": {
+  "km": 49,
+  "CLASS_1": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SLEX Merville→Cabuyao N/A  (No rate is available for this plaza pair.)",
+    "SKYWAY Don Bosco→Don Bosco N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_2": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SLEX Merville→Cabuyao N/A  (No rate is available for this plaza pair.)",
+    "SKYWAY Don Bosco→Don Bosco N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_3": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SLEX Merville→Cabuyao N/A  (No rate is available for this plaza pair.)",
+    "SKYWAY Don Bosco→Don Bosco N/A  (No rate is available for this plaza pair.)"
+   ]
+  }
+ },
+ "Manila → Batangas City": {
+  "km": 106,
+  "CLASS_1": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY E. Rodriguez→Don Bosco N/A  (No rate is available for this plaza pair.)",
+    "SLEX Alabang→Cabuyao ₱107 THIRD_PARTY_ESTIMATE",
+    "STAR unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_2": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY E. Rodriguez→Don Bosco N/A  (No rate is available for this plaza pair.)",
+    "SLEX Alabang→Cabuyao ₱214 THIRD_PARTY_ESTIMATE",
+    "STAR unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_3": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY E. Rodriguez→Don Bosco N/A  (No rate is available for this plaza pair.)",
+    "SLEX Alabang→Cabuyao ₱321 THIRD_PARTY_ESTIMATE",
+    "STAR unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  }
+ },
+ "Manila → Lipa": {
+  "km": 82,
+  "CLASS_1": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY E. Rodriguez→Don Bosco N/A  (No rate is available for this plaza pair.)",
+    "SLEX Alabang→Cabuyao ₱107 THIRD_PARTY_ESTIMATE",
+    "STAR unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_2": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY E. Rodriguez→Don Bosco N/A  (No rate is available for this plaza pair.)",
+    "SLEX Alabang→Cabuyao ₱214 THIRD_PARTY_ESTIMATE",
+    "STAR unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_3": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY E. Rodriguez→Don Bosco N/A  (No rate is available for this plaza pair.)",
+    "SLEX Alabang→Cabuyao ₱321 THIRD_PARTY_ESTIMATE",
+    "STAR unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  }
+ },
+ "Manila → Kawit, Cavite": {
+  "km": 30,
+  "CLASS_1": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY E. Rodriguez→Don Bosco N/A  (No rate is available for this plaza pair.)",
+    "NAIAX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)",
+    "CAVITEX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_2": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY E. Rodriguez→Don Bosco N/A  (No rate is available for this plaza pair.)",
+    "NAIAX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)",
+    "CAVITEX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_3": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SKYWAY E. Rodriguez→Don Bosco N/A  (No rate is available for this plaza pair.)",
+    "NAIAX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)",
+    "CAVITEX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  }
+ },
+ "Alabang → Silang (CALAX)": {
+  "km": 34,
+  "CLASS_1": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SLEX Alabang→Carmona ₱57 THIRD_PARTY_ESTIMATE",
+    "CALAX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_2": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SLEX Alabang→Carmona ₱114 THIRD_PARTY_ESTIMATE",
+    "CALAX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  },
+  "CLASS_3": {
+   "total": null,
+   "status": "INCOMPLETE",
+   "segments": [
+    "SLEX Alabang→Carmona ₱170 THIRD_PARTY_ESTIMATE",
+    "CALAX unresolved entry→unresolved exit N/A  (No rate is available for this plaza pair.)"
+   ]
+  }
+ }
+}

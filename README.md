@@ -9,6 +9,8 @@ Map-first Luzon expressway route planner. The UI intentionally does **not** inve
 3. `npm run db:generate && npm run db:seed`
 4. `npm run dev`
 
+For hosted deployment instructions, see [docs/deployment.md](docs/deployment.md).
+
 ## Toll-rate architecture
 
 - `app/`: customer pages, admin surface, validated HTTP endpoints.
@@ -72,6 +74,15 @@ The planner covers the **Luzon main island**, where the supported expressway net
 - **Routes**: geometry is sampled about every 1 km. Routes that leave coverage (for example ferry routes to other islands) are dropped before tolls are calculated. If Google returns no route at all, the trip is rejected as not routable.
 - **Expressway coverage**: each route is classified as using a supported expressway (priced from the rate database), using **ordinary roads only** (Google reports no toll road and no supported expressway matched, so it is shown as "₱0 · no expressway toll applies"), or using a **toll road outside the supported network** (never shown as free). When no route uses a supported expressway, the UI shows "No supported expressway toll route is available for this destination."
 - **Toll plazas**: plaza locator records whose coordinates are off Luzon are bad geocodes and are ignored by the matcher. They are not deleted.
+
+## Toll data management and automated updates
+
+Plaza locations, rate approvals, automated source monitoring, and a data-quality dashboard live at **/admin/toll-data** (administrators only; requires `AUTH_ENABLED="true"`). Full operator guide: [docs/toll-data.md](docs/toll-data.md).
+
+- Plaza locations are verified against named OpenStreetMap toll booths (© OpenStreetMap contributors, ODbL) that sit on the expressway's own road: `npm run toll:verify-plazas`.
+- Monitored sources are checked daily and weekly (`npm run toll:monitor`, `npm run toll:monitor:weekly`, or `POST /api/internal/toll-monitor` with `CRON_SECRET`). Changes are staged with a difference report and used only after an administrator approves them; automatic publication is off by default and never applies to third-party estimates.
+- TRB-approved adjustments reported by news outlets (`data/toll-rate-announcements.json`) are used to label matching rows *independently verified* and stale rows *superseded*: `npm run toll:setup-monitoring`.
+- Every change is audit-logged and reversible (plaza batches, rate imports, and a database backup); see the rollback section of the guide.
 
 ## Google Cloud setup
 
